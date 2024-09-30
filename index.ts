@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     res.send('API del Hotel Miranda');
 });
 
-// Iniciar el servidor
+//? Iniciar el servidor
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}/`);
 });
