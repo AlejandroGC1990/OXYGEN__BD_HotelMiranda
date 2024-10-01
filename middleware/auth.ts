@@ -36,11 +36,12 @@ export const authenticate = (req: Request, res: Response, next: NextFunction):vo
 };
 
 //? Middleware para verificar el token
-export const verifyToken = (req: Request, res: Response, next: NextFunction) => {
+export const verifyToken = (req: Request, res: Response, next: NextFunction): void => {
     const token = req.headers['authorization']?.split(' ')[1];
 
     if(!token) {
-        return res.sendStatus(403);
+        res.sendStatus(403);
+        return ;
     }
 
     jwt.verify(token, SECRET_KEY, (err: any, decoded: any) => {

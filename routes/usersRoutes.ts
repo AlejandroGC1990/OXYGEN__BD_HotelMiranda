@@ -1,12 +1,13 @@
 import { Router } from "express";
 import { getUser, getUsers, createUser, modifyUser, removeUser } from '../controllers/roomController';
+import { verifyToken } from "../middleware/auth";
 
 const router = Router();
 
-router.get('/users', getUsers);
-router.get('/user/:id', getUser);
-router.post('/user', createUser);
-router.put('/user/:id', modifyUser);
-router.delete('/user/:id', removeUser);
+router.get('/users', verifyToken, getUsers);
+router.get('/user/:id', verifyToken, getUser);
+router.post('/user', verifyToken, createUser);
+router.put('/user/:id', verifyToken, modifyUser);
+router.delete('/user/:id', verifyToken, removeUser);
 
 export default router;

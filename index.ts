@@ -5,6 +5,7 @@ import roomRoutes from './routes/roomRoutes';
 import bookingRoutes from './routes/bookingRoutes';
 import contactRoutes from './routes/contactRoutes';
 import userRoutes from './routes/usersRoutes';
+import authRoutes from './routes/authRoutes';
 
 dotenv.config(); //? Carga variables del archivo .env
 
@@ -16,6 +17,7 @@ app.use(cors());
 app.use(express.json()); 
 
 //? Rutas
+app.use('/api/auth', authRoutes);
 app.use('/api/rooms', roomRoutes);
 app.use('/api/booking', bookingRoutes);
 app.use('/api/contact', contactRoutes);
