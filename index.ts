@@ -6,6 +6,7 @@ import bookingRoutes from './routes/bookingRoutes';
 import contactRoutes from './routes/contactRoutes';
 import userRoutes from './routes/usersRoutes';
 import authRoutes from './routes/authRoutes';
+import publicRoutes from './routes/publicRoutes';
 
 dotenv.config(); //? Carga variables del archivo .env
 
@@ -22,6 +23,8 @@ app.use('/api/rooms', roomRoutes);
 app.use('/api/booking', bookingRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/user', userRoutes);
+app.use('/public', publicRoutes);
+
 
 //? Iniciar el servidor
 app.listen(PORT, () => {
