@@ -1,7 +1,21 @@
 import { Request, Response } from "express";
-import * as fs from 'fs';
 import { Room } from '../interfaces/room';
-import { writeCSVFile } from "../utils/cvsUtils";
+import { getAllRooms } from "../services/roomsService";
+
+//?Obtener datos de todas la habitaciones
+export const getRooms = (req: Request, res: Response) => {
+    const rooms = getAllRooms();
+    res.status(200).json(rooms);
+}
+
+//?Obtener datos de todas la habitaciones
+export const getRoom = (req: Request, res: Response) => {
+    const id = parseInt(req.params.id);
+}
+
+
+
+
 
 export const convertRoomsToCSV = (req: Request, res: Response) => {
     try {
