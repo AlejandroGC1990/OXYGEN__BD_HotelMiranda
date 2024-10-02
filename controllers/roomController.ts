@@ -1,11 +1,13 @@
 import { Request, Response } from "express";
 import fs from 'fs';
+import path from 'path';
 import { Room } from '../interfaces/room';
-import { writeCSVFile } from '../utils/cvsUtils'; 
+import { writeCSVFile } from '../utils/cvsUtils';
 
 //?Leer las habitaciones de un archivo JSON
 const readRoomsFromFile = (): Room[] => {
-    const data = fs.readFileSync('rooms.json', 'utf-8');
+    const filePath = path.join(__dirname, '../data/rooms.json'); // Ajusta la ruta según tu estructura de carpetas
+    const data = fs.readFileSync(filePath, 'utf-8');
     return JSON.parse(data) as Room[];
 };
 
@@ -21,10 +23,10 @@ export const getRoom = (req: Request, res: Response) => {
     const rooms = readRoomsFromFile();
     const room = rooms.find(r => r.room_id === id);
 
-    if(room){
+    if (room) {
         res.status(200).json(room);
     } else {
-        res.status(404).json({message: 'Habitación no encontrada'});
+        res.status(404).json({ message: 'Habitación no encontrada' });
     }
 };
 
@@ -39,12 +41,12 @@ export const createRoom = (req: Request, res: Response) => {
     const rooms = readRoomsFromFile();
 
     //asignar un id único
-    newRoom.room_id = rooms.length > 0 ? rooms[rooms.length -1].room_id + 1 : 1;
+    newRoom.room_id = rooms.length > 0 ? rooms[rooms.length - 1].room_id + 1 : 1;
 
     rooms.push(newRoom);
     saveRoomsToFile(rooms);
 
-    res.status(201).json({message: 'Habitación creada', room: newRoom });
+    res.status(201).json({ message: 'Habitación creada', room: newRoom });
 };
 
 //? Actualizar una habitación existente
@@ -84,7 +86,7 @@ export const convertRoomsToCSV = (req: Request, res: Response) => {
     try {
         const rooms = readRoomsFromFile();
 
-        // Ordenar habitaciones por precio
+        //? Ordenar habitaciones por precio
         rooms.sort((a: Room, b: Room) => a.room_price - b.room_price);
 
         // Escribir el archivo CSV

@@ -1,3 +1,6 @@
+//! Este archivo configura tu servidor Express, define middlewares (como cors y express.json())
+//!  y carga las rutas de tu API. El archivo .env contiene configuraciones como el puerto (PORT). 
+
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -14,8 +17,9 @@ const app = express();
 const PORT = process.env.PORT;
 
 //? Middleware
-app.use(cors());
-app.use(express.json());
+app.use(cors());  // Permite solicitudes desde diferentes dominios
+app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
+
 
 //? Rutas
 app.use('/public', publicRoutes);

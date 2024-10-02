@@ -1,8 +1,13 @@
+//! Explicación: Este archivo contiene utilidades para convertir las habitaciones en formato CSV y 
+//!escribir este CSV en un archivo. Las funciones son usadas para:
+//!  -convertToCSV: Convierte un array de habitaciones en una cadena de texto con formato CSV.
+//!  -writeCSVFile: Escribe el CSV en un archivo (rooms.csv).
+
 import { Room } from '../interfaces/room';
 import * as fs from 'fs';
 
+//? Convertir los datos a formato CSV
 export const convertToCSV = (rooms: Room[]): string => {
-    //? Convertir los datos a formato CSV
     const csvHeaders = 'Room Id, Room Number, Room Type, Room Facilities, Room Price, Room Status, Room Picture, Room BedType\n';
     let csvContent = csvHeaders;
 
@@ -13,7 +18,8 @@ export const convertToCSV = (rooms: Room[]): string => {
     return csvContent;
 };
 
+//? Escribir el archivo CSV
 export const writeCSVFile = (rooms: Room[]): void => {
     const csvContent = convertToCSV(rooms);
-    fs.writeFileSync('rooms.csv', csvContent);
-}
+    fs.writeFileSync('src/exports/rooms.csv', csvContent);
+};
