@@ -5,10 +5,10 @@ import { getRoom, getRooms, createRoom, modifyRoom, removeRoom, convertRoomsToCS
 const router = Router();
 
 router.get('/', getRooms);
-router.get('/rooms/csv', convertRoomsToCSV);
-router.get('/rooms/:id', getRoom);
-router.post('/rooms', createRoom);
-router.put('/rooms/:id', modifyRoom);
-router.delete('/rooms/:id', removeRoom);
+router.get('/csv', convertRoomsToCSV);
+router.get('/:id', getRoom);
+router.post('/', createRoom);
+router.put('/:id', modifyRoom);
+router.delete('/:id', removeRoom);
 
 export default router;
