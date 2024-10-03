@@ -7,8 +7,15 @@ dotenv.config();
 
 //? Usuario hardcodeado para autenticación
 const hardcodeUser: User = {
-    userName: process.env.HARD_CODED_USERNAME || 'defaultUsername',
-    password: process.env.HARD_CODED_PASSWORD || 'defaultPassword',
+    user_id: 11,
+    user_name: process.env.HARD_CODED_USERNAME || 'defaultUsername',
+    user_password: process.env.HARD_CODED_PASSWORD || 'defaultPassword',
+    user_picture: "http://dummyimage.com/237x100.png/ff4444/ffffff",
+    user_joined: "2024-03-13 07:22:02",
+    user_jobDescription: "Offer restaurant and activity recommendations and assist guests in arranging transportation",
+    user_schedule: ["Monday", "Wednesday"],
+    user_contact: "666 666 6666",
+    user_status: "Inactive"
 };
 //? Clave secreta para firmar el token JWT
 const SECRET_KEY: string = process.env.JWT_SECRET_KEY || 'defaultSecretKey';
@@ -26,12 +33,12 @@ declare global {
 
 //? Middleware de autenticación
 export const authenticate = (req: Request, res: Response, next: NextFunction):void => {
-    const {userName, password} = req.body;  // Obtener las credenciales del cuerpo de la solicitud
+    const {user_name, user_password} = req.body;  // Obtener las credenciales del cuerpo de la solicitud
 
     //?Verificar credenciales
-    if(userName === hardcodeUser.userName && password === hardcodeUser.password) {
+    if(user_name === hardcodeUser.user_name && user_password === hardcodeUser.user_password) {
         // Crear el token JWT con una validez de 1 hora
-        const token = jwt.sign({userName}, SECRET_KEY, {expiresIn:'1h'});
+        const token = jwt.sign({user_name}, SECRET_KEY, {expiresIn:'1h'});
         res.json({token}); // Enviar el token como respuesta
     } else {
         res.status(401).json({message: 'Invalid Credentials'});
