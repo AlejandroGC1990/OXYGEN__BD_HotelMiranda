@@ -1,18 +1,18 @@
 import { Request, Response } from "express";
 import { User } from "../interfaces/user";
-import { getAll, getById, create, update, remove } from '../utils/controllers';
+import { getAll, getById, create, update, remove } from '../services/controllers';
 
 //?? Ruta al JSON de users
 const usersFilePath = '../data/users.json';
 
 //?? Obtener todos los usuarios
-export const getAllUsers = (req: Request, res: Response) => {
+export const getAllUsers = (req: Request, res: Response): void => {
     const users = getAll<User>(usersFilePath);
     res.status(200).json(users);
 };
 
 //?? Obtener usuarios por Id
-export const getUsersById = (req: Request, res: Response) => {
+export const getUsersById = (req: Request, res: Response): void => {
     const id = parseInt(req.params.id);
     const user = getById<User>(usersFilePath, 'user_id', id);
 
@@ -24,11 +24,11 @@ export const getUsersById = (req: Request, res: Response) => {
 };
 
 //? Crear un nuevo usuario
-export const createUser = (req: Request, res: Response) => {
+export const createUser = (req: Request, res: Response): void => {
     const newUser: User = req.body;
 
     if (!newUser.user_name) {
-        return res.status(400).json({ message: 'Nombre es requerido' });
+        res.status(400).json({ message: 'Nombre es requerido' });
     }
 
     const createdUser = create<User>(usersFilePath, newUser, 'user_id');
@@ -36,12 +36,12 @@ export const createUser = (req: Request, res: Response) => {
 };
 
 //? Actualizar un usuario existente
-export const updateUser = (req: Request, res: Response) => {
+export const updateUser = (req: Request, res: Response): void => {
     const id = parseInt(req.params.id);
     const updatedData: Partial<User> = req.body;
 
     if (!updatedData.user_name) {
-        return res.status(400).json({ message: 'Proporcione al menos un nombre o un correo para actualizar' });
+        res.status(400).json({ message: 'Proporcione al menos un nombre o un correo para actualizar' });
     }
 
     const updatedUser = update<User>(usersFilePath, 'user_id', id, updatedData);
@@ -54,7 +54,7 @@ export const updateUser = (req: Request, res: Response) => {
 };
 
 //? Eliminar un usuario
-export const removeUser = (req: Request, res: Response) => {
+export const removeUser = (req: Request, res: Response): void => {
     const id = parseInt(req.params.id);
     const success = remove<User>(usersFilePath, 'user_id', id);
 
