@@ -21,7 +21,7 @@ app.use(cors());  // Permite solicitudes desde diferentes dominios
 app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
 
 //? Rutas de autenticación
-app.use('/api/auth', authRoutes);
+app.use('/api/login', authRoutes);
 //? Rutas
 app.use('/public', publicRoutes);
 app.use('/api/rooms', roomRoutes);

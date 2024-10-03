@@ -4,8 +4,8 @@ import { verifyToken } from "../middleware/auth";
 
 const router = Router();
 
-router.get('/', getRooms);
-router.get('/:id', getRoom);
+router.get('/', verifyToken, getRooms);
+router.get('/:id', verifyToken, getRoom);
 router.get('/csv', verifyToken, convertRoomsToCSV);
 router.post('/', verifyToken, createRoom);
 router.put('/:id', verifyToken, modifyRoom);

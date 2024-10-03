@@ -34,13 +34,15 @@ declare global {
 //? Middleware de autenticación
 export const authenticate = (req: Request, res: Response, next: NextFunction):void => {
     const {user_name, user_password} = req.body;  // Obtener las credenciales del cuerpo de la solicitud
-
-    //?Verificar credenciales
-    if(user_name === hardcodeUser.user_name && user_password === hardcodeUser.user_password) {
-        // Crear el token JWT con una validez de 1 hora
-        const token = jwt.sign({user_name}, SECRET_KEY, {expiresIn:'1h'});
-        res.json({token}); // Enviar el token como respuesta
-    } else {
+console.log("patata1");
+//?Verificar credenciales
+if(user_name === hardcodeUser.user_name && user_password === hardcodeUser.user_password) {
+    console.log("patata2");
+    // Crear el token JWT con una validez de 1 hora
+    const token = jwt.sign({user_name: hardcodeUser.user_name}, SECRET_KEY, {expiresIn:'24h'});
+    res.json({token}); // Enviar el token como respuesta
+} else {
+        console.log("patata3");
         res.status(401).json({message: 'Invalid Credentials'});
     }
 };
