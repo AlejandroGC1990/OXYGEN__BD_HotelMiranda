@@ -1,14 +1,14 @@
 import { Router } from "express";
-import { getRoom, getRooms, createRoom, modifyRoom, removeRoom, convertRoomsToCSV } from '../controllers/roomController';
+import { createRoom, updateRoom, removeRoom, convertRoomToCSV, getRoomById, getAllRooms } from '../controllers/roomController';
 import { verifyToken } from "../middleware/auth";
 
 const router = Router();
 
-router.get('/', verifyToken, getRooms);
-router.get('/:id', verifyToken, getRoom);
-router.get('/csv', verifyToken, convertRoomsToCSV);
+router.get('/', verifyToken, getAllRooms);
+router.get('/:id', verifyToken, getRoomById);
+router.get('/csv', verifyToken, convertRoomToCSV);
 router.post('/', verifyToken, createRoom);
-router.put('/:id', verifyToken, modifyRoom);
+router.put('/:id', verifyToken, updateRoom);
 router.delete('/:id', verifyToken, removeRoom);
 
 export default router;

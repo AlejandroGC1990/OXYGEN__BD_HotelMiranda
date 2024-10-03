@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { User } from "../interfaces/user";
-import { getAll, getById, create, update, remove } from '../services/controllers';
+import { getAll, getById, create, update, remove, convertJSONToCSV } from '../services/controllers';
 
 //?? Ruta al JSON de users
 const usersFilePath = '../data/users.json';
@@ -63,4 +63,19 @@ export const removeUser = (req: Request, res: Response): void => {
     } else {
         res.status(404).json({ message: 'Usuario no encontrado' });
     }
+};
+
+//? Convertir usuarios a CSV
+export const convertUsersToCSV = (req: Request, res: Response) => {
+    const headers = [
+        'user_id',
+         'user_name',
+         'user_password',
+         'user_picture',
+         'user_joined',
+         'user_jobDescription',
+         'user_schedule',
+         'user_contact',
+         'user_status'];
+    convertJSONToCSV(req, res, 'users.json', headers);
 };

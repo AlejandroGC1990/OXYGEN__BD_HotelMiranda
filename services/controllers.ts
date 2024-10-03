@@ -9,36 +9,6 @@ const readDataFromFile = <T>(filePath: string): T[] => {
     return JSON.parse(data) as T[];
 };
 
-//? Función para convertir JSON a CSV y devolver la respuesta
-//? Definir una signatura de llamada para la función que convierte JSON a CSV
-type ConvertJSONToCSVFunction<T> = (req: Request, res: Response, fileName: string, headers: string[]) => void;
-
-//? Implementar la función que coincide con la signatura
-const convertJSONToCSV: ConvertJSONToCSVFunction<any> = (req, res, fileName, headers) => {
-    try {
-        // Leer los datos del archivo JSON
-        const data = readDataFromFile<any>(`../data/${fileName}`);
-        
-        // Crear el contenido del CSV
-        const csvHeaders = headers.join(',') + '\n';
-        let csvContent = csvHeaders;
-
-        data.forEach(item => {
-            const values = headers.map(header => (item as any)[header]);
-            csvContent += values.join(',') + '\n';
-        });
-
-        // Guardar el archivo CSV
-        const csvFilePath = path.join(__dirname, '../exports', `${fileName.replace('.json', '')}.csv`);
-        fs.writeFileSync(csvFilePath, csvContent);
-
-        // Responder al cliente con la ubicación del archivo CSV
-        res.status(200).json({ message: 'Archivo CSV creado', path: csvFilePath });
-    } catch (error) {
-        res.status(500).json({ message: 'Error al convertir a CSV', error });
-    }
-};
-
 //? Función para escribir datos en un archivo JSON
 const writeDataToFile = <T>(filePath: string, data: T[]): void => {
     const absolutePath = path.join(__dirname, filePath);
@@ -90,4 +60,34 @@ export const remove = <T>(filePath: string, idKey: keyof T, idValue: number): bo
         return true;
     }
     return false;
+};
+
+//? Función para convertir JSON a CSV y devolver la respuesta
+//? Definir una signatura de llamada para la función que convierte JSON a CSV
+type ConvertJSONToCSVFunction<T> = (req: Request, res: Response, fileName: string, headers: string[]) => void;
+
+//? Implementar la función que coincide con la signatura
+export const convertJSONToCSV: ConvertJSONToCSVFunction<any> = (req, res, fileName, headers) => {
+    try {
+        // Leer los datos del archivo JSON
+        const data = readDataFromFile<any>(`../data/${fileName}`);
+        
+        // Crear el contenido del CSV
+        const csvHeaders = headers.join(',') + '\n';
+        let csvContent = csvHeaders;
+
+        data.forEach(item => {
+            const values = headers.map(header => (item as any)[header]);
+            csvContent += values.join(',') + '\n';
+        });
+
+        // Guardar el archivo CSV
+        const csvFilePath = path.join(__dirname, '../exports', `${fileName.replace('.json', '')}.csv`);
+        fs.writeFileSync(csvFilePath, csvContent);
+
+        // Responder al cliente con la ubicación del archivo CSV
+        res.status(200).json({ message: 'Archivo CSV creado', path: csvFilePath });
+    } catch (error) {
+        res.status(500).json({ message: 'Error al convertir a CSV', error });
+    }
 };

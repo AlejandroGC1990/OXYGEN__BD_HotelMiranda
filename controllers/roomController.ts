@@ -1,27 +1,20 @@
 import { Request, Response } from "express";
-import fs from 'fs';
-import path from 'path';
 import { Room } from '../interfaces/room';
-import { writeCSVFile } from '../utils/cvsUtils';
+import { convertJSONToCSV, create, getAll, getById, remove, update } from "../services/controllers";
 
-//?Leer las habitaciones de un archivo JSON
-const readRoomsFromFile = (): Room[] => {
-    const filePath = path.join(__dirname, '../data/rooms.json'); // Ajusta la ruta según tu estructura de carpetas
-    const data = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(data) as Room[];
-};
+// Ruta al archivo JSON de habitaciones
+const roomsFilePath = '../data/rooms.json';
 
 //?Obtener datos de todas la habitaciones
-export const getRooms = (req: Request, res: Response) => {
-    const rooms = readRoomsFromFile();
+export const getAllRooms = (req: Request, res: Response) => {
+    const rooms = getAll<Room>(roomsFilePath);
     res.status(200).json(rooms);
 };
 
 //?Obtener una habitación por ID
-export const getRoom = (req: Request, res: Response) => {
+export const getRoomById = (req: Request, res: Response) => {
     const id = parseInt(req.params.id);
-    const rooms = readRoomsFromFile();
-    const room = rooms.find(r => r.room_id === id);
+    const room = getById<Room>(roomsFilePath, 'room_id', id);
 
     if (room) {
         res.status(200).json(room);
@@ -30,37 +23,21 @@ export const getRoom = (req: Request, res: Response) => {
     }
 };
 
-//? Guardar habitaciones en un archivo JSON
-const saveRoomsToFile = (rooms: Room[]) => {
-    fs.writeFileSync('src/data/rooms.json', JSON.stringify(rooms, null, 2), 'utf-8');
-};
-
 //? Crear una nueva habitación
 export const createRoom = (req: Request, res: Response) => {
     const newRoom: Room = req.body;
-    const rooms = readRoomsFromFile();
-
-    //asignar un id único
-    newRoom.room_id = rooms.length > 0 ? rooms[rooms.length - 1].room_id + 1 : 1;
-
-    rooms.push(newRoom);
-    saveRoomsToFile(rooms);
-
-    res.status(201).json({ message: 'Habitación creada', room: newRoom });
+    const createdRoom = create<Room>(roomsFilePath, newRoom, 'room_id'); // Asigna ID único
+    res.status(201).json({ message: 'Habitación creada', room: createdRoom });
 };
 
 //? Actualizar una habitación existente
-export const modifyRoom = (req: Request, res: Response) => {
+export const updateRoom = (req: Request, res: Response) => {
     const id = parseInt(req.params.id);
     const updatedData: Partial<Room> = req.body;
-    const rooms = readRoomsFromFile();
-    const roomIndex = rooms.findIndex(r => r.room_id === id);
+    const updatedRoom = update<Room>(roomsFilePath, 'room_id', id, updatedData);
 
-    if (roomIndex !== -1) {
-        const updatedRoom = { ...rooms[roomIndex], ...updatedData };
-        rooms[roomIndex] = updatedRoom;
-        saveRoomsToFile(rooms);
-        res.status(200).json({ message: 'Habitación actualizada exitosamente', room: updatedRoom });
+    if (updatedRoom) {
+        res.status(200).json({message: 'Habitación actualizada exitosamente', room: updatedRoom });
     } else {
         res.status(404).json({ message: 'Habitación no encontrada' });
     }
@@ -69,36 +46,27 @@ export const modifyRoom = (req: Request, res: Response) => {
 //? Eliminar una habitación
 export const removeRoom = (req: Request, res: Response) => {
     const id = parseInt(req.params.id);
-    let rooms = readRoomsFromFile();
-    const roomExists = rooms.some(r => r.room_id === id);
+    const isRemoved = remove<Room>(roomsFilePath, 'room_id', id);
 
-    if (roomExists) {
-        rooms = rooms.filter(r => r.room_id !== id);
-        saveRoomsToFile(rooms);
+
+    if (isRemoved) {
         res.status(200).json({ message: 'Habitación eliminada exitosamente' });
     } else {
         res.status(404).json({ message: 'Habitación no encontrada' });
     }
 };
 
-//? Convertir habitaciones a CSV
-export const convertRoomsToCSV = (req: Request, res: Response) => {
-    try {
-        const rooms = readRoomsFromFile();
-
-        //? Ordenar habitaciones por precio
-        rooms.sort((a: Room, b: Room) => a.room_price - b.room_price);
-
-        // Escribir el archivo CSV
-        writeCSVFile(rooms);
-
-        res.status(200).json({ message: 'Archivo CSV creado exitosamente.' });
-    } catch (error: unknown) {
-        console.error('Error al convertir a CSV:', error);
-        if (error instanceof Error) {
-            res.status(500).json({ message: 'Error al convertir a CSV', error: error.message });
-        } else {
-            res.status(500).json({ message: 'Error desconocido' });
-        }
-    }
+//? Convertir usuarios a CSV
+export const convertRoomToCSV = (req: Request, res: Response) => {
+    const headers = [
+        'room_id',
+         'room_number',
+         'room_type',
+         'room_facilities',
+         'room_price',
+         'offer_price',
+         'room_status',
+         'room_picture',
+         'room_bedType'];
+    convertJSONToCSV(req, res, 'room.json', headers);
 };
