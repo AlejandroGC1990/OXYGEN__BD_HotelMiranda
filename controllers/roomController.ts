@@ -58,6 +58,7 @@ export const removeRoom = (req: Request, res: Response) => {
 
 //? Convertir usuarios a CSV
 export const convertRoomToCSV = (req: Request, res: Response) => {
+    const fileName = 'rooms.json';
     const headers = [
         'room_id',
          'room_number',
@@ -68,5 +69,5 @@ export const convertRoomToCSV = (req: Request, res: Response) => {
          'room_status',
          'room_picture',
          'room_bedType'];
-    convertJSONToCSV(req, res, 'room.json', headers);
+    convertJSONToCSV(req, res, fileName, headers);
 };

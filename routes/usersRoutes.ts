@@ -9,6 +9,6 @@ router.get('/:id', verifyToken, getUsersById);
 router.post('/', verifyToken, createUser);
 router.put('/:id', verifyToken, updateUser);
 router.delete('/:id', verifyToken, removeUser);
-router.get('/csv', verifyToken, convertUsersToCSV);
+router.get('/csv', convertUsersToCSV);
 
 export default router;

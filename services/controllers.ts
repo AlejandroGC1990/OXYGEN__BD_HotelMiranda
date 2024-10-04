@@ -68,11 +68,18 @@ type ConvertJSONToCSVFunction<T> = (req: Request, res: Response, fileName: strin
 
 //? Implementar la función que coincide con la signatura
 export const convertJSONToCSV: ConvertJSONToCSVFunction<any> = (req, res, fileName, headers) => {
+
     try {
-        // Leer los datos del archivo JSON
+        //? Leer los datos del archivo JSON
         const data = readDataFromFile<any>(`../data/${fileName}`);
-        
-        // Crear el contenido del CSV
+
+        console.log('Datos leídos:', data);
+
+        if (!data || data.length === 0) {
+            return res.status(404).json({ message: 'No hay datos para convertir a CSV' });
+        }
+
+        //? Crear el contenido del CSV
         const csvHeaders = headers.join(',') + '\n';
         let csvContent = csvHeaders;
 
@@ -81,13 +88,14 @@ export const convertJSONToCSV: ConvertJSONToCSVFunction<any> = (req, res, fileNa
             csvContent += values.join(',') + '\n';
         });
 
-        // Guardar el archivo CSV
+        //? Guardar el archivo CSV
         const csvFilePath = path.join(__dirname, '../exports', `${fileName.replace('.json', '')}.csv`);
         fs.writeFileSync(csvFilePath, csvContent);
 
-        // Responder al cliente con la ubicación del archivo CSV
+        //? Responder al cliente con la ubicación del archivo CSV
         res.status(200).json({ message: 'Archivo CSV creado', path: csvFilePath });
     } catch (error) {
+        console.error('Error al convertir a CSV:', error);
         res.status(500).json({ message: 'Error al convertir a CSV', error });
     }
 };
