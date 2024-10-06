@@ -66,7 +66,7 @@ export const removeUser = (req: Request, res: Response): void => {
 };
 
 //? Convertir usuarios a CSV
-export const convertUsersToCSV = (req: Request, res: Response, usersFilePath: any) => {
+export const convertUsersToCSV = (req: Request, res: Response) => {
     const fileName = 'users.json';
     const headers = [
         'user_id',
