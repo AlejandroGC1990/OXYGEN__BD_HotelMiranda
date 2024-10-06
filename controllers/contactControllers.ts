@@ -3,7 +3,7 @@ import { Contact } from "../interfaces/contact";
 import { getAll, getById, create, update, remove, convertJSONToCSV } from '../services/controllers';
 
 //? Ruta al archivo JSON de contactos
-const contactsFilePath = '../data/contacts.json';
+const contactsFilePath = '../data/contact.json';
 
 //? Obtener todos los contactos
 export const getAllContacts = (req: Request, res: Response): void => {

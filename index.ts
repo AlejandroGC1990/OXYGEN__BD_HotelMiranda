@@ -6,7 +6,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import roomRoutes from './routes/roomRoutes';
 // import bookingRoutes from './routes/bookingRoutes';
-// import contactRoutes from './routes/contactRoutes';
+import contactRoutes from './routes/contactRoutes';
 import userRoutes from './routes/usersRoutes';
 import authRoutes from './routes/authRoutes';
 import publicRoutes from './routes/publicRoutes';
@@ -26,7 +26,7 @@ app.use('/api/login', authRoutes);
 app.use('/public', publicRoutes);
 app.use('/api/rooms', roomRoutes);
 // app.use('/api/booking', bookingRoutes);
-// app.use('/api/contact', contactRoutes);
+app.use('/api/contact', contactRoutes);
 app.use('/api/users', userRoutes);
 
 
