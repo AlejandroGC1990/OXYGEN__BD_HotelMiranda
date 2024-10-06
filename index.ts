@@ -2,6 +2,7 @@
 //!  y carga las rutas de tu API. El archivo .env contiene configuraciones como el puerto (PORT). 
 
 import express from 'express';
+import connectDB from './config/db';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import roomRoutes from './routes/roomRoutes';
@@ -11,8 +12,11 @@ import userRoutes from './routes/usersRoutes';
 import authRoutes from './routes/authRoutes';
 import publicRoutes from './routes/publicRoutes';
 
-dotenv.config(); //? Carga variables del archivo .env
+//? Conectar a MongoDB
+connectDB();
 
+
+dotenv.config(); //? Carga variables del archivo .env
 const app = express();
 const PORT = process.env.PORT;
 
