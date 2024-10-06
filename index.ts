@@ -1,65 +1,36 @@
-import express from 'express';
-import * as fs from 'fs';
-import cors from 'cors';
+//! Este archivo configura tu servidor Express, define middlewares (como cors y express.json())
+//!  y carga las rutas de tu API. El archivo .env contiene configuraciones como el puerto (PORT). 
 
-interface Room {
-    room_id: number;
-    room_number: number;
-    room_type: string;
-    room_facilities: string[];
-    room_price: number;
-    offer_price?: number;
-    room_status: string;
-    room_picture: string;
-    room_bedType: string;
-}
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import roomRoutes from './routes/roomRoutes';
+// import bookingRoutes from './routes/bookingRoutes';
+import contactRoutes from './routes/contactRoutes';
+import userRoutes from './routes/usersRoutes';
+import authRoutes from './routes/authRoutes';
+import publicRoutes from './routes/publicRoutes';
+
+dotenv.config(); //? Carga variables del archivo .env
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 //? Middleware
-app.use(cors()); 
-app.use(express.json()); 
+app.use(cors());  // Permite solicitudes desde diferentes dominios
+app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
 
-//? Ruta raíz
-app.get('/', (req, res) => {
-    res.send('API del Hotel Miranda');
-});
-
-//? Ruta para convertir JSON a CSV
-app.get('/convert-to-csv', (req, res) => {
-    try {
-        const data = fs.readFileSync('rooms.json', 'utf-8');
-        const rooms: Room[] = JSON.parse(data);
-
-        rooms.sort((a: Room, b: Room) => a.room_price - b.room_price);
-        //res.status(200).json(rooms); // Para visualizar el JSON
-
-        //? Convertir los datos a formato CSV
-        const csvHeaders = 'Room Id, Room Number, Room Type, Room Facilities, Room Price, Room Status, Room Picture, Room BedType\n';
-        let csvContent = csvHeaders;
-
-        rooms.forEach((room: Room) => {
-            csvContent += `${room.room_id}, ${room.room_number}, ${room.room_type}, ${room.room_facilities.join('|')}, ${room.room_price}, ${room.room_status}, ${room.room_picture}, ${room.room_bedType}\n`;
-        });
-
-        //? Escribir el archivo CSV
-        fs.writeFileSync('rooms.csv', csvContent);
-
-        //? Enviar respuesta al cliente
-        res.status(200).json({ message: 'Archivo CSV creado exitosamente.' });
-    } catch (error: unknown) {
-        console.error('Error al convertir a CSV:', error);
-        if (error instanceof Error) {
-            res.status(500).json({ message: 'Error al convertir a CSV', error: error.message });
-        } else {
-            res.status(500).json({ message: 'Error desconocido' });
-        }
-    }
-});
+//? Rutas de autenticación
+app.use('/api/login', authRoutes);
+//? Rutas
+app.use('/public', publicRoutes);
+app.use('/api/rooms', roomRoutes);
+// app.use('/api/booking', bookingRoutes);
+app.use('/api/contact', contactRoutes);
+app.use('/api/users', userRoutes);
 
 
-// Iniciar el servidor
+//? Iniciar el servidor
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}/`);
+    console.log(`Servidor corriendo en http://localhost:${PORT}/public/info`);
 });
