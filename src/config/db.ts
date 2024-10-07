@@ -6,16 +6,13 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const mongoURI = process.env.MONGO_URI;
+const mongoURI = (process.env.MONGO_URI) ? process.env.MONGO_URI : '';
 
 const connectDB = async () => {
   try {
-    await connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await connect(mongoURI);
     console.log('Conectado a MongoDB con éxito');
-  } catch (err) {
+  } catch (err: any) {
     console.error('Error conectando a MongoDB:', err.message);
     process.exit(1);
   }

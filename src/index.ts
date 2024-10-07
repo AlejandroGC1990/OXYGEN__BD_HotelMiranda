@@ -15,7 +15,6 @@ import publicRoutes from './routes/publicRoutes';
 //? Conectar a MongoDB
 connectDB();
 
-
 dotenv.config(); //? Carga variables del archivo .env
 const app = express();
 const PORT = process.env.PORT;
@@ -24,7 +23,7 @@ const PORT = process.env.PORT;
 app.use(cors());  // Permite solicitudes desde diferentes dominios
 app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
 
-//? Rutas de autenticación
+//? Ruta de autenticación
 app.use('/api/login', authRoutes);
 //? Rutas
 app.use('/public', publicRoutes);

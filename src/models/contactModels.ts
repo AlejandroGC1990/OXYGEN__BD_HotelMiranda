@@ -3,7 +3,7 @@ import { Contact } from '../interfaces/contact';
 
 //? Esquema de Contact
 const ContactSchema: Schema = new Schema({
-    guest_idReview: { type: Number, required: true },
+    guest_idReview: { type: Number, required: true, unique: true },
     guest_timeDateReview: { type: String, required: true },
     guest_DateReview: { type: String, required: true },
     guest_name: { type: String, required: true },
@@ -27,7 +27,7 @@ const ContactModel = mongoose.model<Contact>('Contact', ContactSchema);
 async function run() {
     //? Conectar a MongoDB
     await mongoose.connect('mongodb://localhost:27017/yourDatabaseName');
-    
+
     //? Crear un nuevo documento en la colección 'contacts'
     const billContact = new ContactModel({
         guest_idReview: 102,
@@ -47,10 +47,14 @@ async function run() {
         guest_orderDate: "08-09-2001",
         guest_room_state: "Clean"
     });
-    
+
     //? Guardar el contacto en la base de datos
     await billContact.save();
-    console.log(billContact.guest_email);
+    try {
+        console.log("Contact saved successfully:", billContact.guest_email);
+    } catch (error) {
+        console.error("Error while saving contact:", error.message);
+    }
 }
 
 run().catch(err => console.log(err));
