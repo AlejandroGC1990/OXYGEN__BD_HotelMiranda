@@ -1,5 +1,3 @@
-// src/interfaces/Contact.ts
-
 export interface Contact {
     guest_idReview: number;           
     guest_timeDateReview: string;     
