@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { Room } from '../interfaces/room';
-import { convertJSONToCSV, create, getAll, getById, remove, update } from "../services/controllers";
+import { create, getAll, getById, remove, update } from "../services/controllers";
 
 // Ruta al archivo JSON de habitaciones
 const roomsFilePath = '../data/rooms.json';
@@ -54,20 +54,4 @@ export const removeRoom = (req: Request, res: Response) => {
     } else {
         res.status(404).json({ message: 'Habitación no encontrada' });
     }
-};
-
-//? Convertir usuarios a CSV
-export const convertRoomToCSV = (req: Request, res: Response) => {
-    const fileName = 'rooms.json';
-    const headers = [
-        'room_id',
-         'room_number',
-         'room_type',
-         'room_facilities',
-         'room_price',
-         'offer_price',
-         'room_status',
-         'room_picture',
-         'room_bedType'];
-    convertJSONToCSV(req, res, fileName, headers);
 };

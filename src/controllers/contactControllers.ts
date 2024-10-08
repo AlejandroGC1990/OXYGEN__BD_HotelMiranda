@@ -1,90 +1,91 @@
 import { Request, Response } from "express";
-import { Contact } from "../interfaces/contact";
-import { getAll, getById, create, update, remove, convertJSONToCSV } from '../services/controllers';
-
-//? Ruta al archivo JSON de contactos
-const contactsFilePath = '../data/contact.json';
+import { Contact } from '../interfaces/contact';
+import ContactModel from "../models/contactModels"; 
+import { getAll, getById, create, update, remove } from '../services/controllers';
 
 //? Obtener todos los contactos
-export const getAllContacts = (req: Request, res: Response): void => {
-    const contacts = getAll<Contact>(contactsFilePath);
-    res.status(200).json(contacts);
+export const getAllContacts = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const contacts = await getAll<Contact>(ContactModel); 
+        res.status(200).json(contacts);
+    } catch (error) {
+        console.error(error); // Agrega log para depuración
+        res.status(500).json({ message: "Error al obtener contactos" });
+    }
 };
 
 //? Obtener contacto por ID
-export const getContactById = (req: Request, res: Response): void => {
-    const id = parseInt(req.params.id);
-    const contact = getById<Contact>(contactsFilePath, 'guest_idReview', id);
+export const getContactById = async (req: Request, res: Response): Promise<void> => {
+    const id = req.params.id;
+    try {
+        const contact = await getById<Contact>(ContactModel, id); 
 
-    if (contact) {
-        res.status(200).json(contact);
-    } else {
-        res.status(404).json({ message: "Contacto no encontrado" });
+        if (contact) {
+            res.status(200).json(contact);
+        } else {
+            res.status(404).json({ message: "Contacto no encontrado" });
+        }
+    } catch (error) {
+        console.error(error); // Agrega log para depuración
+        res.status(500).json({ message: "Error al obtener contacto" });
     }
 };
 
 //? Crear un nuevo contacto
-export const createContact = (req: Request, res: Response): void => {
-    const newContact: Contact = req.body;
+export const createContact = async (req: Request, res: Response): Promise<void> => {
+    const newContact: Contact = req.body; 
 
     if (!newContact.guest_name || !newContact.guest_email) {
         res.status(400).json({ message: 'El nombre y el email son requeridos' });
+        return;
     }
 
-    const createdContact = create<Contact>(contactsFilePath, newContact, 'guest_idReview');
-    res.status(201).json({ message: 'Contacto creado', contact: createdContact });
+    try {
+        const createdContact = await create<Contact>(ContactModel, newContact); 
+        res.status(201).json({ message: 'Contacto creado', contact: createdContact });
+    } catch (error) {
+        console.error(error); // Agrega log para depuración
+        res.status(500).json({ message: "Error al crear contacto" });
+    }
 };
 
 //? Actualizar un contacto existente
-export const updateContact = (req: Request, res: Response): void => {
-    const id = parseInt(req.params.id);
+export const updateContact = async (req: Request, res: Response): Promise<void> => {
+    const id = req.params.id;
     const updatedData: Partial<Contact> = req.body;
 
     if (!updatedData.guest_name && !updatedData.guest_email) {
         res.status(400).json({ message: 'Proporcione al menos un nombre o un email para actualizar' });
+        return;
     }
 
-    const updatedContact = update<Contact>(contactsFilePath, 'guest_idReview', id, updatedData);
+    try {
+        const updatedContact = await update<Contact>(ContactModel, id, updatedData); 
 
-    if (updatedContact) {
-        res.status(200).json({ message: 'Contacto actualizado', contact: updatedContact });
-    } else {
-        res.status(404).json({ message: 'Contacto no encontrado' });
+        if (updatedContact) {
+            res.status(200).json({ message: 'Contacto actualizado', contact: updatedContact });
+        } else {
+            res.status(404).json({ message: 'Contacto no encontrado' });
+        }
+    } catch (error) {
+        console.error(error); // Agrega log para depuración
+        res.status(500).json({ message: "Error al actualizar contacto" });
     }
 };
 
 //? Eliminar un contacto
-export const removeContact = (req: Request, res: Response): void => {
-    const id = parseInt(req.params.id);
-    const success = remove<Contact>(contactsFilePath, 'guest_idReview', id);
+export const removeContact = async (req: Request, res: Response): Promise<void> => {
+    const id = req.params.id;
+    try {
+        const success = await remove<Contact>(ContactModel, id);
 
-    if (success) {
-        res.status(200).json({ message: 'Contacto eliminado' });
-    } else {
-        res.status(404).json({ message: 'Contacto no encontrado' });
+        if (success) {
+            res.status(200).json({ message: 'Contacto eliminado' });
+        } else {
+            res.status(404).json({ message: 'Contacto no encontrado' });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error al eliminar contacto" });
     }
-};
-
-//? Convertir contactos a CSV
-export const convertContactsToCSV = (req: Request, res: Response) => {
-    const fileName = 'contacts.json';
-    const headers = [
-        'guest_idReview',
-        'guest_timeDateReview',
-        'guest_DateReview',
-        'guest_name',
-        'guest_email',
-        'guest_phone',
-        'guest_rateReview',
-        'guest_commentReview',
-        'guest_statusReview',
-        'guest_checkIn',
-        'guest_checkInTime',
-        'guest_checkOut',
-        'guest_checkOutTime',
-        'guest_orderDateTime',
-        'guest_orderDate',
-        'guest_room_state'
-    ];
-    convertJSONToCSV(req, res, fileName, headers);
 };

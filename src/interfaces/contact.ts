@@ -1,4 +1,4 @@
-export interface Contact {
+export interface Contact extends Document{
     guest_idReview: number;           
     guest_timeDateReview: string;     
     guest_DateReview: string;          

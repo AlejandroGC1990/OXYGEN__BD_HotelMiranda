@@ -1,7 +1,7 @@
-import mongoose, { Schema, model } from 'mongoose';
+import { Schema, model, Model } from 'mongoose';
 import { User } from '../interfaces/user';
 
-//? Esquema de User con mensajes de error
+//? Esquema de User
 const UserSchema: Schema = new Schema({
     user_id: { 
         type: Number, 
@@ -43,30 +43,6 @@ const UserSchema: Schema = new Schema({
 });
 
 //? Crear el modelo 'User'
-const UserModel = model<User>('User', UserSchema);
+const UserModel: Model<User> = model<User>('User', UserSchema);
 
-//? Función async para crear un usuario y manejar errores
-async function run() {
-    try {
-        //?Crear un nuevo documento en la colección 'users'
-        const newUser = new UserModel({
-            user_id: 1,
-            user_name: "John Doe",
-            user_password: "password123",
-            user_picture: "profile-pic.jpg",
-            user_joined: "2024-01-01",
-            user_jobDescription: "Hotel Manager",
-            user_schedule: ["Mon", "Wed", "Fri"],
-            user_contact: "john.doe@email.com",
-            user_status: "Active"
-        });
-
-        //?Guardar el usuario en la base de datos
-        await newUser.save();
-        console.log(newUser.user_name);
-    } catch (error: any) {
-        console.error("Error while saving user: ", error.message);
-    }
-}
-
-run().catch(err => console.log(err));
+export default UserModel;

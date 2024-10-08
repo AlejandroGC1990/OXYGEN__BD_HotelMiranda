@@ -21,7 +21,7 @@ export const getUsersById = (req: Request, res: Response): void => {
     } else {
         res.status(404).json({ message: "Usuario no encontrado" });
     }
-};
+// };
 
 //? Crear un nuevo usuario
 export const createUser = (req: Request, res: Response): void => {

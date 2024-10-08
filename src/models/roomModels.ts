@@ -1,4 +1,4 @@
-import mongoose, { Schema, model } from 'mongoose';
+import { Schema, model, Model } from 'mongoose';
 import { Room } from '../interfaces/room';
 
 //? Esquema de Room con mensajes de error
@@ -43,31 +43,6 @@ const RoomSchema: Schema = new Schema({
 });
 
 //? Crear el modelo 'Room'
-const RoomModel = model<Room>('Room', RoomSchema);
+const RoomModel: Model<Room> = model<Room>('Room', RoomSchema);
 
-//? Función async para crear una habitación y manejar errores
-async function run() {
-    try {
-        //?Crear un nuevo documento en la colección 'rooms'
-        const newRoom = new RoomModel({
-            room_id: 101,
-            room_number: 205,
-            room_type: "Deluxe",
-            room_facilities: ["WiFi", "TV", "Air Conditioner"],
-            room_price: 120,
-            offer_price: 100,
-            room_status: "Available",
-            room_picture: "room-205.jpg",
-            room_bedType: "King"
-        });
-
-        //?Guardar la habitación en la base de datos
-        await newRoom.save();
-        console.log(newRoom.room_number);
-        
-    } catch (error: any) {
-        console.error("Error while saving room: ", error.message);
-    }
-}
-
-run().catch(err => console.log(err));
+export default RoomModel;
