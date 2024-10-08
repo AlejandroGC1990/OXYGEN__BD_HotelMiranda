@@ -1,57 +1,82 @@
 import { Request, Response } from "express";
 import { Room } from '../interfaces/room';
-import { create, getAll, getById, remove, update } from "../services/controllers";
+import RoomModel from "../models/roomModels";
+import { getAll, getById, create, update, remove } from "../services/controllers";
 
-// Ruta al archivo JSON de habitaciones
-const roomsFilePath = '../data/rooms.json';
-
-//?Obtener datos de todas la habitaciones
-export const getAllRooms = (req: Request, res: Response) => {
-    const rooms = getAll<Room>(roomsFilePath);
-    res.status(200).json(rooms);
+//? Obtener datos de todas las habitaciones
+export const getAllRooms = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const rooms = await getAll<Room>(RoomModel);
+        res.status(200).json(rooms);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error al obtener habitaciones" });
+    }
 };
 
-//?Obtener una habitación por ID
-export const getRoomById = (req: Request, res: Response) => {
-    const id = parseInt(req.params.id);
-    const room = getById<Room>(roomsFilePath, 'room_id', id);
+//? Obtener una habitación por ID
+export const getRoomById = async (req: Request, res: Response): Promise<void> => {
+    const id = req.params.id;
+    try {
+        const room = await getById<Room>(RoomModel, id);
 
-    if (room) {
-        res.status(200).json(room);
-    } else {
-        res.status(404).json({ message: 'Habitación no encontrada' });
+        if (room) {
+            res.status(200).json(room);
+        } else {
+            res.status(404).json({ message: 'Habitación no encontrada' });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error al obtener habitación" });
     }
 };
 
 //? Crear una nueva habitación
-export const createRoom = (req: Request, res: Response) => {
-    const newRoom: Room = req.body;
-    const createdRoom = create<Room>(roomsFilePath, newRoom, 'room_id'); // Asigna ID único
-    res.status(201).json({ message: 'Habitación creada', room: createdRoom });
+export const createRoom = async (req: Request, res: Response): Promise<void> => {
+    const newRoom: Room = new RoomModel(req.body);
+
+    try {
+        const createdRoom = await newRoom.save();
+        res.status(201).json({ message: 'Habitación creada', room: createdRoom });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error al crear habitación" });
+    }
 };
 
 //? Actualizar una habitación existente
-export const updateRoom = (req: Request, res: Response) => {
-    const id = parseInt(req.params.id);
+export const updateRoom = async (req: Request, res: Response): Promise<void> => {
+    const id = req.params.id;
     const updatedData: Partial<Room> = req.body;
-    const updatedRoom = update<Room>(roomsFilePath, 'room_id', id, updatedData);
 
-    if (updatedRoom) {
-        res.status(200).json({message: 'Habitación actualizada exitosamente', room: updatedRoom });
-    } else {
-        res.status(404).json({ message: 'Habitación no encontrada' });
+    try {
+        const updatedRoom = await update<Room>(RoomModel, id, updatedData);
+
+        if (updatedRoom) {
+            res.status(200).json({ message: 'Habitación actualizada exitosamente', room: updatedRoom });
+        } else {
+            res.status(404).json({ message: 'Habitación no encontrada' });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error al actualizar habitación" });
     }
 };
 
 //? Eliminar una habitación
-export const removeRoom = (req: Request, res: Response) => {
-    const id = parseInt(req.params.id);
-    const isRemoved = remove<Room>(roomsFilePath, 'room_id', id);
+export const removeRoom = async (req: Request, res: Response): Promise<void> => {
+    const id = req.params.id;
 
+    try {
+        const isRemoved = await remove<Room>(RoomModel, id);
 
-    if (isRemoved) {
-        res.status(200).json({ message: 'Habitación eliminada exitosamente' });
-    } else {
-        res.status(404).json({ message: 'Habitación no encontrada' });
+        if (isRemoved) {
+            res.status(200).json({ message: 'Habitación eliminada exitosamente' });
+        } else {
+            res.status(404).json({ message: 'Habitación no encontrada' });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Error al eliminar habitación" });
     }
 };

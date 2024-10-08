@@ -1,4 +1,4 @@
-import { Schema, model, Model } from 'mongoose';
+import { Schema, model } from 'mongoose';
 import { Room } from '../interfaces/room';
 
 //? Esquema de Room con mensajes de error
@@ -43,6 +43,6 @@ const RoomSchema: Schema = new Schema({
 });
 
 //? Crear el modelo 'Room'
-const RoomModel: Model<Room> = model<Room>('Room', RoomSchema);
+const RoomModel = model<Room>('Room', RoomSchema);
 
 export default RoomModel;

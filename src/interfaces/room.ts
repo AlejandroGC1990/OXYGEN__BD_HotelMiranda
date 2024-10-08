@@ -1,4 +1,6 @@
-export interface Room {
+import { Document } from 'mongoose';
+
+export interface Room extends Document {
     room_id: number;
     room_number: number;
     room_type: string;

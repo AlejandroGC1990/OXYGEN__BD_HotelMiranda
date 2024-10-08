@@ -9,7 +9,7 @@ export const getAllContacts = async (req: Request, res: Response): Promise<void>
         const contacts = await getAll<Contact>(ContactModel); 
         res.status(200).json(contacts);
     } catch (error) {
-        console.error(error); // Agrega log para depuración
+        console.error(error); 
         res.status(500).json({ message: "Error al obtener contactos" });
     }
 };
@@ -26,7 +26,7 @@ export const getContactById = async (req: Request, res: Response): Promise<void>
             res.status(404).json({ message: "Contacto no encontrado" });
         }
     } catch (error) {
-        console.error(error); // Agrega log para depuración
+        console.error(error); 
         res.status(500).json({ message: "Error al obtener contacto" });
     }
 };
@@ -44,7 +44,7 @@ export const createContact = async (req: Request, res: Response): Promise<void> 
         const createdContact = await create<Contact>(ContactModel, newContact); 
         res.status(201).json({ message: 'Contacto creado', contact: createdContact });
     } catch (error) {
-        console.error(error); // Agrega log para depuración
+        console.error(error); 
         res.status(500).json({ message: "Error al crear contacto" });
     }
 };
@@ -68,7 +68,7 @@ export const updateContact = async (req: Request, res: Response): Promise<void> 
             res.status(404).json({ message: 'Contacto no encontrado' });
         }
     } catch (error) {
-        console.error(error); // Agrega log para depuración
+        console.error(error); 
         res.status(500).json({ message: "Error al actualizar contacto" });
     }
 };
