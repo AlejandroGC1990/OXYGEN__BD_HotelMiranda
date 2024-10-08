@@ -48,9 +48,6 @@ const RoomModel = model<Room>('Room', RoomSchema);
 //? Función async para crear una habitación y manejar errores
 async function run() {
     try {
-        //?Conectar a MongoDB
-        await mongoose.connect('mongodb://localhost:27017/yourDatabaseName');
-
         //?Crear un nuevo documento en la colección 'rooms'
         const newRoom = new RoomModel({
             room_id: 101,
@@ -67,7 +64,8 @@ async function run() {
         //?Guardar la habitación en la base de datos
         await newRoom.save();
         console.log(newRoom.room_number);
-    } catch (error) {
+        
+    } catch (error: any) {
         console.error("Error while saving room: ", error.message);
     }
 }

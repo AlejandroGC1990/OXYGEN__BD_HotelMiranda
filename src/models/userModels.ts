@@ -48,9 +48,6 @@ const UserModel = model<User>('User', UserSchema);
 //? Función async para crear un usuario y manejar errores
 async function run() {
     try {
-        //?Conectar a MongoDB
-        await mongoose.connect('mongodb://localhost:27017/yourDatabaseName');
-
         //?Crear un nuevo documento en la colección 'users'
         const newUser = new UserModel({
             user_id: 1,
