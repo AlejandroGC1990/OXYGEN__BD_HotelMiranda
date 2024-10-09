@@ -4,6 +4,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import mongoose from 'mongoose';
 import roomRoutes from './routes/roomRoutes';
 // import bookingRoutes from './routes/bookingRoutes';
 import contactRoutes from './routes/contactRoutes';
@@ -15,6 +16,12 @@ dotenv.config(); //? Carga variables del archivo .env
 
 const app = express();
 const PORT = process.env.PORT;
+const MONGO_URI = process.env.MONGO_URI;
+
+//? Conexión a MongoDB
+mongoose.connect(MONGO_URI!)
+    .then(() => console.log('MongoDB connected'))
+    .catch(err => console.error('MongoDB connection error:', err));
 
 //? Middleware
 app.use(cors());  // Permite solicitudes desde diferentes dominios
@@ -22,6 +29,7 @@ app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
 
 //? Rutas de autenticación
 app.use('/api/login', authRoutes);
+
 //? Rutas
 app.use('/public', publicRoutes);
 app.use('/api/rooms', roomRoutes);

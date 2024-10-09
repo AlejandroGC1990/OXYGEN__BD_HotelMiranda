@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { Contact } from "../interfaces/contact";
-import { getAll, getById, create, update, remove, convertJSONToCSV } from '../services/controllers';
+import { getAll, getById, create, update, remove, convertJSONToCSV } from '../services/crud';
 
 //? Ruta al archivo JSON de contactos
 const contactsFilePath = '../data/contact.json';

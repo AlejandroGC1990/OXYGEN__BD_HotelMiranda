@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { Room } from '../interfaces/room';
-import { convertJSONToCSV, create, getAll, getById, remove, update } from "../services/controllers";
+import { convertJSONToCSV, create, getAll, getById, remove, update } from "../services/crud";
 
 // Ruta al archivo JSON de habitaciones
 const roomsFilePath = '../data/rooms.json';
