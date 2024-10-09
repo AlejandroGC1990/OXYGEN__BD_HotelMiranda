@@ -32,18 +32,18 @@ declare global {
 }
 
 //? Middleware de autenticación
-export const authenticate = (req: Request, res: Response, next: NextFunction):void => {
-    const {user_name, user_password} = req.body;  // Obtener las credenciales del cuerpo de la solicitud
-console.log("patata1");
-//?Verificar credenciales
-if(user_name === hardcodeUser.user_name && user_password === hardcodeUser.user_password) {
-    console.log("patata2");
-    // Crear el token JWT con una validez de 1 hora
-    const token = jwt.sign({user_name: hardcodeUser.user_name}, SECRET_KEY, {expiresIn:'24h'});
-    res.json({token}); // Enviar el token como respuesta
-} else {
+export const authenticate = (req: Request, res: Response, next: NextFunction): void => {
+    const { user_name, user_password } = req.body;  // Obtener las credenciales del cuerpo de la solicitud
+
+    //?Verificar credenciales
+    if (user_name === hardcodeUser.user_name && user_password === hardcodeUser.user_password) {
+
+        // Crear el token JWT con una validez de 1 hora
+        const token = jwt.sign({ user_name: hardcodeUser.user_name }, SECRET_KEY, { expiresIn: '24h' });
+        res.json({ token }); // Enviar el token como respuesta
+    } else {
         console.log("patata3");
-        res.status(401).json({message: 'Invalid Credentials'});
+        res.status(401).json({ message: 'Invalid Credentials' });
     }
 };
 
@@ -52,13 +52,13 @@ export const verifyToken = (req: Request, res: Response, next: NextFunction): vo
     //? Obtener el token del encabezado de autorización
     const token = req.headers['authorization']?.split(' ')[1];
 
-    if(!token) {
+    if (!token) {
         res.sendStatus(403); //Si no hay token, no party
-        return ;
+        return;
     }
 
     jwt.verify(token, SECRET_KEY, (err: any, decoded: any) => {
-        if(err) {
+        if (err) {
             return res.sendStatus(403);
         }
         req.user = decoded; // Guardar la información decodificada del token en la solicitud
@@ -74,15 +74,15 @@ export const checkAuthentication = (req: Request, res: Response, next: NextFunct
 
     if (!token) {
         req.isAuthenticated = false; // Si no hay token, el usuario no está autenticado
-        return next(); 
+        return next();
     }
 
     jwt.verify(token, SECRET_KEY, (err: any) => {
         if (err) {
-            req.isAuthenticated = false; 
+            req.isAuthenticated = false;
         } else {
-            req.isAuthenticated = true; 
+            req.isAuthenticated = true;
         }
-        next(); 
+        next();
     });
 };
