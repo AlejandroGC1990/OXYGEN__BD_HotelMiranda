@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import RoomModel from "models/roomModels";
+import RoomModel from "../models/roomModels";
 
 //?Obtener datos de todas la habitaciones
 export const getAllRooms = async (req: Request, res: Response) => {

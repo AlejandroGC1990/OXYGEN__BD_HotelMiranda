@@ -1,49 +1,43 @@
 import { NextFunction, Request, Response } from "express";
-import { User } from "../interfaces/user";
 import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
+import bcrypt from 'bcrypt';
+import UserModel from "../models/userModels";
 
 dotenv.config();
 
-//? Usuario hardcodeado para autenticación
-const hardcodeUser: User = {
-    user_id: 11,
-    user_name: process.env.HARD_CODED_USERNAME || 'defaultUsername',
-    user_password: process.env.HARD_CODED_PASSWORD || 'defaultPassword',
-    user_picture: "http://dummyimage.com/237x100.png/ff4444/ffffff",
-    user_joined: "2024-03-13 07:22:02",
-    user_jobDescription: "Offer restaurant and activity recommendations and assist guests in arranging transportation",
-    user_schedule: ["Monday", "Wednesday"],
-    user_contact: "666 666 6666",
-    user_status: "Inactive"
-};
-//? Clave secreta para firmar el token JWT
-const SECRET_KEY: string = process.env.JWT_SECRET_KEY || 'defaultSecretKey';
-
-
-//? Extender la interfaz Request globalmente para incluir la propiedad 'user'
 declare global {
     namespace Express {
         interface Request {
-            user?: string | jwt.JwtPayload;
+            user?: any; // o define un tipo más específico si lo deseas
             isAuthenticated?: boolean;
         }
     }
 }
 
+//? Clave secreta para firmar el token JWT
+const SECRET_KEY: string = process.env.JWT_SECRET_KEY || 'defaultSecretKey';
+
 //? Middleware de autenticación
-export const authenticate = (req: Request, res: Response, next: NextFunction): void => {
+export const authenticate = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     const { user_name, user_password } = req.body;  // Obtener las credenciales del cuerpo de la solicitud
 
-    //?Verificar credenciales
-    if (user_name === hardcodeUser.user_name && user_password === hardcodeUser.user_password) {
+    try {
+        //?Buscar usuario en la BD
+        const user = await UserModel.findOne({ user_name });
 
-        // Crear el token JWT con una validez de 1 hora
-        const token = jwt.sign({ user_name: hardcodeUser.user_name }, SECRET_KEY, { expiresIn: '24h' });
-        res.json({ token }); // Enviar el token como respuesta
-    } else {
-        console.log("patata3");
-        res.status(401).json({ message: 'Invalid Credentials' });
+        //?Verificar credenciales
+        if (user && await bcrypt.compare(user_password, user.user_password)) {
+
+            // Crear el token JWT
+            const token = jwt.sign({ user_name: user.user_name }, SECRET_KEY);
+            res.json({ token }); // Enviar el token como respuesta
+        } else {
+            res.status(401).json({ message: 'Invalid Credentials' });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal Server Error'});
     }
 };
 

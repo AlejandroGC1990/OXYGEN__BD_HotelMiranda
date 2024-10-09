@@ -1,4 +1,4 @@
-import { User } from 'interfaces/user';
+import { User } from '../interfaces/user';
 import mongoose, { Document, Schema } from 'mongoose';
 
 //? Definir el esquema de Mongoose basado en userInterfaz

@@ -1,4 +1,4 @@
-import { Room } from "interfaces/room";
+import { Room } from "../interfaces/room";
 import mongoose, { Document, Schema } from "mongoose";
 
 //? Definir el esquema de Mongoose basado en roomInterfaz
