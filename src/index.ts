@@ -32,10 +32,10 @@ app.use('/api/login', authRoutes);
 
 //? Rutas
 app.use('/public', publicRoutes);
-app.use('/api/rooms', roomRoutes);
+app.use('/api/room', roomRoutes);
 // app.use('/api/booking', bookingRoutes);
 app.use('/api/contact', contactRoutes);
-app.use('/api/users', userRoutes);
+app.use('/api/user', userRoutes);
 
 
 //? Iniciar el servidor

@@ -32,8 +32,10 @@ export const createRoom = (req: Request, res: Response) => {
 
 //? Actualizar una habitación existente
 export const updateRoom = (req: Request, res: Response) => {
-    const id = parseInt(req.params.id);
-    const updatedData: Partial<Room> = req.body;
+    const id = parseInt(req.params.id);  // Obtén el ID de la habitación desde los parámetros de la solicitud
+    const updatedData: Partial<Room> = req.body; // Obtén los datos actualizados del cuerpo de la solicitud
+    
+    //? Llama a la función de actualización
     const updatedRoom = update<Room>(roomsFilePath, 'room_id', id, updatedData);
 
     if (updatedRoom) {

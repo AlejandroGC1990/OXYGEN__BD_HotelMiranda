@@ -24,7 +24,13 @@
     "room_picture": "http://dummyimage.com/220x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Bathup", "AC", "Coffee Set", "Shower", "Double Bed"],
+    "room_facilities": [
+      "Bathup",
+      "AC",
+      "Coffee Set",
+      "Shower",
+      "Double Bed"
+    ],
     "room_price": 81.32,
     "room_status": "Available"
   },
@@ -55,7 +61,12 @@
     "room_picture": "http://dummyimage.com/184x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["AC", "Shower", "LED TV", "Wifi"],
+    "room_facilities": [
+      "AC",
+      "Shower",
+      "LED TV",
+      "Wifi"
+    ],
     "room_price": 76.58,
     "room_status": "Available"
   },
@@ -108,7 +119,13 @@
     "room_picture": "http://dummyimage.com/238x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Bathup", "Towel", "Coffee Set", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "Bathup",
+      "Towel",
+      "Coffee Set",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 98.31,
     "room_status": "Booked"
   },
@@ -119,7 +136,13 @@
     "room_picture": "http://dummyimage.com/247x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Coffee Set", "AC", "Shower", "Towel", "Double Bed"],
+    "room_facilities": [
+      "Coffee Set",
+      "AC",
+      "Shower",
+      "Towel",
+      "Double Bed"
+    ],
     "room_price": 101.96,
     "room_status": "Available"
   },
@@ -142,7 +165,7 @@
       "Shower",
       "AC"
     ],
-    "room_price": 175.80,
+    "room_price": 175.8,
     "room_status": "Booked"
   },
   {
@@ -174,7 +197,11 @@
     "room_picture": "http://dummyimage.com/168x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set", "Wifi", "Shower"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 59.34,
     "room_status": "Available"
   },
@@ -185,7 +212,13 @@
     "room_picture": "http://dummyimage.com/233x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV", "Shower", "Double Bed", "Wifi", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "Shower",
+      "Double Bed",
+      "Wifi",
+      "AC"
+    ],
     "room_price": 168.16,
     "room_status": "Booked"
   },
@@ -196,7 +229,9 @@
     "room_picture": "http://dummyimage.com/222x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 180.05,
     "room_status": "Booked"
   },
@@ -227,7 +262,13 @@
     "room_picture": "http://dummyimage.com/103x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Towel", "Coffee Set", "AC", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "Towel",
+      "Coffee Set",
+      "AC",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 194.52,
     "room_status": "Available"
   },
@@ -256,7 +297,11 @@
     "room_picture": "http://dummyimage.com/242x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "Wifi", "Shower"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 54.82,
     "room_status": "Booked"
   },
@@ -286,7 +331,11 @@
     "room_picture": "http://dummyimage.com/149x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "AC", "Coffee Set"],
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "Coffee Set"
+    ],
     "room_price": 179.68,
     "room_status": "Available"
   },
@@ -318,7 +367,13 @@
     "room_picture": "http://dummyimage.com/164x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Towel", "LED TV", "Wifi", "AC", "Bathup"],
+    "room_facilities": [
+      "Towel",
+      "LED TV",
+      "Wifi",
+      "AC",
+      "Bathup"
+    ],
     "room_price": 73.93,
     "room_status": "Booked"
   },
@@ -329,7 +384,10 @@
     "room_picture": "http://dummyimage.com/143x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV", "Bathup"],
+    "room_facilities": [
+      "LED TV",
+      "Bathup"
+    ],
     "room_price": 179.38,
     "room_status": "Booked"
   },
@@ -361,7 +419,9 @@
     "room_picture": "http://dummyimage.com/163x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 143.52,
     "room_status": "Booked"
   },
@@ -372,7 +432,10 @@
     "room_picture": "http://dummyimage.com/238x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Towel", "Coffee Set"],
+    "room_facilities": [
+      "Towel",
+      "Coffee Set"
+    ],
     "room_price": 80.82,
     "room_status": "Available"
   },
@@ -383,7 +446,13 @@
     "room_picture": "http://dummyimage.com/109x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Double Bed", "Towel", "AC", "Shower", "Coffee Set"],
+    "room_facilities": [
+      "Double Bed",
+      "Towel",
+      "AC",
+      "Shower",
+      "Coffee Set"
+    ],
     "room_price": 73.06,
     "room_status": "Booked"
   },
@@ -457,7 +526,10 @@
     "room_picture": "http://dummyimage.com/206x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Bathup"],
+    "room_facilities": [
+      "LED TV",
+      "Bathup"
+    ],
     "room_price": 74.33,
     "room_status": "Booked"
   },
@@ -468,7 +540,9 @@
     "room_picture": "http://dummyimage.com/235x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 80.02,
     "room_status": "Booked"
   },
@@ -488,7 +562,7 @@
       "LED TV",
       "Wifi"
     ],
-    "room_price": 113.50,
+    "room_price": 113.5,
     "room_status": "Available"
   },
   {
@@ -498,7 +572,10 @@
     "room_picture": "http://dummyimage.com/239x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "Bathup"
+    ],
     "room_price": 55.84,
     "room_status": "Available"
   },
@@ -548,7 +625,11 @@
     "room_picture": "http://dummyimage.com/173x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "Towel", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Towel",
+      "Wifi"
+    ],
     "room_price": 187.43,
     "room_status": "Available"
   },
@@ -577,7 +658,11 @@
     "room_picture": "http://dummyimage.com/145x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Double Bed", "Wifi"],
+    "room_facilities": [
+      "AC",
+      "Double Bed",
+      "Wifi"
+    ],
     "room_price": 159.26,
     "room_status": "Booked"
   },
@@ -588,7 +673,10 @@
     "room_picture": "http://dummyimage.com/180x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi"
+    ],
     "room_price": 92.78,
     "room_status": "Available"
   },
@@ -678,7 +766,9 @@
     "room_picture": "http://dummyimage.com/107x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 54.73,
     "room_status": "Booked"
   },
@@ -711,7 +801,13 @@
     "room_picture": "http://dummyimage.com/166x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Towel", "AC", "Wifi", "Coffee Set", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "Wifi",
+      "Coffee Set",
+      "Shower"
+    ],
     "room_price": 97.14,
     "room_status": "Available"
   },
@@ -722,7 +818,10 @@
     "room_picture": "http://dummyimage.com/120x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Double Bed", "Bathup"],
+    "room_facilities": [
+      "Double Bed",
+      "Bathup"
+    ],
     "room_price": 176.36,
     "room_status": "Booked"
   },
@@ -733,7 +832,9 @@
     "room_picture": "http://dummyimage.com/148x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 135.97,
     "room_status": "Booked"
   },
@@ -765,7 +866,9 @@
     "room_picture": "http://dummyimage.com/162x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 86.49,
     "room_status": "Booked"
   },
@@ -796,7 +899,13 @@
     "room_picture": "http://dummyimage.com/210x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV", "Wifi", "Towel", "AC", "Bathup"],
+    "room_facilities": [
+      "LED TV",
+      "Wifi",
+      "Towel",
+      "AC",
+      "Bathup"
+    ],
     "room_price": 68.04,
     "room_status": "Available"
   },
@@ -816,7 +925,7 @@
       "Bathup",
       "Double Bed"
     ],
-    "room_price": 120.70,
+    "room_price": 120.7,
     "room_status": "Available"
   },
   {
@@ -826,8 +935,10 @@
     "room_picture": "http://dummyimage.com/250x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi"],
-    "room_price": 174.10,
+    "room_facilities": [
+      "Wifi"
+    ],
+    "room_price": 174.1,
     "room_status": "Available"
   },
   {
@@ -878,7 +989,12 @@
     "room_picture": "http://dummyimage.com/132x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set", "Bathup", "Towel", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Bathup",
+      "Towel",
+      "Wifi"
+    ],
     "room_price": 176.71,
     "room_status": "Booked"
   },
@@ -889,7 +1005,9 @@
     "room_picture": "http://dummyimage.com/175x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 160.08,
     "room_status": "Booked"
   },
@@ -1011,7 +1129,7 @@
       "Shower",
       "Double Bed"
     ],
-    "room_price": 81.60,
+    "room_price": 81.6,
     "room_status": "Available"
   },
   {
@@ -1021,8 +1139,11 @@
     "room_picture": "http://dummyimage.com/105x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "Double Bed"],
-    "room_price": 130.60,
+    "room_facilities": [
+      "Wifi",
+      "Double Bed"
+    ],
+    "room_price": 130.6,
     "room_status": "Available"
   },
   {
@@ -1054,7 +1175,10 @@
     "room_picture": "http://dummyimage.com/176x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "Towel"],
+    "room_facilities": [
+      "Coffee Set",
+      "Towel"
+    ],
     "room_price": 127.36,
     "room_status": "Available"
   },
@@ -1113,7 +1237,7 @@
       "Coffee Set",
       "Bathup"
     ],
-    "room_price": 125.80,
+    "room_price": 125.8,
     "room_status": "Booked"
   },
   {
@@ -1144,7 +1268,13 @@
     "room_picture": "http://dummyimage.com/151x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "Bathup", "AC", "Double Bed", "Towel"],
+    "room_facilities": [
+      "Coffee Set",
+      "Bathup",
+      "AC",
+      "Double Bed",
+      "Towel"
+    ],
     "room_price": 128.68,
     "room_status": "Available"
   },
@@ -1155,7 +1285,10 @@
     "room_picture": "http://dummyimage.com/207x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Shower", "Coffee Set"],
+    "room_facilities": [
+      "Shower",
+      "Coffee Set"
+    ],
     "room_price": 177.75,
     "room_status": "Booked"
   },
@@ -1166,7 +1299,10 @@
     "room_picture": "http://dummyimage.com/121x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Coffee Set"],
+    "room_facilities": [
+      "Towel",
+      "Coffee Set"
+    ],
     "room_price": 145.79,
     "room_status": "Booked"
   },
@@ -1177,7 +1313,13 @@
     "room_picture": "http://dummyimage.com/102x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed", "Coffee Set", "LED TV", "Towel", "AC"],
+    "room_facilities": [
+      "Double Bed",
+      "Coffee Set",
+      "LED TV",
+      "Towel",
+      "AC"
+    ],
     "room_price": 149.65,
     "room_status": "Available"
   },
@@ -1228,7 +1370,9 @@
     "room_picture": "http://dummyimage.com/111x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 181.31,
     "room_status": "Available"
   },
@@ -1257,7 +1401,11 @@
     "room_picture": "http://dummyimage.com/248x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Shower", "AC", "Wifi"],
+    "room_facilities": [
+      "Shower",
+      "AC",
+      "Wifi"
+    ],
     "room_price": 104.96,
     "room_status": "Available"
   },
@@ -1325,7 +1473,10 @@
     "room_picture": "http://dummyimage.com/130x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "AC"
+    ],
     "room_price": 73.16,
     "room_status": "Booked"
   },
@@ -1336,7 +1487,12 @@
     "room_picture": "http://dummyimage.com/198x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Coffee Set", "Shower", "Double Bed", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "Shower",
+      "Double Bed",
+      "Bathup"
+    ],
     "room_price": 132.38,
     "room_status": "Booked"
   },
@@ -1347,7 +1503,10 @@
     "room_picture": "http://dummyimage.com/155x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup", "Towel"],
+    "room_facilities": [
+      "Bathup",
+      "Towel"
+    ],
     "room_price": 197.26,
     "room_status": "Booked"
   },
@@ -1410,7 +1569,7 @@
       "Coffee Set",
       "Wifi"
     ],
-    "room_price": 158.90,
+    "room_price": 158.9,
     "room_status": "Booked"
   },
   {
@@ -1439,7 +1598,11 @@
     "room_picture": "http://dummyimage.com/138x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Shower", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "Wifi"
+    ],
     "room_price": 111.06,
     "room_status": "Available"
   },
@@ -1562,7 +1725,7 @@
       "Shower",
       "Double Bed"
     ],
-    "room_price": 61.40,
+    "room_price": 61.4,
     "room_status": "Booked"
   },
   {
@@ -1572,7 +1735,13 @@
     "room_picture": "http://dummyimage.com/125x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Bathup", "Double Bed", "AC", "Shower", "Towel"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed",
+      "AC",
+      "Shower",
+      "Towel"
+    ],
     "room_price": 52.67,
     "room_status": "Booked"
   },
@@ -1583,7 +1752,12 @@
     "room_picture": "http://dummyimage.com/194x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Shower", "Bathup", "Towel", "Wifi"],
+    "room_facilities": [
+      "Shower",
+      "Bathup",
+      "Towel",
+      "Wifi"
+    ],
     "room_price": 122.43,
     "room_status": "Available"
   },
@@ -1594,7 +1768,10 @@
     "room_picture": "http://dummyimage.com/215x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed", "Towel"],
+    "room_facilities": [
+      "Double Bed",
+      "Towel"
+    ],
     "room_price": 58.09,
     "room_status": "Available"
   },
@@ -1615,7 +1792,7 @@
       "Towel",
       "LED TV"
     ],
-    "room_price": 57.70,
+    "room_price": 57.7,
     "room_status": "Available"
   },
   {
@@ -1663,7 +1840,13 @@
     "room_picture": "http://dummyimage.com/221x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Towel", "Bathup", "Wifi", "Double Bed", "LED TV"],
+    "room_facilities": [
+      "Towel",
+      "Bathup",
+      "Wifi",
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 119.89,
     "room_status": "Booked"
   },
@@ -1732,7 +1915,12 @@
     "room_picture": "http://dummyimage.com/158x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Towel", "Coffee Set", "Shower", "Double Bed"],
+    "room_facilities": [
+      "Towel",
+      "Coffee Set",
+      "Shower",
+      "Double Bed"
+    ],
     "room_price": 55.65,
     "room_status": "Available"
   },
@@ -1743,7 +1931,9 @@
     "room_picture": "http://dummyimage.com/179x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 120.62,
     "room_status": "Available"
   },
@@ -1793,8 +1983,13 @@
     "room_picture": "http://dummyimage.com/219x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Wifi", "Shower", "Towel", "Double Bed"],
-    "room_price": 113.30,
+    "room_facilities": [
+      "Wifi",
+      "Shower",
+      "Towel",
+      "Double Bed"
+    ],
+    "room_price": 113.3,
     "room_status": "Booked"
   },
   {
@@ -1823,7 +2018,12 @@
     "room_picture": "http://dummyimage.com/125x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed", "Shower", "AC", "Wifi"],
+    "room_facilities": [
+      "Double Bed",
+      "Shower",
+      "AC",
+      "Wifi"
+    ],
     "room_price": 107.32,
     "room_status": "Booked"
   },
@@ -1905,7 +2105,7 @@
       "AC",
       "Wifi"
     ],
-    "room_price": 102.20,
+    "room_price": 102.2,
     "room_status": "Available"
   },
   {
@@ -1953,7 +2153,12 @@
     "room_picture": "http://dummyimage.com/122x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi", "Double Bed", "Towel", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "Double Bed",
+      "Towel",
+      "Shower"
+    ],
     "room_price": 53.43,
     "room_status": "Available"
   },
@@ -2026,7 +2231,10 @@
     "room_picture": "http://dummyimage.com/208x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set"
+    ],
     "room_price": 109.11,
     "room_status": "Available"
   },
@@ -2102,8 +2310,12 @@
     "room_picture": "http://dummyimage.com/154x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Double Bed", "Bathup"],
-    "room_price": 69.30,
+    "room_facilities": [
+      "Towel",
+      "Double Bed",
+      "Bathup"
+    ],
+    "room_price": 69.3,
     "room_status": "Available"
   },
   {
@@ -2113,7 +2325,10 @@
     "room_picture": "http://dummyimage.com/140x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "Double Bed"],
+    "room_facilities": [
+      "Shower",
+      "Double Bed"
+    ],
     "room_price": 139.57,
     "room_status": "Available"
   },
@@ -2124,7 +2339,9 @@
     "room_picture": "http://dummyimage.com/119x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 124.41,
     "room_status": "Available"
   },
@@ -2156,7 +2373,13 @@
     "room_picture": "http://dummyimage.com/194x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Shower", "LED TV", "Bathup", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "LED TV",
+      "Bathup",
+      "Wifi"
+    ],
     "room_price": 195.44,
     "room_status": "Booked"
   },
@@ -2167,7 +2390,13 @@
     "room_picture": "http://dummyimage.com/105x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Shower", "Coffee Set", "Wifi", "AC", "Bathup"],
+    "room_facilities": [
+      "Shower",
+      "Coffee Set",
+      "Wifi",
+      "AC",
+      "Bathup"
+    ],
     "room_price": 185.14,
     "room_status": "Available"
   },
@@ -2211,7 +2440,7 @@
       "Wifi",
       "Double Bed"
     ],
-    "room_price": 76.20,
+    "room_price": 76.2,
     "room_status": "Available"
   },
   {
@@ -2221,8 +2450,13 @@
     "room_picture": "http://dummyimage.com/239x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["AC", "Coffee Set", "Shower", "Double Bed"],
-    "room_price": 193.20,
+    "room_facilities": [
+      "AC",
+      "Coffee Set",
+      "Shower",
+      "Double Bed"
+    ],
+    "room_price": 193.2,
     "room_status": "Booked"
   },
   {
@@ -2232,7 +2466,9 @@
     "room_picture": "http://dummyimage.com/105x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Towel"],
+    "room_facilities": [
+      "Towel"
+    ],
     "room_price": 169.79,
     "room_status": "Booked"
   },
@@ -2262,8 +2498,13 @@
     "room_picture": "http://dummyimage.com/174x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["AC", "Towel", "Bathup", "LED TV"],
-    "room_price": 50.10,
+    "room_facilities": [
+      "AC",
+      "Towel",
+      "Bathup",
+      "LED TV"
+    ],
+    "room_price": 50.1,
     "room_status": "Booked"
   },
   {
@@ -2273,7 +2514,12 @@
     "room_picture": "http://dummyimage.com/152x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "Coffee Set", "Towel", "Shower"],
+    "room_facilities": [
+      "Double Bed",
+      "Coffee Set",
+      "Towel",
+      "Shower"
+    ],
     "room_price": 87.78,
     "room_status": "Available"
   },
@@ -2345,7 +2591,11 @@
     "room_picture": "http://dummyimage.com/132x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup", "Coffee Set", "AC"],
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set",
+      "AC"
+    ],
     "room_price": 142.75,
     "room_status": "Available"
   },
@@ -2356,7 +2606,11 @@
     "room_picture": "http://dummyimage.com/135x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup", "LED TV", "Shower"],
+    "room_facilities": [
+      "Bathup",
+      "LED TV",
+      "Shower"
+    ],
     "room_price": 86.31,
     "room_status": "Available"
   },
@@ -2410,7 +2664,12 @@
     "room_picture": "http://dummyimage.com/240x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set", "Towel", "Wifi", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "Towel",
+      "Wifi",
+      "Bathup"
+    ],
     "room_price": 192.93,
     "room_status": "Booked"
   },
@@ -2481,7 +2740,10 @@
     "room_picture": "http://dummyimage.com/195x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "Bathup"],
+    "room_facilities": [
+      "Double Bed",
+      "Bathup"
+    ],
     "room_price": 94.36,
     "room_status": "Available"
   },
@@ -2513,7 +2775,9 @@
     "room_picture": "http://dummyimage.com/244x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 51.44,
     "room_status": "Booked"
   },
@@ -2524,7 +2788,13 @@
     "room_picture": "http://dummyimage.com/139x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "Towel", "Wifi", "Coffee Set", "Bathup"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "Wifi",
+      "Coffee Set",
+      "Bathup"
+    ],
     "room_price": 99.59,
     "room_status": "Booked"
   },
@@ -2565,7 +2835,7 @@
       "Bathup",
       "Wifi"
     ],
-    "room_price": 105.30,
+    "room_price": 105.3,
     "room_status": "Available"
   },
   {
@@ -2575,7 +2845,11 @@
     "room_picture": "http://dummyimage.com/241x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV", "Double Bed", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed",
+      "AC"
+    ],
     "room_price": 144.68,
     "room_status": "Booked"
   },
@@ -2586,7 +2860,10 @@
     "room_picture": "http://dummyimage.com/240x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed", "LED TV"],
+    "room_facilities": [
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 111.78,
     "room_status": "Booked"
   },
@@ -2636,7 +2913,13 @@
     "room_picture": "http://dummyimage.com/150x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV", "AC", "Shower", "Bathup", "Double Bed"],
+    "room_facilities": [
+      "LED TV",
+      "AC",
+      "Shower",
+      "Bathup",
+      "Double Bed"
+    ],
     "room_price": 143.37,
     "room_status": "Available"
   },
@@ -2647,7 +2930,13 @@
     "room_picture": "http://dummyimage.com/226x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Shower", "Bathup", "Coffee Set", "Double Bed", "Wifi"],
+    "room_facilities": [
+      "Shower",
+      "Bathup",
+      "Coffee Set",
+      "Double Bed",
+      "Wifi"
+    ],
     "room_price": 191.66,
     "room_status": "Available"
   },
@@ -2678,7 +2967,11 @@
     "room_picture": "http://dummyimage.com/239x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi", "Coffee Set", "Double Bed"],
+    "room_facilities": [
+      "Wifi",
+      "Coffee Set",
+      "Double Bed"
+    ],
     "room_price": 80.24,
     "room_status": "Booked"
   },
@@ -2689,7 +2982,13 @@
     "room_picture": "http://dummyimage.com/100x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Shower", "Double Bed", "Towel", "AC", "Bathup"],
+    "room_facilities": [
+      "Shower",
+      "Double Bed",
+      "Towel",
+      "AC",
+      "Bathup"
+    ],
     "room_price": 113.68,
     "room_status": "Booked"
   },
@@ -2722,7 +3021,10 @@
     "room_picture": "http://dummyimage.com/230x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "LED TV"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV"
+    ],
     "room_price": 89.23,
     "room_status": "Available"
   },
@@ -2733,7 +3035,10 @@
     "room_picture": "http://dummyimage.com/135x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "AC"],
+    "room_facilities": [
+      "Double Bed",
+      "AC"
+    ],
     "room_price": 128.47,
     "room_status": "Booked"
   },
@@ -2810,7 +3115,12 @@
     "room_picture": "http://dummyimage.com/188x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Coffee Set", "Wifi", "Shower"],
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set",
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 71.43,
     "room_status": "Booked"
   },
@@ -2821,7 +3131,9 @@
     "room_picture": "http://dummyimage.com/152x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 61.37,
     "room_status": "Booked"
   },
@@ -2832,7 +3144,10 @@
     "room_picture": "http://dummyimage.com/234x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "AC"
+    ],
     "room_price": 72.13,
     "room_status": "Available"
   },
@@ -2863,7 +3178,13 @@
     "room_picture": "http://dummyimage.com/195x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "AC", "Coffee Set", "Bathup", "Shower"],
+    "room_facilities": [
+      "Double Bed",
+      "AC",
+      "Coffee Set",
+      "Bathup",
+      "Shower"
+    ],
     "room_price": 187.13,
     "room_status": "Available"
   },
@@ -2913,7 +3234,13 @@
     "room_picture": "http://dummyimage.com/226x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["AC", "Towel", "Double Bed", "LED TV", "Wifi"],
+    "room_facilities": [
+      "AC",
+      "Towel",
+      "Double Bed",
+      "LED TV",
+      "Wifi"
+    ],
     "room_price": 88.21,
     "room_status": "Available"
   },
@@ -2924,7 +3251,13 @@
     "room_picture": "http://dummyimage.com/186x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Bathup", "Double Bed", "Wifi", "Towel", "LED TV"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed",
+      "Wifi",
+      "Towel",
+      "LED TV"
+    ],
     "room_price": 56.82,
     "room_status": "Booked"
   },
@@ -2935,7 +3268,9 @@
     "room_picture": "http://dummyimage.com/106x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 199.76,
     "room_status": "Available"
   },
@@ -2946,7 +3281,9 @@
     "room_picture": "http://dummyimage.com/176x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 149.48,
     "room_status": "Available"
   },
@@ -2967,7 +3304,7 @@
       "LED TV",
       "Towel"
     ],
-    "room_price": 160.60,
+    "room_price": 160.6,
     "room_status": "Available"
   },
   {
@@ -3041,7 +3378,13 @@
     "room_picture": "http://dummyimage.com/170x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Wifi", "AC", "LED TV", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Wifi",
+      "AC",
+      "LED TV",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 161.86,
     "room_status": "Booked"
   },
@@ -3089,7 +3432,13 @@
     "room_picture": "http://dummyimage.com/243x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Shower", "Coffee Set", "AC", "Towel"],
+    "room_facilities": [
+      "LED TV",
+      "Shower",
+      "Coffee Set",
+      "AC",
+      "Towel"
+    ],
     "room_price": 117.63,
     "room_status": "Booked"
   },
@@ -3100,7 +3449,12 @@
     "room_picture": "http://dummyimage.com/166x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "Towel", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 66.37,
     "room_status": "Available"
   },
@@ -3111,7 +3465,11 @@
     "room_picture": "http://dummyimage.com/107x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "Double Bed", "LED TV"],
+    "room_facilities": [
+      "Wifi",
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 188.99,
     "room_status": "Booked"
   },
@@ -3122,7 +3480,12 @@
     "room_picture": "http://dummyimage.com/156x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "Coffee Set", "Double Bed", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "Coffee Set",
+      "Double Bed",
+      "Shower"
+    ],
     "room_price": 195.62,
     "room_status": "Booked"
   },
@@ -3133,7 +3496,10 @@
     "room_picture": "http://dummyimage.com/224x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Towel", "AC"],
+    "room_facilities": [
+      "Towel",
+      "AC"
+    ],
     "room_price": 107.79,
     "room_status": "Booked"
   },
@@ -3144,7 +3510,11 @@
     "room_picture": "http://dummyimage.com/184x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Double Bed", "Towel", "Wifi"],
+    "room_facilities": [
+      "Double Bed",
+      "Towel",
+      "Wifi"
+    ],
     "room_price": 148.29,
     "room_status": "Booked"
   },
@@ -3174,7 +3544,13 @@
     "room_picture": "http://dummyimage.com/247x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed", "LED TV", "Wifi", "Coffee Set", "Bathup"],
+    "room_facilities": [
+      "Double Bed",
+      "LED TV",
+      "Wifi",
+      "Coffee Set",
+      "Bathup"
+    ],
     "room_price": 138.55,
     "room_status": "Available"
   },
@@ -3185,8 +3561,12 @@
     "room_picture": "http://dummyimage.com/173x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "Wifi", "Double Bed"],
-    "room_price": 76.10,
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi",
+      "Double Bed"
+    ],
+    "room_price": 76.1,
     "room_status": "Booked"
   },
   {
@@ -3196,8 +3576,11 @@
     "room_picture": "http://dummyimage.com/140x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV", "Bathup"],
-    "room_price": 69.80,
+    "room_facilities": [
+      "LED TV",
+      "Bathup"
+    ],
+    "room_price": 69.8,
     "room_status": "Booked"
   },
   {
@@ -3228,7 +3611,9 @@
     "room_picture": "http://dummyimage.com/211x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 145.59,
     "room_status": "Booked"
   },
@@ -3258,7 +3643,13 @@
     "room_picture": "http://dummyimage.com/158x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "LED TV", "Double Bed", "Towel", "Coffee Set"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV",
+      "Double Bed",
+      "Towel",
+      "Coffee Set"
+    ],
     "room_price": 168.88,
     "room_status": "Booked"
   },
@@ -3278,7 +3669,7 @@
       "AC",
       "Bathup"
     ],
-    "room_price": 173.50,
+    "room_price": 173.5,
     "room_status": "Booked"
   },
   {
@@ -3306,7 +3697,11 @@
     "room_picture": "http://dummyimage.com/198x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "Shower", "Double Bed"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "Double Bed"
+    ],
     "room_price": 90.35,
     "room_status": "Available"
   },
@@ -3357,7 +3752,10 @@
     "room_picture": "http://dummyimage.com/100x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["LED TV", "Shower"],
+    "room_facilities": [
+      "LED TV",
+      "Shower"
+    ],
     "room_price": 169.67,
     "room_status": "Available"
   },
@@ -3368,7 +3766,9 @@
     "room_picture": "http://dummyimage.com/198x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 155.77,
     "room_status": "Booked"
   },
@@ -3379,7 +3779,11 @@
     "room_picture": "http://dummyimage.com/194x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "AC", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "Shower"
+    ],
     "room_price": 53.44,
     "room_status": "Available"
   },
@@ -3449,7 +3853,12 @@
     "room_picture": "http://dummyimage.com/102x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Bathup", "Shower", "Towel", "LED TV"],
+    "room_facilities": [
+      "Bathup",
+      "Shower",
+      "Towel",
+      "LED TV"
+    ],
     "room_price": 115.05,
     "room_status": "Booked"
   },
@@ -3469,7 +3878,7 @@
       "AC",
       "Wifi"
     ],
-    "room_price": 147.50,
+    "room_price": 147.5,
     "room_status": "Booked"
   },
   {
@@ -3479,7 +3888,10 @@
     "room_picture": "http://dummyimage.com/245x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV", "Shower"],
+    "room_facilities": [
+      "LED TV",
+      "Shower"
+    ],
     "room_price": 119.81,
     "room_status": "Available"
   },
@@ -3490,7 +3902,11 @@
     "room_picture": "http://dummyimage.com/224x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV", "Shower", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "Shower",
+      "AC"
+    ],
     "room_price": 178.34,
     "room_status": "Booked"
   },
@@ -3501,7 +3917,9 @@
     "room_picture": "http://dummyimage.com/138x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 145.47,
     "room_status": "Available"
   },
@@ -3512,7 +3930,11 @@
     "room_picture": "http://dummyimage.com/225x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "AC", "LED TV"],
+    "room_facilities": [
+      "Double Bed",
+      "AC",
+      "LED TV"
+    ],
     "room_price": 70.45,
     "room_status": "Available"
   },
@@ -3523,8 +3945,10 @@
     "room_picture": "http://dummyimage.com/156x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["AC"],
-    "room_price": 160.20,
+    "room_facilities": [
+      "AC"
+    ],
+    "room_price": 160.2,
     "room_status": "Available"
   },
   {
@@ -3612,7 +4036,11 @@
     "room_picture": "http://dummyimage.com/161x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi", "LED TV", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV",
+      "Shower"
+    ],
     "room_price": 55.63,
     "room_status": "Booked"
   },
@@ -3623,7 +4051,12 @@
     "room_picture": "http://dummyimage.com/207x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup", "Double Bed", "Wifi", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed",
+      "Wifi",
+      "Coffee Set"
+    ],
     "room_price": 107.31,
     "room_status": "Available"
   },
@@ -3634,7 +4067,11 @@
     "room_picture": "http://dummyimage.com/244x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Double Bed", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Double Bed",
+      "Wifi"
+    ],
     "room_price": 138.52,
     "room_status": "Available"
   },
@@ -3667,7 +4104,12 @@
     "room_picture": "http://dummyimage.com/127x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Bathup", "Double Bed", "Towel"],
+    "room_facilities": [
+      "AC",
+      "Bathup",
+      "Double Bed",
+      "Towel"
+    ],
     "room_price": 76.52,
     "room_status": "Booked"
   },
@@ -3697,7 +4139,10 @@
     "room_picture": "http://dummyimage.com/158x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Towel"],
+    "room_facilities": [
+      "LED TV",
+      "Towel"
+    ],
     "room_price": 67.75,
     "room_status": "Available"
   },
@@ -3720,7 +4165,7 @@
       "Double Bed",
       "Towel"
     ],
-    "room_price": 160.30,
+    "room_price": 160.3,
     "room_status": "Available"
   },
   {
@@ -3751,7 +4196,12 @@
     "room_picture": "http://dummyimage.com/226x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Towel", "Double Bed", "Shower", "AC"],
+    "room_facilities": [
+      "Towel",
+      "Double Bed",
+      "Shower",
+      "AC"
+    ],
     "room_price": 188.29,
     "room_status": "Available"
   },
@@ -3762,8 +4212,12 @@
     "room_picture": "http://dummyimage.com/230x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "AC", "Shower"],
-    "room_price": 94.80,
+    "room_facilities": [
+      "Coffee Set",
+      "AC",
+      "Shower"
+    ],
+    "room_price": 94.8,
     "room_status": "Available"
   },
   {
@@ -3813,7 +4267,13 @@
     "room_picture": "http://dummyimage.com/215x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Coffee Set", "Bathup", "Wifi", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "Coffee Set",
+      "Bathup",
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 190.57,
     "room_status": "Booked"
   },
@@ -3833,7 +4293,7 @@
       "Double Bed",
       "Bathup"
     ],
-    "room_price": 179.20,
+    "room_price": 179.2,
     "room_status": "Available"
   },
   {
@@ -3843,8 +4303,13 @@
     "room_picture": "http://dummyimage.com/208x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV", "Bathup", "Wifi", "Double Bed"],
-    "room_price": 125.70,
+    "room_facilities": [
+      "LED TV",
+      "Bathup",
+      "Wifi",
+      "Double Bed"
+    ],
+    "room_price": 125.7,
     "room_status": "Available"
   },
   {
@@ -3863,7 +4328,7 @@
       "Shower",
       "Towel"
     ],
-    "room_price": 76.00,
+    "room_price": 76,
     "room_status": "Available"
   },
   {
@@ -3894,7 +4359,13 @@
     "room_picture": "http://dummyimage.com/221x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Double Bed", "AC", "LED TV", "Coffee Set", "Bathup"],
+    "room_facilities": [
+      "Double Bed",
+      "AC",
+      "LED TV",
+      "Coffee Set",
+      "Bathup"
+    ],
     "room_price": 190.76,
     "room_status": "Available"
   },
@@ -3905,7 +4376,12 @@
     "room_picture": "http://dummyimage.com/230x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["AC", "Wifi", "Bathup", "Towel"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "Bathup",
+      "Towel"
+    ],
     "room_price": 126.48,
     "room_status": "Available"
   },
@@ -3916,7 +4392,10 @@
     "room_picture": "http://dummyimage.com/147x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Wifi", "Bathup"],
+    "room_facilities": [
+      "Wifi",
+      "Bathup"
+    ],
     "room_price": 139.04,
     "room_status": "Booked"
   },
@@ -3945,7 +4424,10 @@
     "room_picture": "http://dummyimage.com/141x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV", "Bathup"],
+    "room_facilities": [
+      "LED TV",
+      "Bathup"
+    ],
     "room_price": 142.65,
     "room_status": "Booked"
   },
@@ -3975,7 +4457,11 @@
     "room_picture": "http://dummyimage.com/145x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "AC", "Coffee Set"],
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "Coffee Set"
+    ],
     "room_price": 186.99,
     "room_status": "Booked"
   },
@@ -4006,7 +4492,12 @@
     "room_picture": "http://dummyimage.com/105x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Bathup", "Double Bed", "AC", "LED TV"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed",
+      "AC",
+      "LED TV"
+    ],
     "room_price": 168.96,
     "room_status": "Available"
   },
@@ -4035,7 +4526,10 @@
     "room_picture": "http://dummyimage.com/210x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV", "Bathup"],
+    "room_facilities": [
+      "LED TV",
+      "Bathup"
+    ],
     "room_price": 97.82,
     "room_status": "Available"
   },
@@ -4098,7 +4592,7 @@
       "LED TV",
       "Coffee Set"
     ],
-    "room_price": 180.10,
+    "room_price": 180.1,
     "room_status": "Booked"
   },
   {
@@ -4127,7 +4621,12 @@
     "room_picture": "http://dummyimage.com/165x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Wifi", "Shower", "LED TV"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "Shower",
+      "LED TV"
+    ],
     "room_price": 155.29,
     "room_status": "Available"
   },
@@ -4178,7 +4677,9 @@
     "room_picture": "http://dummyimage.com/216x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Shower"],
+    "room_facilities": [
+      "Shower"
+    ],
     "room_price": 172.16,
     "room_status": "Booked"
   },
@@ -4209,7 +4710,10 @@
     "room_picture": "http://dummyimage.com/178x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "AC"],
+    "room_facilities": [
+      "Shower",
+      "AC"
+    ],
     "room_price": 176.02,
     "room_status": "Booked"
   },
@@ -4220,7 +4724,13 @@
     "room_picture": "http://dummyimage.com/131x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set", "Shower", "Double Bed", "Wifi", "LED TV"],
+    "room_facilities": [
+      "Coffee Set",
+      "Shower",
+      "Double Bed",
+      "Wifi",
+      "LED TV"
+    ],
     "room_price": 83.55,
     "room_status": "Available"
   },
@@ -4231,7 +4741,11 @@
     "room_picture": "http://dummyimage.com/121x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi", "Double Bed", "Towel"],
+    "room_facilities": [
+      "Wifi",
+      "Double Bed",
+      "Towel"
+    ],
     "room_price": 154.73,
     "room_status": "Available"
   },
@@ -4242,7 +4756,11 @@
     "room_picture": "http://dummyimage.com/127x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Towel", "Wifi", "LED TV"],
+    "room_facilities": [
+      "Towel",
+      "Wifi",
+      "LED TV"
+    ],
     "room_price": 131.83,
     "room_status": "Booked"
   },
@@ -4253,7 +4771,9 @@
     "room_picture": "http://dummyimage.com/182x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 141.33,
     "room_status": "Booked"
   },
@@ -4264,7 +4784,10 @@
     "room_picture": "http://dummyimage.com/196x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Shower", "LED TV"],
+    "room_facilities": [
+      "Shower",
+      "LED TV"
+    ],
     "room_price": 169.85,
     "room_status": "Available"
   },
@@ -4294,7 +4817,13 @@
     "room_picture": "http://dummyimage.com/223x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Double Bed", "LED TV", "Towel", "Wifi", "Shower"],
+    "room_facilities": [
+      "Double Bed",
+      "LED TV",
+      "Towel",
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 84.71,
     "room_status": "Available"
   },
@@ -4355,7 +4884,7 @@
       "AC",
       "LED TV"
     ],
-    "room_price": 94.50,
+    "room_price": 94.5,
     "room_status": "Available"
   },
   {
@@ -4387,7 +4916,10 @@
     "room_picture": "http://dummyimage.com/114x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 68.23,
     "room_status": "Booked"
   },
@@ -4416,7 +4948,11 @@
     "room_picture": "http://dummyimage.com/236x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["AC", "Double Bed", "LED TV"],
+    "room_facilities": [
+      "AC",
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 161.13,
     "room_status": "Booked"
   },
@@ -4427,7 +4963,12 @@
     "room_picture": "http://dummyimage.com/161x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["LED TV", "Wifi", "Shower", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "Wifi",
+      "Shower",
+      "AC"
+    ],
     "room_price": 171.88,
     "room_status": "Booked"
   },
@@ -4481,8 +5022,11 @@
     "room_picture": "http://dummyimage.com/245x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed", "Coffee Set"],
-    "room_price": 132.90,
+    "room_facilities": [
+      "Double Bed",
+      "Coffee Set"
+    ],
+    "room_price": 132.9,
     "room_status": "Available"
   },
   {
@@ -4492,7 +5036,9 @@
     "room_picture": "http://dummyimage.com/135x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 116.28,
     "room_status": "Booked"
   },
@@ -4503,7 +5049,12 @@
     "room_picture": "http://dummyimage.com/197x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "Towel", "Double Bed", "LED TV"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 97.43,
     "room_status": "Booked"
   },
@@ -4514,7 +5065,11 @@
     "room_picture": "http://dummyimage.com/161x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["LED TV", "Bathup", "Coffee Set"],
+    "room_facilities": [
+      "LED TV",
+      "Bathup",
+      "Coffee Set"
+    ],
     "room_price": 67.05,
     "room_status": "Available"
   },
@@ -4544,7 +5099,11 @@
     "room_picture": "http://dummyimage.com/222x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["LED TV", "Coffee Set", "Wifi"],
+    "room_facilities": [
+      "LED TV",
+      "Coffee Set",
+      "Wifi"
+    ],
     "room_price": 144.06,
     "room_status": "Booked"
   },
@@ -4555,7 +5114,9 @@
     "room_picture": "http://dummyimage.com/112x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 104.04,
     "room_status": "Booked"
   },
@@ -4566,7 +5127,11 @@
     "room_picture": "http://dummyimage.com/184x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi", "Double Bed", "Bathup"],
+    "room_facilities": [
+      "Wifi",
+      "Double Bed",
+      "Bathup"
+    ],
     "room_price": 199.19,
     "room_status": "Available"
   },
@@ -4598,7 +5163,9 @@
     "room_picture": "http://dummyimage.com/201x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 51.04,
     "room_status": "Booked"
   },
@@ -4609,7 +5176,11 @@
     "room_picture": "http://dummyimage.com/245x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 190.21,
     "room_status": "Booked"
   },
@@ -4664,7 +5235,11 @@
     "room_picture": "http://dummyimage.com/210x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup", "AC", "Double Bed"],
+    "room_facilities": [
+      "Bathup",
+      "AC",
+      "Double Bed"
+    ],
     "room_price": 133.36,
     "room_status": "Available"
   },
@@ -4675,7 +5250,11 @@
     "room_picture": "http://dummyimage.com/108x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "LED TV", "AC"],
+    "room_facilities": [
+      "Coffee Set",
+      "LED TV",
+      "AC"
+    ],
     "room_price": 194.08,
     "room_status": "Booked"
   },
@@ -4698,7 +5277,7 @@
       "AC",
       "Shower"
     ],
-    "room_price": 87.30,
+    "room_price": 87.3,
     "room_status": "Available"
   },
   {
@@ -4728,7 +5307,12 @@
     "room_picture": "http://dummyimage.com/188x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Bathup", "Coffee Set", "AC"],
+    "room_facilities": [
+      "Towel",
+      "Bathup",
+      "Coffee Set",
+      "AC"
+    ],
     "room_price": 172.07,
     "room_status": "Booked"
   },
@@ -4739,7 +5323,10 @@
     "room_picture": "http://dummyimage.com/172x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Shower", "LED TV"],
+    "room_facilities": [
+      "Shower",
+      "LED TV"
+    ],
     "room_price": 124.82,
     "room_status": "Available"
   },
@@ -4750,8 +5337,12 @@
     "room_picture": "http://dummyimage.com/182x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Shower", "Bathup"],
-    "room_price": 89.80,
+    "room_facilities": [
+      "AC",
+      "Shower",
+      "Bathup"
+    ],
+    "room_price": 89.8,
     "room_status": "Available"
   },
   {
@@ -4761,7 +5352,9 @@
     "room_picture": "http://dummyimage.com/242x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 70.48,
     "room_status": "Available"
   },
@@ -4772,7 +5365,12 @@
     "room_picture": "http://dummyimage.com/124x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Wifi", "LED TV", "Double Bed"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "LED TV",
+      "Double Bed"
+    ],
     "room_price": 145.29,
     "room_status": "Booked"
   },
@@ -4783,7 +5381,13 @@
     "room_picture": "http://dummyimage.com/143x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed", "LED TV", "Towel", "AC", "Coffee Set"],
+    "room_facilities": [
+      "Double Bed",
+      "LED TV",
+      "Towel",
+      "AC",
+      "Coffee Set"
+    ],
     "room_price": 85.52,
     "room_status": "Booked"
   },
@@ -4858,7 +5462,9 @@
     "room_picture": "http://dummyimage.com/112x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 94.52,
     "room_status": "Available"
   },
@@ -4869,8 +5475,11 @@
     "room_picture": "http://dummyimage.com/248x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Towel", "Coffee Set"],
-    "room_price": 163.90,
+    "room_facilities": [
+      "Towel",
+      "Coffee Set"
+    ],
+    "room_price": 163.9,
     "room_status": "Available"
   },
   {
@@ -4880,7 +5489,10 @@
     "room_picture": "http://dummyimage.com/155x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["AC", "LED TV"],
+    "room_facilities": [
+      "AC",
+      "LED TV"
+    ],
     "room_price": 124.91,
     "room_status": "Available"
   },
@@ -4912,7 +5524,12 @@
     "room_picture": "http://dummyimage.com/110x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "Towel", "Shower", "Coffee Set"],
+    "room_facilities": [
+      "Wifi",
+      "Towel",
+      "Shower",
+      "Coffee Set"
+    ],
     "room_price": 163.72,
     "room_status": "Booked"
   },
@@ -4923,7 +5540,12 @@
     "room_picture": "http://dummyimage.com/233x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "Bathup", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "Shower",
+      "Bathup",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 156.02,
     "room_status": "Available"
   },
@@ -4934,7 +5556,12 @@
     "room_picture": "http://dummyimage.com/136x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi", "Double Bed", "LED TV", "Towel"],
+    "room_facilities": [
+      "Wifi",
+      "Double Bed",
+      "LED TV",
+      "Towel"
+    ],
     "room_price": 112.67,
     "room_status": "Available"
   },
@@ -4965,7 +5592,9 @@
     "room_picture": "http://dummyimage.com/204x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 142.59,
     "room_status": "Available"
   },
@@ -5079,8 +5708,12 @@
     "room_picture": "http://dummyimage.com/217x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "LED TV", "Double Bed"],
-    "room_price": 108.90,
+    "room_facilities": [
+      "Shower",
+      "LED TV",
+      "Double Bed"
+    ],
+    "room_price": 108.9,
     "room_status": "Booked"
   },
   {
@@ -5090,7 +5723,11 @@
     "room_picture": "http://dummyimage.com/161x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Coffee Set", "LED TV"],
+    "room_facilities": [
+      "Towel",
+      "Coffee Set",
+      "LED TV"
+    ],
     "room_price": 113.46,
     "room_status": "Booked"
   },
@@ -5122,7 +5759,11 @@
     "room_picture": "http://dummyimage.com/233x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "Shower", "LED TV"],
+    "room_facilities": [
+      "Wifi",
+      "Shower",
+      "LED TV"
+    ],
     "room_price": 56.44,
     "room_status": "Booked"
   },
@@ -5152,7 +5793,12 @@
     "room_picture": "http://dummyimage.com/242x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Shower", "Towel", "LED TV", "Wifi"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "LED TV",
+      "Wifi"
+    ],
     "room_price": 197.12,
     "room_status": "Booked"
   },
@@ -5163,7 +5809,9 @@
     "room_picture": "http://dummyimage.com/123x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 67.68,
     "room_status": "Booked"
   },
@@ -5174,8 +5822,12 @@
     "room_picture": "http://dummyimage.com/195x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Towel", "AC", "Bathup"],
-    "room_price": 154.30,
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "Bathup"
+    ],
+    "room_price": 154.3,
     "room_status": "Booked"
   },
   {
@@ -5185,7 +5837,10 @@
     "room_picture": "http://dummyimage.com/235x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV", "Wifi"],
+    "room_facilities": [
+      "LED TV",
+      "Wifi"
+    ],
     "room_price": 137.99,
     "room_status": "Booked"
   },
@@ -5196,7 +5851,12 @@
     "room_picture": "http://dummyimage.com/122x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Wifi", "Double Bed", "Coffee Set", "LED TV"],
+    "room_facilities": [
+      "Wifi",
+      "Double Bed",
+      "Coffee Set",
+      "LED TV"
+    ],
     "room_price": 96.11,
     "room_status": "Available"
   },
@@ -5229,7 +5889,10 @@
     "room_picture": "http://dummyimage.com/164x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV", "Towel"],
+    "room_facilities": [
+      "LED TV",
+      "Towel"
+    ],
     "room_price": 189.55,
     "room_status": "Booked"
   },
@@ -5240,7 +5903,13 @@
     "room_picture": "http://dummyimage.com/250x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["AC", "Coffee Set", "Shower", "LED TV", "Towel"],
+    "room_facilities": [
+      "AC",
+      "Coffee Set",
+      "Shower",
+      "LED TV",
+      "Towel"
+    ],
     "room_price": 199.47,
     "room_status": "Available"
   },
@@ -5251,7 +5920,10 @@
     "room_picture": "http://dummyimage.com/213x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "Double Bed"],
+    "room_facilities": [
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 182.52,
     "room_status": "Available"
   },
@@ -5262,7 +5934,10 @@
     "room_picture": "http://dummyimage.com/203x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "LED TV"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV"
+    ],
     "room_price": 76.96,
     "room_status": "Booked"
   },
@@ -5295,8 +5970,14 @@
     "room_picture": "http://dummyimage.com/204x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "Wifi", "AC", "Coffee Set", "Double Bed"],
-    "room_price": 151.90,
+    "room_facilities": [
+      "Shower",
+      "Wifi",
+      "AC",
+      "Coffee Set",
+      "Double Bed"
+    ],
+    "room_price": 151.9,
     "room_status": "Available"
   },
   {
@@ -5318,7 +5999,7 @@
       "Coffee Set",
       "LED TV"
     ],
-    "room_price": 101.70,
+    "room_price": 101.7,
     "room_status": "Booked"
   },
   {
@@ -5358,7 +6039,7 @@
       "Wifi",
       "Towel"
     ],
-    "room_price": 138.00,
+    "room_price": 138,
     "room_status": "Booked"
   },
   {
@@ -5368,7 +6049,10 @@
     "room_picture": "http://dummyimage.com/171x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "Bathup"
+    ],
     "room_price": 59.46,
     "room_status": "Booked"
   },
@@ -5401,7 +6085,11 @@
     "room_picture": "http://dummyimage.com/125x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "Wifi", "AC"],
+    "room_facilities": [
+      "Towel",
+      "Wifi",
+      "AC"
+    ],
     "room_price": 197.77,
     "room_status": "Booked"
   },
@@ -5429,7 +6117,9 @@
     "room_picture": "http://dummyimage.com/234x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Shower"],
+    "room_facilities": [
+      "Shower"
+    ],
     "room_price": 119.28,
     "room_status": "Booked"
   },
@@ -5482,8 +6172,14 @@
     "room_picture": "http://dummyimage.com/147x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["AC", "LED TV", "Towel", "Bathup", "Wifi"],
-    "room_price": 198.30,
+    "room_facilities": [
+      "AC",
+      "LED TV",
+      "Towel",
+      "Bathup",
+      "Wifi"
+    ],
+    "room_price": 198.3,
     "room_status": "Available"
   },
   {
@@ -5511,8 +6207,12 @@
     "room_picture": "http://dummyimage.com/159x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Double Bed", "Shower"],
-    "room_price": 82.60,
+    "room_facilities": [
+      "Towel",
+      "Double Bed",
+      "Shower"
+    ],
+    "room_price": 82.6,
     "room_status": "Available"
   },
   {
@@ -5522,7 +6222,10 @@
     "room_picture": "http://dummyimage.com/131x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Bathup", "Double Bed"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed"
+    ],
     "room_price": 184.78,
     "room_status": "Booked"
   },
@@ -5533,7 +6236,11 @@
     "room_picture": "http://dummyimage.com/179x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "Shower", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "Wifi"
+    ],
     "room_price": 143.24,
     "room_status": "Available"
   },
@@ -5566,7 +6273,11 @@
     "room_picture": "http://dummyimage.com/107x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi", "AC", "Coffee Set"],
+    "room_facilities": [
+      "Wifi",
+      "AC",
+      "Coffee Set"
+    ],
     "room_price": 164.75,
     "room_status": "Booked"
   },
@@ -5608,7 +6319,7 @@
       "LED TV",
       "AC"
     ],
-    "room_price": 179.10,
+    "room_price": 179.1,
     "room_status": "Available"
   },
   {
@@ -5618,7 +6329,11 @@
     "room_picture": "http://dummyimage.com/220x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "Bathup", "Coffee Set"],
+    "room_facilities": [
+      "Shower",
+      "Bathup",
+      "Coffee Set"
+    ],
     "room_price": 67.34,
     "room_status": "Available"
   },
@@ -5651,7 +6366,11 @@
     "room_picture": "http://dummyimage.com/194x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Double Bed", "Wifi", "Coffee Set"],
+    "room_facilities": [
+      "Double Bed",
+      "Wifi",
+      "Coffee Set"
+    ],
     "room_price": 156.43,
     "room_status": "Booked"
   },
@@ -5684,7 +6403,13 @@
     "room_picture": "http://dummyimage.com/149x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["AC", "Towel", "Coffee Set", "LED TV", "Shower"],
+    "room_facilities": [
+      "AC",
+      "Towel",
+      "Coffee Set",
+      "LED TV",
+      "Shower"
+    ],
     "room_price": 172.86,
     "room_status": "Booked"
   },
@@ -5737,7 +6462,12 @@
     "room_picture": "http://dummyimage.com/188x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Bathup", "Towel", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Towel",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 180.04,
     "room_status": "Available"
   },
@@ -5748,7 +6478,10 @@
     "room_picture": "http://dummyimage.com/177x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV", "Coffee Set"],
+    "room_facilities": [
+      "LED TV",
+      "Coffee Set"
+    ],
     "room_price": 87.29,
     "room_status": "Available"
   },
@@ -5789,7 +6522,7 @@
       "Bathup",
       "LED TV"
     ],
-    "room_price": 116.80,
+    "room_price": 116.8,
     "room_status": "Available"
   },
   {
@@ -5799,7 +6532,9 @@
     "room_picture": "http://dummyimage.com/145x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Shower"],
+    "room_facilities": [
+      "Shower"
+    ],
     "room_price": 149.91,
     "room_status": "Available"
   },
@@ -5828,7 +6563,9 @@
     "room_picture": "http://dummyimage.com/147x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 65.65,
     "room_status": "Available"
   },
@@ -5883,7 +6620,11 @@
     "room_picture": "http://dummyimage.com/247x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "Coffee Set", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "Coffee Set",
+      "AC"
+    ],
     "room_price": 101.33,
     "room_status": "Available"
   },
@@ -5894,7 +6635,9 @@
     "room_picture": "http://dummyimage.com/220x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Shower"],
+    "room_facilities": [
+      "Shower"
+    ],
     "room_price": 104.92,
     "room_status": "Booked"
   },
@@ -5905,7 +6648,12 @@
     "room_picture": "http://dummyimage.com/182x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Double Bed", "Coffee Set", "Bathup", "Wifi"],
+    "room_facilities": [
+      "Double Bed",
+      "Coffee Set",
+      "Bathup",
+      "Wifi"
+    ],
     "room_price": 114.04,
     "room_status": "Booked"
   },
@@ -5947,7 +6695,7 @@
       "LED TV",
       "Towel"
     ],
-    "room_price": 60.70,
+    "room_price": 60.7,
     "room_status": "Available"
   },
   {
@@ -5957,7 +6705,9 @@
     "room_picture": "http://dummyimage.com/195x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 86.39,
     "room_status": "Available"
   },
@@ -5986,7 +6736,12 @@
     "room_picture": "http://dummyimage.com/131x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Towel", "AC", "Double Bed", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "Double Bed",
+      "Shower"
+    ],
     "room_price": 113.77,
     "room_status": "Booked"
   },
@@ -6035,7 +6790,11 @@
     "room_picture": "http://dummyimage.com/125x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["AC", "Double Bed", "LED TV"],
+    "room_facilities": [
+      "AC",
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 126.72,
     "room_status": "Available"
   },
@@ -6068,7 +6827,11 @@
     "room_picture": "http://dummyimage.com/228x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "LED TV",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 101.56,
     "room_status": "Available"
   },
@@ -6079,7 +6842,10 @@
     "room_picture": "http://dummyimage.com/152x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Bathup"],
+    "room_facilities": [
+      "Towel",
+      "Bathup"
+    ],
     "room_price": 100.13,
     "room_status": "Booked"
   },
@@ -6108,7 +6874,11 @@
     "room_picture": "http://dummyimage.com/222x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "Wifi", "AC"],
+    "room_facilities": [
+      "Double Bed",
+      "Wifi",
+      "AC"
+    ],
     "room_price": 127.28,
     "room_status": "Booked"
   },
@@ -6119,7 +6889,10 @@
     "room_picture": "http://dummyimage.com/118x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV", "Towel"],
+    "room_facilities": [
+      "LED TV",
+      "Towel"
+    ],
     "room_price": 61.24,
     "room_status": "Available"
   },
@@ -6130,7 +6903,11 @@
     "room_picture": "http://dummyimage.com/115x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Shower", "Wifi", "Bathup"],
+    "room_facilities": [
+      "Shower",
+      "Wifi",
+      "Bathup"
+    ],
     "room_price": 122.55,
     "room_status": "Available"
   },
@@ -6141,7 +6918,10 @@
     "room_picture": "http://dummyimage.com/240x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set"
+    ],
     "room_price": 132.73,
     "room_status": "Available"
   },
@@ -6192,7 +6972,12 @@
     "room_picture": "http://dummyimage.com/239x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Towel", "Bathup", "Coffee Set", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "Bathup",
+      "Coffee Set",
+      "Shower"
+    ],
     "room_price": 50.64,
     "room_status": "Booked"
   },
@@ -6224,7 +7009,11 @@
     "room_picture": "http://dummyimage.com/243x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Wifi", "LED TV", "Bathup"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV",
+      "Bathup"
+    ],
     "room_price": 121.77,
     "room_status": "Available"
   },
@@ -6235,7 +7024,13 @@
     "room_picture": "http://dummyimage.com/247x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Shower", "Bathup", "Double Bed", "AC", "Coffee Set"],
+    "room_facilities": [
+      "Shower",
+      "Bathup",
+      "Double Bed",
+      "AC",
+      "Coffee Set"
+    ],
     "room_price": 116.59,
     "room_status": "Booked"
   },
@@ -6246,8 +7041,11 @@
     "room_picture": "http://dummyimage.com/110x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "LED TV"],
-    "room_price": 182.80,
+    "room_facilities": [
+      "Towel",
+      "LED TV"
+    ],
+    "room_price": 182.8,
     "room_status": "Booked"
   },
   {
@@ -6257,7 +7055,12 @@
     "room_picture": "http://dummyimage.com/243x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Shower", "LED TV", "Coffee Set"],
+    "room_facilities": [
+      "AC",
+      "Shower",
+      "LED TV",
+      "Coffee Set"
+    ],
     "room_price": 108.38,
     "room_status": "Available"
   },
@@ -6268,7 +7071,13 @@
     "room_picture": "http://dummyimage.com/153x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Double Bed", "Towel", "Wifi", "Shower", "AC"],
+    "room_facilities": [
+      "Double Bed",
+      "Towel",
+      "Wifi",
+      "Shower",
+      "AC"
+    ],
     "room_price": 52.21,
     "room_status": "Available"
   },
@@ -6279,8 +7088,11 @@
     "room_picture": "http://dummyimage.com/160x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Shower", "Towel"],
-    "room_price": 62.40,
+    "room_facilities": [
+      "Shower",
+      "Towel"
+    ],
+    "room_price": 62.4,
     "room_status": "Available"
   },
   {
@@ -6331,7 +7143,12 @@
     "room_picture": "http://dummyimage.com/107x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Shower", "AC", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "Shower",
+      "AC",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 193.51,
     "room_status": "Booked"
   },
@@ -6361,7 +7178,13 @@
     "room_picture": "http://dummyimage.com/128x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Bathup", "LED TV", "Wifi", "Shower"],
+    "room_facilities": [
+      "AC",
+      "Bathup",
+      "LED TV",
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 68.23,
     "room_status": "Available"
   },
@@ -6413,7 +7236,12 @@
     "room_picture": "http://dummyimage.com/139x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV", "Coffee Set", "AC", "Shower"],
+    "room_facilities": [
+      "LED TV",
+      "Coffee Set",
+      "AC",
+      "Shower"
+    ],
     "room_price": 165.17,
     "room_status": "Booked"
   },
@@ -6433,7 +7261,7 @@
       "Double Bed",
       "Towel"
     ],
-    "room_price": 152.90,
+    "room_price": 152.9,
     "room_status": "Available"
   },
   {
@@ -6451,7 +7279,7 @@
       "LED TV",
       "Double Bed"
     ],
-    "room_price": 65.90,
+    "room_price": 65.9,
     "room_status": "Available"
   },
   {
@@ -6461,7 +7289,9 @@
     "room_picture": "http://dummyimage.com/180x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 151.38,
     "room_status": "Available"
   },
@@ -6536,7 +7366,14 @@
     "room_picture": "http://dummyimage.com/175x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Wifi", "Bathup", "Towel", "LED TV", "Shower"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "Bathup",
+      "Towel",
+      "LED TV",
+      "Shower"
+    ],
     "room_price": 153.22,
     "room_status": "Available"
   },
@@ -6547,7 +7384,12 @@
     "room_picture": "http://dummyimage.com/135x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Double Bed", "Bathup", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Double Bed",
+      "Bathup",
+      "Wifi"
+    ],
     "room_price": 121.01,
     "room_status": "Available"
   },
@@ -6636,7 +7478,9 @@
     "room_picture": "http://dummyimage.com/115x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Towel"],
+    "room_facilities": [
+      "Towel"
+    ],
     "room_price": 77.39,
     "room_status": "Booked"
   },
@@ -6665,7 +7509,9 @@
     "room_picture": "http://dummyimage.com/250x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Shower"],
+    "room_facilities": [
+      "Shower"
+    ],
     "room_price": 138.65,
     "room_status": "Available"
   },
@@ -6688,7 +7534,7 @@
       "Towel",
       "Bathup"
     ],
-    "room_price": 178.20,
+    "room_price": 178.2,
     "room_status": "Booked"
   },
   {
@@ -6698,7 +7544,10 @@
     "room_picture": "http://dummyimage.com/137x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Shower", "Wifi"],
+    "room_facilities": [
+      "Shower",
+      "Wifi"
+    ],
     "room_price": 177.96,
     "room_status": "Booked"
   },
@@ -6731,7 +7580,13 @@
     "room_picture": "http://dummyimage.com/242x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set", "AC", "Bathup", "Towel", "Double Bed"],
+    "room_facilities": [
+      "Coffee Set",
+      "AC",
+      "Bathup",
+      "Towel",
+      "Double Bed"
+    ],
     "room_price": 193.76,
     "room_status": "Booked"
   },
@@ -6742,8 +7597,10 @@
     "room_picture": "http://dummyimage.com/133x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Shower"],
-    "room_price": 105.30,
+    "room_facilities": [
+      "Shower"
+    ],
+    "room_price": 105.3,
     "room_status": "Booked"
   },
   {
@@ -6870,7 +7727,9 @@
     "room_picture": "http://dummyimage.com/190x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 82.67,
     "room_status": "Booked"
   },
@@ -6881,7 +7740,12 @@
     "room_picture": "http://dummyimage.com/250x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "LED TV", "Double Bed", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "LED TV",
+      "Double Bed",
+      "Bathup"
+    ],
     "room_price": 178.02,
     "room_status": "Booked"
   },
@@ -6967,7 +7831,9 @@
     "room_picture": "http://dummyimage.com/237x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Towel"],
+    "room_facilities": [
+      "Towel"
+    ],
     "room_price": 144.84,
     "room_status": "Booked"
   },
@@ -6978,7 +7844,10 @@
     "room_picture": "http://dummyimage.com/207x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "LED TV"],
+    "room_facilities": [
+      "Coffee Set",
+      "LED TV"
+    ],
     "room_price": 177.16,
     "room_status": "Available"
   },
@@ -7008,7 +7877,11 @@
     "room_picture": "http://dummyimage.com/177x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed", "Shower", "Coffee Set"],
+    "room_facilities": [
+      "Double Bed",
+      "Shower",
+      "Coffee Set"
+    ],
     "room_price": 53.36,
     "room_status": "Available"
   },
@@ -7056,7 +7929,11 @@
     "room_picture": "http://dummyimage.com/159x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "Coffee Set", "Bathup"],
+    "room_facilities": [
+      "Shower",
+      "Coffee Set",
+      "Bathup"
+    ],
     "room_price": 181.44,
     "room_status": "Booked"
   },
@@ -7077,7 +7954,7 @@
       "Towel",
       "AC"
     ],
-    "room_price": 100.10,
+    "room_price": 100.1,
     "room_status": "Available"
   },
   {
@@ -7087,7 +7964,12 @@
     "room_picture": "http://dummyimage.com/193x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Bathup", "Double Bed", "Towel", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed",
+      "Towel",
+      "Coffee Set"
+    ],
     "room_price": 72.44,
     "room_status": "Available"
   },
@@ -7098,7 +7980,9 @@
     "room_picture": "http://dummyimage.com/180x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 122.95,
     "room_status": "Booked"
   },
@@ -7121,7 +8005,7 @@
       "AC",
       "Double Bed"
     ],
-    "room_price": 183.20,
+    "room_price": 183.2,
     "room_status": "Available"
   },
   {
@@ -7153,7 +8037,13 @@
     "room_picture": "http://dummyimage.com/235x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["AC", "Wifi", "Coffee Set", "Double Bed", "LED TV"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "Coffee Set",
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 192.47,
     "room_status": "Available"
   },
@@ -7184,7 +8074,12 @@
     "room_picture": "http://dummyimage.com/183x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Towel", "AC", "Wifi", "Bathup"],
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "Wifi",
+      "Bathup"
+    ],
     "room_price": 136.06,
     "room_status": "Booked"
   },
@@ -7195,7 +8090,12 @@
     "room_picture": "http://dummyimage.com/196x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["AC", "Bathup", "Shower", "Coffee Set"],
+    "room_facilities": [
+      "AC",
+      "Bathup",
+      "Shower",
+      "Coffee Set"
+    ],
     "room_price": 89.39,
     "room_status": "Booked"
   },
@@ -7263,8 +8163,14 @@
     "room_picture": "http://dummyimage.com/227x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV", "Double Bed", "Shower", "Wifi", "Towel"],
-    "room_price": 93.70,
+    "room_facilities": [
+      "LED TV",
+      "Double Bed",
+      "Shower",
+      "Wifi",
+      "Towel"
+    ],
+    "room_price": 93.7,
     "room_status": "Available"
   },
   {
@@ -7274,8 +8180,10 @@
     "room_picture": "http://dummyimage.com/120x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["AC"],
-    "room_price": 102.70,
+    "room_facilities": [
+      "AC"
+    ],
+    "room_price": 102.7,
     "room_status": "Available"
   },
   {
@@ -7346,7 +8254,10 @@
     "room_picture": "http://dummyimage.com/221x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "Towel"],
+    "room_facilities": [
+      "Shower",
+      "Towel"
+    ],
     "room_price": 111.32,
     "room_status": "Available"
   },
@@ -7357,7 +8268,12 @@
     "room_picture": "http://dummyimage.com/205x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "AC", "Shower", "Towel"],
+    "room_facilities": [
+      "Bathup",
+      "AC",
+      "Shower",
+      "Towel"
+    ],
     "room_price": 150.28,
     "room_status": "Booked"
   },
@@ -7368,7 +8284,12 @@
     "room_picture": "http://dummyimage.com/173x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "Towel", "AC", "Double Bed"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "AC",
+      "Double Bed"
+    ],
     "room_price": 113.97,
     "room_status": "Booked"
   },
@@ -7417,7 +8338,10 @@
     "room_picture": "http://dummyimage.com/170x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "LED TV"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV"
+    ],
     "room_price": 187.03,
     "room_status": "Booked"
   },
@@ -7428,7 +8352,11 @@
     "room_picture": "http://dummyimage.com/130x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Towel", "Bathup", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "Bathup",
+      "Shower"
+    ],
     "room_price": 180.65,
     "room_status": "Booked"
   },
@@ -7457,7 +8385,13 @@
     "room_picture": "http://dummyimage.com/169x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Towel", "AC", "LED TV", "Wifi", "Bathup"],
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "LED TV",
+      "Wifi",
+      "Bathup"
+    ],
     "room_price": 156.78,
     "room_status": "Booked"
   },
@@ -7563,7 +8497,12 @@
     "room_picture": "http://dummyimage.com/116x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Shower", "LED TV", "AC"],
+    "room_facilities": [
+      "Bathup",
+      "Shower",
+      "LED TV",
+      "AC"
+    ],
     "room_price": 160.12,
     "room_status": "Available"
   },
@@ -7574,7 +8513,10 @@
     "room_picture": "http://dummyimage.com/200x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set", "LED TV"],
+    "room_facilities": [
+      "Coffee Set",
+      "LED TV"
+    ],
     "room_price": 108.01,
     "room_status": "Booked"
   },
@@ -7673,7 +8615,7 @@
       "Towel",
       "Double Bed"
     ],
-    "room_price": 176.90,
+    "room_price": 176.9,
     "room_status": "Booked"
   },
   {
@@ -7683,7 +8625,10 @@
     "room_picture": "http://dummyimage.com/113x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["AC", "Double Bed"],
+    "room_facilities": [
+      "AC",
+      "Double Bed"
+    ],
     "room_price": 182.91,
     "room_status": "Booked"
   },
@@ -7694,7 +8639,12 @@
     "room_picture": "http://dummyimage.com/121x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Shower", "AC", "Towel", "LED TV"],
+    "room_facilities": [
+      "Shower",
+      "AC",
+      "Towel",
+      "LED TV"
+    ],
     "room_price": 157.49,
     "room_status": "Available"
   },
@@ -7705,7 +8655,10 @@
     "room_picture": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "Towel"],
+    "room_facilities": [
+      "Double Bed",
+      "Towel"
+    ],
     "room_price": 113.67,
     "room_status": "Booked"
   },
@@ -7771,7 +8724,7 @@
       "Wifi",
       "Bathup"
     ],
-    "room_price": 90.90,
+    "room_price": 90.9,
     "room_status": "Booked"
   },
   {
@@ -7801,7 +8754,10 @@
     "room_picture": "http://dummyimage.com/115x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["AC", "Coffee Set"],
+    "room_facilities": [
+      "AC",
+      "Coffee Set"
+    ],
     "room_price": 178.21,
     "room_status": "Booked"
   },
@@ -7812,7 +8768,9 @@
     "room_picture": "http://dummyimage.com/121x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 115.17,
     "room_status": "Available"
   },
@@ -7823,8 +8781,11 @@
     "room_picture": "http://dummyimage.com/137x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Towel"],
-    "room_price": 170.00,
+    "room_facilities": [
+      "LED TV",
+      "Towel"
+    ],
+    "room_price": 170,
     "room_status": "Available"
   },
   {
@@ -7834,8 +8795,11 @@
     "room_picture": "http://dummyimage.com/123x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Coffee Set", "Towel"],
-    "room_price": 185.10,
+    "room_facilities": [
+      "Coffee Set",
+      "Towel"
+    ],
+    "room_price": 185.1,
     "room_status": "Available"
   },
   {
@@ -7884,7 +8848,11 @@
     "room_picture": "http://dummyimage.com/219x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Towel", "Shower"],
+    "room_facilities": [
+      "Bathup",
+      "Towel",
+      "Shower"
+    ],
     "room_price": 75.12,
     "room_status": "Available"
   },
@@ -7914,7 +8882,12 @@
     "room_picture": "http://dummyimage.com/149x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Coffee Set", "AC", "Shower", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "AC",
+      "Shower",
+      "Wifi"
+    ],
     "room_price": 63.11,
     "room_status": "Available"
   },
@@ -7937,7 +8910,7 @@
       "AC",
       "Coffee Set"
     ],
-    "room_price": 119.80,
+    "room_price": 119.8,
     "room_status": "Available"
   },
   {
@@ -7947,7 +8920,13 @@
     "room_picture": "http://dummyimage.com/141x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Wifi", "AC", "Bathup", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Wifi",
+      "AC",
+      "Bathup",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 180.78,
     "room_status": "Booked"
   },
@@ -7958,8 +8937,13 @@
     "room_picture": "http://dummyimage.com/221x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Coffee Set", "Wifi", "Double Bed"],
-    "room_price": 63.40,
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set",
+      "Wifi",
+      "Double Bed"
+    ],
+    "room_price": 63.4,
     "room_status": "Available"
   },
   {
@@ -7969,7 +8953,12 @@
     "room_picture": "http://dummyimage.com/162x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Towel", "Shower", "LED TV", "Double Bed"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "LED TV",
+      "Double Bed"
+    ],
     "room_price": 162.67,
     "room_status": "Available"
   },
@@ -7998,7 +8987,11 @@
     "room_picture": "http://dummyimage.com/177x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["LED TV", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "LED TV",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 58.55,
     "room_status": "Available"
   },
@@ -8038,7 +9031,7 @@
       "Coffee Set",
       "Double Bed"
     ],
-    "room_price": 188.60,
+    "room_price": 188.6,
     "room_status": "Available"
   },
   {
@@ -8048,7 +9041,13 @@
     "room_picture": "http://dummyimage.com/104x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "Bathup", "Wifi", "LED TV", "AC"],
+    "room_facilities": [
+      "Towel",
+      "Bathup",
+      "Wifi",
+      "LED TV",
+      "AC"
+    ],
     "room_price": 120.93,
     "room_status": "Available"
   },
@@ -8080,7 +9079,11 @@
     "room_picture": "http://dummyimage.com/159x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV", "Coffee Set", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "Coffee Set",
+      "AC"
+    ],
     "room_price": 132.24,
     "room_status": "Booked"
   },
@@ -8091,7 +9094,11 @@
     "room_picture": "http://dummyimage.com/116x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["LED TV", "AC", "Wifi"],
+    "room_facilities": [
+      "LED TV",
+      "AC",
+      "Wifi"
+    ],
     "room_price": 150.53,
     "room_status": "Booked"
   },
@@ -8123,7 +9130,10 @@
     "room_picture": "http://dummyimage.com/248x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "AC"],
+    "room_facilities": [
+      "Shower",
+      "AC"
+    ],
     "room_price": 54.88,
     "room_status": "Booked"
   },
@@ -8134,7 +9144,12 @@
     "room_picture": "http://dummyimage.com/180x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "Bathup", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "Coffee Set",
+      "Bathup",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 154.24,
     "room_status": "Available"
   },
@@ -8167,7 +9182,11 @@
     "room_picture": "http://dummyimage.com/210x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Towel", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Towel",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 193.78,
     "room_status": "Booked"
   },
@@ -8178,7 +9197,9 @@
     "room_picture": "http://dummyimage.com/218x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 159.71,
     "room_status": "Booked"
   },
@@ -8210,7 +9231,13 @@
     "room_picture": "http://dummyimage.com/238x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Towel", "Coffee Set", "AC", "Double Bed"],
+    "room_facilities": [
+      "LED TV",
+      "Towel",
+      "Coffee Set",
+      "AC",
+      "Double Bed"
+    ],
     "room_price": 184.01,
     "room_status": "Booked"
   },
@@ -8240,7 +9267,9 @@
     "room_picture": "http://dummyimage.com/236x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 116.99,
     "room_status": "Booked"
   },
@@ -8272,7 +9301,12 @@
     "room_picture": "http://dummyimage.com/143x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "LED TV", "AC", "Shower"],
+    "room_facilities": [
+      "Coffee Set",
+      "LED TV",
+      "AC",
+      "Shower"
+    ],
     "room_price": 121.21,
     "room_status": "Available"
   },
@@ -8283,7 +9317,9 @@
     "room_picture": "http://dummyimage.com/123x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 66.09,
     "room_status": "Booked"
   },
@@ -8294,7 +9330,9 @@
     "room_picture": "http://dummyimage.com/166x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 124.16,
     "room_status": "Booked"
   },
@@ -8323,7 +9361,10 @@
     "room_picture": "http://dummyimage.com/194x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Shower", "Bathup"],
+    "room_facilities": [
+      "Shower",
+      "Bathup"
+    ],
     "room_price": 155.67,
     "room_status": "Available"
   },
@@ -8355,8 +9396,13 @@
     "room_picture": "http://dummyimage.com/128x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "Towel", "Wifi", "AC"],
-    "room_price": 133.80,
+    "room_facilities": [
+      "Double Bed",
+      "Towel",
+      "Wifi",
+      "AC"
+    ],
+    "room_price": 133.8,
     "room_status": "Booked"
   },
   {
@@ -8366,7 +9412,13 @@
     "room_picture": "http://dummyimage.com/137x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Coffee Set", "LED TV", "Wifi", "AC", "Shower"],
+    "room_facilities": [
+      "Coffee Set",
+      "LED TV",
+      "Wifi",
+      "AC",
+      "Shower"
+    ],
     "room_price": 112.96,
     "room_status": "Available"
   },
@@ -8377,7 +9429,9 @@
     "room_picture": "http://dummyimage.com/215x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 69.34,
     "room_status": "Booked"
   },
@@ -8428,7 +9482,11 @@
     "room_picture": "http://dummyimage.com/194x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Shower", "Towel", "Wifi"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "Wifi"
+    ],
     "room_price": 167.79,
     "room_status": "Available"
   },
@@ -8479,8 +9537,14 @@
     "room_picture": "http://dummyimage.com/130x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Towel", "LED TV", "Shower", "Double Bed", "Wifi"],
-    "room_price": 90.30,
+    "room_facilities": [
+      "Towel",
+      "LED TV",
+      "Shower",
+      "Double Bed",
+      "Wifi"
+    ],
+    "room_price": 90.3,
     "room_status": "Booked"
   },
   {
@@ -8516,7 +9580,7 @@
       "LED TV",
       "Towel"
     ],
-    "room_price": 119.30,
+    "room_price": 119.3,
     "room_status": "Available"
   },
   {
@@ -8526,7 +9590,9 @@
     "room_picture": "http://dummyimage.com/241x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 142.56,
     "room_status": "Available"
   },
@@ -8558,8 +9624,11 @@
     "room_picture": "http://dummyimage.com/210x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "Bathup"],
-    "room_price": 104.60,
+    "room_facilities": [
+      "Shower",
+      "Bathup"
+    ],
+    "room_price": 104.6,
     "room_status": "Available"
   },
   {
@@ -8587,7 +9656,10 @@
     "room_picture": "http://dummyimage.com/104x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi"
+    ],
     "room_price": 143.73,
     "room_status": "Available"
   },
@@ -8598,7 +9670,9 @@
     "room_picture": "http://dummyimage.com/115x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 132.52,
     "room_status": "Booked"
   },
@@ -8628,7 +9702,10 @@
     "room_picture": "http://dummyimage.com/101x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "Shower"],
+    "room_facilities": [
+      "Coffee Set",
+      "Shower"
+    ],
     "room_price": 146.94,
     "room_status": "Booked"
   },
@@ -8660,7 +9737,12 @@
     "room_picture": "http://dummyimage.com/228x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["AC", "Towel", "Coffee Set", "LED TV"],
+    "room_facilities": [
+      "AC",
+      "Towel",
+      "Coffee Set",
+      "LED TV"
+    ],
     "room_price": 88.57,
     "room_status": "Available"
   },
@@ -8731,7 +9813,10 @@
     "room_picture": "http://dummyimage.com/142x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Coffee Set", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "Bathup"
+    ],
     "room_price": 104.73,
     "room_status": "Available"
   },
@@ -8742,8 +9827,13 @@
     "room_picture": "http://dummyimage.com/144x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Coffee Set", "Double Bed", "Shower"],
-    "room_price": 112.10,
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set",
+      "Double Bed",
+      "Shower"
+    ],
+    "room_price": 112.1,
     "room_status": "Available"
   },
   {
@@ -8753,7 +9843,13 @@
     "room_picture": "http://dummyimage.com/188x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV", "Double Bed", "Wifi", "Coffee Set", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed",
+      "Wifi",
+      "Coffee Set",
+      "AC"
+    ],
     "room_price": 87.78,
     "room_status": "Available"
   },
@@ -8764,7 +9860,10 @@
     "room_picture": "http://dummyimage.com/148x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["AC", "Towel"],
+    "room_facilities": [
+      "AC",
+      "Towel"
+    ],
     "room_price": 90.84,
     "room_status": "Booked"
   },
@@ -8793,7 +9892,11 @@
     "room_picture": "http://dummyimage.com/109x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Coffee Set", "Towel", "Shower"],
+    "room_facilities": [
+      "Coffee Set",
+      "Towel",
+      "Shower"
+    ],
     "room_price": 173.37,
     "room_status": "Booked"
   },
@@ -8804,7 +9907,11 @@
     "room_picture": "http://dummyimage.com/229x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Wifi", "Towel"],
+    "room_facilities": [
+      "Bathup",
+      "Wifi",
+      "Towel"
+    ],
     "room_price": 59.65,
     "room_status": "Booked"
   },
@@ -8815,8 +9922,13 @@
     "room_picture": "http://dummyimage.com/108x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Shower", "Wifi", "Double Bed", "AC"],
-    "room_price": 82.90,
+    "room_facilities": [
+      "Shower",
+      "Wifi",
+      "Double Bed",
+      "AC"
+    ],
+    "room_price": 82.9,
     "room_status": "Available"
   },
   {
@@ -8838,7 +9950,7 @@
       "Shower",
       "Towel"
     ],
-    "room_price": 61.00,
+    "room_price": 61,
     "room_status": "Available"
   },
   {
@@ -8848,7 +9960,10 @@
     "room_picture": "http://dummyimage.com/126x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed", "Shower"],
+    "room_facilities": [
+      "Double Bed",
+      "Shower"
+    ],
     "room_price": 79.28,
     "room_status": "Booked"
   },
@@ -8859,7 +9974,13 @@
     "room_picture": "http://dummyimage.com/198x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed", "Wifi", "Shower", "Towel", "AC"],
+    "room_facilities": [
+      "Double Bed",
+      "Wifi",
+      "Shower",
+      "Towel",
+      "AC"
+    ],
     "room_price": 187.86,
     "room_status": "Booked"
   },
@@ -8870,8 +9991,10 @@
     "room_picture": "http://dummyimage.com/146x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi"],
-    "room_price": 115.90,
+    "room_facilities": [
+      "Wifi"
+    ],
+    "room_price": 115.9,
     "room_status": "Available"
   },
   {
@@ -8881,8 +10004,12 @@
     "room_picture": "http://dummyimage.com/176x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "Shower", "LED TV"],
-    "room_price": 71.20,
+    "room_facilities": [
+      "Coffee Set",
+      "Shower",
+      "LED TV"
+    ],
+    "room_price": 71.2,
     "room_status": "Booked"
   },
   {
@@ -8892,8 +10019,11 @@
     "room_picture": "http://dummyimage.com/147x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Shower", "Bathup"],
-    "room_price": 60.20,
+    "room_facilities": [
+      "Shower",
+      "Bathup"
+    ],
+    "room_price": 60.2,
     "room_status": "Booked"
   },
   {
@@ -8903,7 +10033,11 @@
     "room_picture": "http://dummyimage.com/140x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Shower", "LED TV", "AC"],
+    "room_facilities": [
+      "Shower",
+      "LED TV",
+      "AC"
+    ],
     "room_price": 160.88,
     "room_status": "Available"
   },
@@ -8914,7 +10048,9 @@
     "room_picture": "http://dummyimage.com/194x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 82.57,
     "room_status": "Booked"
   },
@@ -8946,7 +10082,9 @@
     "room_picture": "http://dummyimage.com/239x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 96.08,
     "room_status": "Booked"
   },
@@ -8988,7 +10126,7 @@
       "Towel",
       "Wifi"
     ],
-    "room_price": 73.40,
+    "room_price": 73.4,
     "room_status": "Available"
   },
   {
@@ -8998,8 +10136,14 @@
     "room_picture": "http://dummyimage.com/105x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "Bathup", "Double Bed", "AC", "Wifi"],
-    "room_price": 94.50,
+    "room_facilities": [
+      "Shower",
+      "Bathup",
+      "Double Bed",
+      "AC",
+      "Wifi"
+    ],
+    "room_price": 94.5,
     "room_status": "Booked"
   },
   {
@@ -9009,7 +10153,13 @@
     "room_picture": "http://dummyimage.com/152x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["AC", "Wifi", "Double Bed", "Bathup", "Shower"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "Double Bed",
+      "Bathup",
+      "Shower"
+    ],
     "room_price": 135.84,
     "room_status": "Available"
   },
@@ -9302,7 +10452,11 @@
     "room_picture": "http://dummyimage.com/108x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "LED TV", "Coffee Set"],
+    "room_facilities": [
+      "Shower",
+      "LED TV",
+      "Coffee Set"
+    ],
     "room_price": 56.01,
     "room_status": "Booked"
   },
@@ -9313,7 +10467,12 @@
     "room_picture": "http://dummyimage.com/165x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Coffee Set", "Wifi", "AC", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi",
+      "AC",
+      "Bathup"
+    ],
     "room_price": 134.06,
     "room_status": "Available"
   },
@@ -9343,7 +10502,14 @@
     "room_picture": "http://dummyimage.com/191x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "Bathup", "LED TV", "Towel", "AC", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "Bathup",
+      "LED TV",
+      "Towel",
+      "AC",
+      "Shower"
+    ],
     "room_price": 91.01,
     "room_status": "Available"
   },
@@ -9354,7 +10520,13 @@
     "room_picture": "http://dummyimage.com/198x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Coffee Set", "AC", "LED TV", "Towel", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "AC",
+      "LED TV",
+      "Towel",
+      "Bathup"
+    ],
     "room_price": 56.57,
     "room_status": "Booked"
   },
@@ -9365,7 +10537,9 @@
     "room_picture": "http://dummyimage.com/194x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 79.56,
     "room_status": "Available"
   },
@@ -9376,7 +10550,13 @@
     "room_picture": "http://dummyimage.com/227x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Wifi", "LED TV", "Bathup", "Coffee Set", "Towel"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV",
+      "Bathup",
+      "Coffee Set",
+      "Towel"
+    ],
     "room_price": 162.24,
     "room_status": "Booked"
   },
@@ -9446,7 +10626,12 @@
     "room_picture": "http://dummyimage.com/100x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Shower", "Double Bed", "Coffee Set", "Towel"],
+    "room_facilities": [
+      "Shower",
+      "Double Bed",
+      "Coffee Set",
+      "Towel"
+    ],
     "room_price": 182.82,
     "room_status": "Booked"
   },
@@ -9457,7 +10642,10 @@
     "room_picture": "http://dummyimage.com/160x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "AC"
+    ],
     "room_price": 113.53,
     "room_status": "Available"
   },
@@ -9468,7 +10656,12 @@
     "room_picture": "http://dummyimage.com/181x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi", "AC", "Bathup", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "AC",
+      "Bathup",
+      "Shower"
+    ],
     "room_price": 83.44,
     "room_status": "Available"
   },
@@ -9486,7 +10679,7 @@
       "Shower",
       "Double Bed"
     ],
-    "room_price": 144.20,
+    "room_price": 144.2,
     "room_status": "Available"
   },
   {
@@ -9518,7 +10711,9 @@
     "room_picture": "http://dummyimage.com/148x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 88.91,
     "room_status": "Booked"
   },
@@ -9550,7 +10745,11 @@
     "room_picture": "http://dummyimage.com/231x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Shower", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "Wifi"
+    ],
     "room_price": 110.54,
     "room_status": "Available"
   },
@@ -9561,7 +10760,11 @@
     "room_picture": "http://dummyimage.com/105x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi", "AC", "Towel"],
+    "room_facilities": [
+      "Wifi",
+      "AC",
+      "Towel"
+    ],
     "room_price": 88.87,
     "room_status": "Booked"
   },
@@ -9612,7 +10815,11 @@
     "room_picture": "http://dummyimage.com/248x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Double Bed", "Towel", "LED TV"],
+    "room_facilities": [
+      "Double Bed",
+      "Towel",
+      "LED TV"
+    ],
     "room_price": 128.25,
     "room_status": "Available"
   },
@@ -9645,7 +10852,9 @@
     "room_picture": "http://dummyimage.com/250x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 171.75,
     "room_status": "Booked"
   },
@@ -9656,7 +10865,13 @@
     "room_picture": "http://dummyimage.com/170x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Coffee Set", "Wifi", "LED TV", "Towel", "AC"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi",
+      "LED TV",
+      "Towel",
+      "AC"
+    ],
     "room_price": 100.24,
     "room_status": "Available"
   },
@@ -9697,7 +10912,7 @@
       "Bathup",
       "AC"
     ],
-    "room_price": 82.50,
+    "room_price": 82.5,
     "room_status": "Booked"
   },
   {
@@ -9707,7 +10922,13 @@
     "room_picture": "http://dummyimage.com/211x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Shower", "LED TV", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "Bathup",
+      "Shower",
+      "LED TV",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 89.31,
     "room_status": "Available"
   },
@@ -9737,7 +10958,13 @@
     "room_picture": "http://dummyimage.com/173x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Bathup", "Wifi", "Coffee Set", "AC", "Shower"],
+    "room_facilities": [
+      "Bathup",
+      "Wifi",
+      "Coffee Set",
+      "AC",
+      "Shower"
+    ],
     "room_price": 124.56,
     "room_status": "Available"
   },
@@ -9789,8 +11016,12 @@
     "room_picture": "http://dummyimage.com/139x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "Double Bed", "Coffee Set"],
-    "room_price": 64.70,
+    "room_facilities": [
+      "Wifi",
+      "Double Bed",
+      "Coffee Set"
+    ],
+    "room_price": 64.7,
     "room_status": "Available"
   },
   {
@@ -9800,7 +11031,12 @@
     "room_picture": "http://dummyimage.com/137x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "Coffee Set", "Bathup", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "Coffee Set",
+      "Bathup",
+      "AC"
+    ],
     "room_price": 180.93,
     "room_status": "Available"
   },
@@ -9850,7 +11086,10 @@
     "room_picture": "http://dummyimage.com/212x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV", "Double Bed"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed"
+    ],
     "room_price": 96.26,
     "room_status": "Available"
   },
@@ -9871,7 +11110,7 @@
       "LED TV",
       "Double Bed"
     ],
-    "room_price": 182.80,
+    "room_price": 182.8,
     "room_status": "Available"
   },
   {
@@ -9936,7 +11175,7 @@
       "AC",
       "Bathup"
     ],
-    "room_price": 68.60,
+    "room_price": 68.6,
     "room_status": "Available"
   },
   {
@@ -9987,7 +11226,9 @@
     "room_picture": "http://dummyimage.com/205x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Towel"],
+    "room_facilities": [
+      "Towel"
+    ],
     "room_price": 119.89,
     "room_status": "Available"
   },
@@ -9998,7 +11239,9 @@
     "room_picture": "http://dummyimage.com/240x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Towel"],
+    "room_facilities": [
+      "Towel"
+    ],
     "room_price": 106.93,
     "room_status": "Available"
   },
@@ -10050,7 +11293,13 @@
     "room_picture": "http://dummyimage.com/218x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup", "AC", "Double Bed", "Coffee Set", "LED TV"],
+    "room_facilities": [
+      "Bathup",
+      "AC",
+      "Double Bed",
+      "Coffee Set",
+      "LED TV"
+    ],
     "room_price": 77.26,
     "room_status": "Available"
   },
@@ -10061,7 +11310,10 @@
     "room_picture": "http://dummyimage.com/235x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Towel", "Double Bed"],
+    "room_facilities": [
+      "Towel",
+      "Double Bed"
+    ],
     "room_price": 160.27,
     "room_status": "Available"
   },
@@ -10112,7 +11364,9 @@
     "room_picture": "http://dummyimage.com/124x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 89.74,
     "room_status": "Booked"
   },
@@ -10143,8 +11397,14 @@
     "room_picture": "http://dummyimage.com/244x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Shower", "LED TV", "Bathup", "Wifi", "Double Bed"],
-    "room_price": 180.80,
+    "room_facilities": [
+      "Shower",
+      "LED TV",
+      "Bathup",
+      "Wifi",
+      "Double Bed"
+    ],
+    "room_price": 180.8,
     "room_status": "Booked"
   },
   {
@@ -10154,7 +11414,13 @@
     "room_picture": "http://dummyimage.com/169x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Shower", "Towel", "Wifi", "LED TV", "Bathup"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "Wifi",
+      "LED TV",
+      "Bathup"
+    ],
     "room_price": 167.21,
     "room_status": "Booked"
   },
@@ -10165,7 +11431,9 @@
     "room_picture": "http://dummyimage.com/163x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 191.66,
     "room_status": "Available"
   },
@@ -10176,7 +11444,11 @@
     "room_picture": "http://dummyimage.com/210x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "LED TV", "Coffee Set"],
+    "room_facilities": [
+      "Shower",
+      "LED TV",
+      "Coffee Set"
+    ],
     "room_price": 110.43,
     "room_status": "Booked"
   },
@@ -10269,7 +11541,12 @@
     "room_picture": "http://dummyimage.com/183x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Bathup", "AC", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "AC",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 86.57,
     "room_status": "Available"
   },
@@ -10280,7 +11557,10 @@
     "room_picture": "http://dummyimage.com/214x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Double Bed", "Wifi"],
+    "room_facilities": [
+      "Double Bed",
+      "Wifi"
+    ],
     "room_price": 196.31,
     "room_status": "Booked"
   },
@@ -10313,7 +11593,11 @@
     "room_picture": "http://dummyimage.com/150x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Towel", "Shower", "AC"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "AC"
+    ],
     "room_price": 72.52,
     "room_status": "Booked"
   },
@@ -10324,7 +11608,10 @@
     "room_picture": "http://dummyimage.com/201x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Bathup", "Wifi"],
+    "room_facilities": [
+      "Bathup",
+      "Wifi"
+    ],
     "room_price": 75.43,
     "room_status": "Booked"
   },
@@ -10364,7 +11651,7 @@
       "Double Bed",
       "Bathup"
     ],
-    "room_price": 192.00,
+    "room_price": 192,
     "room_status": "Booked"
   },
   {
@@ -10386,7 +11673,7 @@
       "Towel",
       "LED TV"
     ],
-    "room_price": 186.80,
+    "room_price": 186.8,
     "room_status": "Booked"
   },
   {
@@ -10396,8 +11683,13 @@
     "room_picture": "http://dummyimage.com/167x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Bathup", "Wifi", "Double Bed", "AC"],
-    "room_price": 122.50,
+    "room_facilities": [
+      "Bathup",
+      "Wifi",
+      "Double Bed",
+      "AC"
+    ],
+    "room_price": 122.5,
     "room_status": "Available"
   },
   {
@@ -10415,7 +11707,7 @@
       "Shower",
       "Towel"
     ],
-    "room_price": 82.80,
+    "room_price": 82.8,
     "room_status": "Booked"
   },
   {
@@ -10425,7 +11717,9 @@
     "room_picture": "http://dummyimage.com/191x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 50.06,
     "room_status": "Booked"
   },
@@ -10454,7 +11748,9 @@
     "room_picture": "http://dummyimage.com/102x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 72.78,
     "room_status": "Available"
   },
@@ -10465,7 +11761,10 @@
     "room_picture": "http://dummyimage.com/104x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Double Bed"],
+    "room_facilities": [
+      "AC",
+      "Double Bed"
+    ],
     "room_price": 155.13,
     "room_status": "Available"
   },
@@ -10476,7 +11775,13 @@
     "room_picture": "http://dummyimage.com/119x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Towel", "Bathup", "Wifi", "Coffee Set"],
+    "room_facilities": [
+      "LED TV",
+      "Towel",
+      "Bathup",
+      "Wifi",
+      "Coffee Set"
+    ],
     "room_price": 53.35,
     "room_status": "Booked"
   },
@@ -10499,7 +11804,7 @@
       "Bathup",
       "Coffee Set"
     ],
-    "room_price": 182.50,
+    "room_price": 182.5,
     "room_status": "Available"
   },
   {
@@ -10529,7 +11834,10 @@
     "room_picture": "http://dummyimage.com/219x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 192.24,
     "room_status": "Available"
   },
@@ -10540,7 +11848,11 @@
     "room_picture": "http://dummyimage.com/102x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "Bathup", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "Bathup",
+      "AC"
+    ],
     "room_price": 146.63,
     "room_status": "Booked"
   },
@@ -10581,7 +11893,7 @@
       "Towel",
       "Double Bed"
     ],
-    "room_price": 161.00,
+    "room_price": 161,
     "room_status": "Booked"
   },
   {
@@ -10613,7 +11925,9 @@
     "room_picture": "http://dummyimage.com/178x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 85.89,
     "room_status": "Available"
   },
@@ -10662,8 +11976,10 @@
     "room_picture": "http://dummyimage.com/116x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set"],
-    "room_price": 115.60,
+    "room_facilities": [
+      "Coffee Set"
+    ],
+    "room_price": 115.6,
     "room_status": "Booked"
   },
   {
@@ -10683,7 +11999,7 @@
       "Wifi",
       "Towel"
     ],
-    "room_price": 67.80,
+    "room_price": 67.8,
     "room_status": "Available"
   },
   {
@@ -10713,7 +12029,13 @@
     "room_picture": "http://dummyimage.com/121x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi", "LED TV", "AC", "Towel", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV",
+      "AC",
+      "Towel",
+      "Shower"
+    ],
     "room_price": 161.56,
     "room_status": "Booked"
   },
@@ -10724,7 +12046,13 @@
     "room_picture": "http://dummyimage.com/242x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Shower", "Towel", "Double Bed", "LED TV", "AC"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "Double Bed",
+      "LED TV",
+      "AC"
+    ],
     "room_price": 60.15,
     "room_status": "Available"
   },
@@ -10757,7 +12085,11 @@
     "room_picture": "http://dummyimage.com/219x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "AC", "Double Bed"],
+    "room_facilities": [
+      "Coffee Set",
+      "AC",
+      "Double Bed"
+    ],
     "room_price": 180.22,
     "room_status": "Available"
   },
@@ -10768,7 +12100,13 @@
     "room_picture": "http://dummyimage.com/174x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "Shower", "Double Bed", "Wifi", "AC"],
+    "room_facilities": [
+      "Bathup",
+      "Shower",
+      "Double Bed",
+      "Wifi",
+      "AC"
+    ],
     "room_price": 85.79,
     "room_status": "Available"
   },
@@ -10788,7 +12126,7 @@
       "Towel",
       "Wifi"
     ],
-    "room_price": 72.60,
+    "room_price": 72.6,
     "room_status": "Booked"
   },
   {
@@ -10836,8 +12174,11 @@
     "room_picture": "http://dummyimage.com/198x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "Shower"],
-    "room_price": 96.40,
+    "room_facilities": [
+      "Towel",
+      "Shower"
+    ],
+    "room_price": 96.4,
     "room_status": "Available"
   },
   {
@@ -10847,7 +12188,13 @@
     "room_picture": "http://dummyimage.com/213x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["AC", "Shower", "LED TV", "Wifi", "Bathup"],
+    "room_facilities": [
+      "AC",
+      "Shower",
+      "LED TV",
+      "Wifi",
+      "Bathup"
+    ],
     "room_price": 73.91,
     "room_status": "Available"
   },
@@ -10858,7 +12205,10 @@
     "room_picture": "http://dummyimage.com/106x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "Double Bed"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed"
+    ],
     "room_price": 51.54,
     "room_status": "Available"
   },
@@ -10869,7 +12219,11 @@
     "room_picture": "http://dummyimage.com/197x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "Shower", "Double Bed"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "Double Bed"
+    ],
     "room_price": 68.43,
     "room_status": "Booked"
   },
@@ -10880,7 +12234,13 @@
     "room_picture": "http://dummyimage.com/163x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Bathup", "LED TV", "Towel", "AC", "Shower"],
+    "room_facilities": [
+      "Bathup",
+      "LED TV",
+      "Towel",
+      "AC",
+      "Shower"
+    ],
     "room_price": 175.35,
     "room_status": "Booked"
   },
@@ -10931,7 +12291,12 @@
     "room_picture": "http://dummyimage.com/145x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Shower", "Double Bed", "Coffee Set", "LED TV"],
+    "room_facilities": [
+      "Shower",
+      "Double Bed",
+      "Coffee Set",
+      "LED TV"
+    ],
     "room_price": 134.85,
     "room_status": "Available"
   },
@@ -10951,7 +12316,7 @@
       "Towel",
       "Double Bed"
     ],
-    "room_price": 113.70,
+    "room_price": 113.7,
     "room_status": "Booked"
   },
   {
@@ -10970,7 +12335,7 @@
       "Wifi",
       "Double Bed"
     ],
-    "room_price": 79.00,
+    "room_price": 79,
     "room_status": "Available"
   },
   {
@@ -10991,7 +12356,7 @@
       "Bathup",
       "Towel"
     ],
-    "room_price": 195.50,
+    "room_price": 195.5,
     "room_status": "Available"
   },
   {
@@ -11103,7 +12468,13 @@
     "room_picture": "http://dummyimage.com/123x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Shower", "Wifi", "LED TV", "AC"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "Wifi",
+      "LED TV",
+      "AC"
+    ],
     "room_price": 52.08,
     "room_status": "Available"
   },
@@ -11174,7 +12545,12 @@
     "room_picture": "http://dummyimage.com/187x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Shower", "Wifi", "Towel"],
+    "room_facilities": [
+      "AC",
+      "Shower",
+      "Wifi",
+      "Towel"
+    ],
     "room_price": 121.29,
     "room_status": "Booked"
   },
@@ -11185,8 +12561,11 @@
     "room_picture": "http://dummyimage.com/149x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV", "Shower"],
-    "room_price": 118.80,
+    "room_facilities": [
+      "LED TV",
+      "Shower"
+    ],
+    "room_price": 118.8,
     "room_status": "Booked"
   },
   {
@@ -11282,7 +12661,7 @@
       "LED TV",
       "Wifi"
     ],
-    "room_price": 194.90,
+    "room_price": 194.9,
     "room_status": "Available"
   },
   {
@@ -11372,7 +12751,12 @@
     "room_picture": "http://dummyimage.com/113x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Towel", "Coffee Set", "Double Bed", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "Coffee Set",
+      "Double Bed",
+      "Shower"
+    ],
     "room_price": 172.28,
     "room_status": "Available"
   },
@@ -11403,7 +12787,13 @@
     "room_picture": "http://dummyimage.com/114x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Coffee Set", "Shower", "AC", "LED TV", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Shower",
+      "AC",
+      "LED TV",
+      "Wifi"
+    ],
     "room_price": 148.14,
     "room_status": "Available"
   },
@@ -11414,7 +12804,13 @@
     "room_picture": "http://dummyimage.com/192x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Bathup", "LED TV", "Towel", "Wifi", "AC"],
+    "room_facilities": [
+      "Bathup",
+      "LED TV",
+      "Towel",
+      "Wifi",
+      "AC"
+    ],
     "room_price": 84.81,
     "room_status": "Available"
   },
@@ -11443,7 +12839,9 @@
     "room_picture": "http://dummyimage.com/240x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 146.09,
     "room_status": "Booked"
   },
@@ -11454,7 +12852,13 @@
     "room_picture": "http://dummyimage.com/190x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Bathup", "Shower", "Coffee Set", "LED TV", "Towel"],
+    "room_facilities": [
+      "Bathup",
+      "Shower",
+      "Coffee Set",
+      "LED TV",
+      "Towel"
+    ],
     "room_price": 142.69,
     "room_status": "Available"
   },
@@ -11465,7 +12869,13 @@
     "room_picture": "http://dummyimage.com/181x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "Double Bed", "Shower", "AC", "LED TV"],
+    "room_facilities": [
+      "Coffee Set",
+      "Double Bed",
+      "Shower",
+      "AC",
+      "LED TV"
+    ],
     "room_price": 128.85,
     "room_status": "Booked"
   },
@@ -11476,7 +12886,10 @@
     "room_picture": "http://dummyimage.com/160x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup", "AC"],
+    "room_facilities": [
+      "Bathup",
+      "AC"
+    ],
     "room_price": 84.04,
     "room_status": "Available"
   },
@@ -11487,7 +12900,12 @@
     "room_picture": "http://dummyimage.com/100x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["AC", "LED TV", "Double Bed", "Wifi"],
+    "room_facilities": [
+      "AC",
+      "LED TV",
+      "Double Bed",
+      "Wifi"
+    ],
     "room_price": 90.11,
     "room_status": "Booked"
   },
@@ -11518,7 +12936,11 @@
     "room_picture": "http://dummyimage.com/171x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set", "AC", "Double Bed"],
+    "room_facilities": [
+      "Coffee Set",
+      "AC",
+      "Double Bed"
+    ],
     "room_price": 199.51,
     "room_status": "Available"
   },
@@ -11529,7 +12951,9 @@
     "room_picture": "http://dummyimage.com/169x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 114.81,
     "room_status": "Available"
   },
@@ -11576,8 +13000,12 @@
     "room_picture": "http://dummyimage.com/221x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Double Bed", "Coffee Set", "Towel"],
-    "room_price": 192.40,
+    "room_facilities": [
+      "Double Bed",
+      "Coffee Set",
+      "Towel"
+    ],
+    "room_price": 192.4,
     "room_status": "Booked"
   },
   {
@@ -11608,7 +13036,11 @@
     "room_picture": "http://dummyimage.com/174x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 147.18,
     "room_status": "Available"
   },
@@ -11619,7 +13051,13 @@
     "room_picture": "http://dummyimage.com/205x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Double Bed", "Wifi", "AC", "Bathup", "Coffee Set"],
+    "room_facilities": [
+      "Double Bed",
+      "Wifi",
+      "AC",
+      "Bathup",
+      "Coffee Set"
+    ],
     "room_price": 148.58,
     "room_status": "Available"
   },
@@ -11652,7 +13090,9 @@
     "room_picture": "http://dummyimage.com/188x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 113.77,
     "room_status": "Available"
   },
@@ -11683,7 +13123,10 @@
     "room_picture": "http://dummyimage.com/197x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "AC"],
+    "room_facilities": [
+      "Shower",
+      "AC"
+    ],
     "room_price": 58.16,
     "room_status": "Available"
   },
@@ -11694,7 +13137,12 @@
     "room_picture": "http://dummyimage.com/177x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Bathup", "Coffee Set", "Double Bed", "LED TV"],
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set",
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 150.54,
     "room_status": "Available"
   },
@@ -11705,7 +13153,9 @@
     "room_picture": "http://dummyimage.com/239x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 144.12,
     "room_status": "Booked"
   },
@@ -11716,8 +13166,10 @@
     "room_picture": "http://dummyimage.com/152x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed"],
-    "room_price": 134.50,
+    "room_facilities": [
+      "Double Bed"
+    ],
+    "room_price": 134.5,
     "room_status": "Booked"
   },
   {
@@ -11727,7 +13179,13 @@
     "room_picture": "http://dummyimage.com/129x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Bathup", "LED TV", "AC", "Shower", "Double Bed"],
+    "room_facilities": [
+      "Bathup",
+      "LED TV",
+      "AC",
+      "Shower",
+      "Double Bed"
+    ],
     "room_price": 176.23,
     "room_status": "Booked"
   },
@@ -11780,7 +13238,9 @@
     "room_picture": "http://dummyimage.com/144x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 58.12,
     "room_status": "Booked"
   },
@@ -11834,7 +13294,10 @@
     "room_picture": "http://dummyimage.com/230x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV", "Coffee Set"],
+    "room_facilities": [
+      "LED TV",
+      "Coffee Set"
+    ],
     "room_price": 148.07,
     "room_status": "Booked"
   },
@@ -11876,7 +13339,7 @@
       "Double Bed",
       "LED TV"
     ],
-    "room_price": 77.10,
+    "room_price": 77.1,
     "room_status": "Available"
   },
   {
@@ -11886,7 +13349,9 @@
     "room_picture": "http://dummyimage.com/230x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["AC"],
+    "room_facilities": [
+      "AC"
+    ],
     "room_price": 52.41,
     "room_status": "Available"
   },
@@ -11897,7 +13362,13 @@
     "room_picture": "http://dummyimage.com/202x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "AC", "Double Bed", "Wifi", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "AC",
+      "Double Bed",
+      "Wifi",
+      "Coffee Set"
+    ],
     "room_price": 164.67,
     "room_status": "Booked"
   },
@@ -11946,7 +13417,9 @@
     "room_picture": "http://dummyimage.com/128x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 138.68,
     "room_status": "Available"
   },
@@ -11976,7 +13449,11 @@
     "room_picture": "http://dummyimage.com/144x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["LED TV", "AC", "Towel"],
+    "room_facilities": [
+      "LED TV",
+      "AC",
+      "Towel"
+    ],
     "room_price": 103.15,
     "room_status": "Booked"
   },
@@ -11987,7 +13464,13 @@
     "room_picture": "http://dummyimage.com/236x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup", "Coffee Set", "Double Bed", "Shower", "Wifi"],
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set",
+      "Double Bed",
+      "Shower",
+      "Wifi"
+    ],
     "room_price": 148.96,
     "room_status": "Available"
   },
@@ -12020,7 +13503,10 @@
     "room_picture": "http://dummyimage.com/246x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set"
+    ],
     "room_price": 58.21,
     "room_status": "Available"
   },
@@ -12071,7 +13557,12 @@
     "room_picture": "http://dummyimage.com/122x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Wifi", "Coffee Set", "LED TV", "Double Bed"],
+    "room_facilities": [
+      "Wifi",
+      "Coffee Set",
+      "LED TV",
+      "Double Bed"
+    ],
     "room_price": 97.01,
     "room_status": "Available"
   },
@@ -12082,7 +13573,10 @@
     "room_picture": "http://dummyimage.com/200x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["AC", "Shower"],
+    "room_facilities": [
+      "AC",
+      "Shower"
+    ],
     "room_price": 174.27,
     "room_status": "Booked"
   },
@@ -12093,7 +13587,12 @@
     "room_picture": "http://dummyimage.com/144x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Double Bed", "Wifi", "AC", "Towel"],
+    "room_facilities": [
+      "Double Bed",
+      "Wifi",
+      "AC",
+      "Towel"
+    ],
     "room_price": 186.13,
     "room_status": "Booked"
   },
@@ -12126,7 +13625,13 @@
     "room_picture": "http://dummyimage.com/205x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Double Bed", "LED TV", "Coffee Set", "Towel", "Wifi"],
+    "room_facilities": [
+      "Double Bed",
+      "LED TV",
+      "Coffee Set",
+      "Towel",
+      "Wifi"
+    ],
     "room_price": 89.92,
     "room_status": "Available"
   },
@@ -12195,7 +13700,13 @@
     "room_picture": "http://dummyimage.com/193x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Double Bed", "Wifi", "Shower", "Coffee Set", "Towel"],
+    "room_facilities": [
+      "Double Bed",
+      "Wifi",
+      "Shower",
+      "Coffee Set",
+      "Towel"
+    ],
     "room_price": 51.72,
     "room_status": "Available"
   },
@@ -12206,7 +13717,13 @@
     "room_picture": "http://dummyimage.com/181x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Coffee Set", "Wifi", "Bathup", "Towel", "LED TV"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi",
+      "Bathup",
+      "Towel",
+      "LED TV"
+    ],
     "room_price": 165.92,
     "room_status": "Available"
   },
@@ -12238,7 +13755,9 @@
     "room_picture": "http://dummyimage.com/201x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 93.82,
     "room_status": "Available"
   },
@@ -12271,7 +13790,10 @@
     "room_picture": "http://dummyimage.com/136x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "Towel"],
+    "room_facilities": [
+      "Wifi",
+      "Towel"
+    ],
     "room_price": 83.54,
     "room_status": "Booked"
   },
@@ -12282,7 +13804,11 @@
     "room_picture": "http://dummyimage.com/104x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Double Bed", "AC", "Towel"],
+    "room_facilities": [
+      "Double Bed",
+      "AC",
+      "Towel"
+    ],
     "room_price": 83.17,
     "room_status": "Booked"
   },
@@ -12303,7 +13829,7 @@
       "Wifi",
       "Shower"
     ],
-    "room_price": 177.70,
+    "room_price": 177.7,
     "room_status": "Available"
   },
   {
@@ -12313,7 +13839,13 @@
     "room_picture": "http://dummyimage.com/101x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Double Bed", "Towel", "Wifi", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed",
+      "Towel",
+      "Wifi",
+      "Coffee Set"
+    ],
     "room_price": 82.49,
     "room_status": "Available"
   },
@@ -12324,7 +13856,13 @@
     "room_picture": "http://dummyimage.com/185x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "Shower", "Wifi", "Double Bed", "LED TV"],
+    "room_facilities": [
+      "Bathup",
+      "Shower",
+      "Wifi",
+      "Double Bed",
+      "LED TV"
+    ],
     "room_price": 174.78,
     "room_status": "Booked"
   },
@@ -12335,7 +13873,13 @@
     "room_picture": "http://dummyimage.com/229x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["LED TV", "Double Bed", "Bathup", "Wifi", "Shower"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed",
+      "Bathup",
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 120.09,
     "room_status": "Available"
   },
@@ -12346,7 +13890,10 @@
     "room_picture": "http://dummyimage.com/160x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi", "Bathup"],
+    "room_facilities": [
+      "Wifi",
+      "Bathup"
+    ],
     "room_price": 174.33,
     "room_status": "Booked"
   },
@@ -12376,7 +13923,11 @@
     "room_picture": "http://dummyimage.com/201x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "Wifi", "Shower"],
+    "room_facilities": [
+      "Bathup",
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 80.99,
     "room_status": "Booked"
   },
@@ -12405,7 +13956,12 @@
     "room_picture": "http://dummyimage.com/144x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Shower", "Wifi", "LED TV"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "Wifi",
+      "LED TV"
+    ],
     "room_price": 118.87,
     "room_status": "Booked"
   },
@@ -12476,7 +14032,12 @@
     "room_picture": "http://dummyimage.com/158x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Wifi", "Bathup", "Double Bed", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "Bathup",
+      "Double Bed",
+      "AC"
+    ],
     "room_price": 116.05,
     "room_status": "Booked"
   },
@@ -12487,7 +14048,9 @@
     "room_picture": "http://dummyimage.com/193x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 144.84,
     "room_status": "Booked"
   },
@@ -12498,8 +14061,13 @@
     "room_picture": "http://dummyimage.com/193x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi", "AC", "Towel", "Double Bed"],
-    "room_price": 180.60,
+    "room_facilities": [
+      "Wifi",
+      "AC",
+      "Towel",
+      "Double Bed"
+    ],
+    "room_price": 180.6,
     "room_status": "Available"
   },
   {
@@ -12517,7 +14085,7 @@
       "Wifi",
       "AC"
     ],
-    "room_price": 171.40,
+    "room_price": 171.4,
     "room_status": "Available"
   },
   {
@@ -12535,7 +14103,7 @@
       "Shower",
       "Coffee Set"
     ],
-    "room_price": 172.00,
+    "room_price": 172,
     "room_status": "Booked"
   },
   {
@@ -12545,7 +14113,11 @@
     "room_picture": "http://dummyimage.com/122x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Bathup", "Coffee Set", "Wifi"],
+    "room_facilities": [
+      "Bathup",
+      "Coffee Set",
+      "Wifi"
+    ],
     "room_price": 116.62,
     "room_status": "Available"
   },
@@ -12556,8 +14128,13 @@
     "room_picture": "http://dummyimage.com/226x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Wifi", "Bathup", "AC"],
-    "room_price": 161.90,
+    "room_facilities": [
+      "Towel",
+      "Wifi",
+      "Bathup",
+      "AC"
+    ],
+    "room_price": 161.9,
     "room_status": "Booked"
   },
   {
@@ -12567,7 +14144,9 @@
     "room_picture": "http://dummyimage.com/245x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 143.99,
     "room_status": "Available"
   },
@@ -12578,7 +14157,12 @@
     "room_picture": "http://dummyimage.com/241x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Double Bed", "Coffee Set", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "Double Bed",
+      "Coffee Set",
+      "Shower"
+    ],
     "room_price": 144.45,
     "room_status": "Available"
   },
@@ -12609,7 +14193,10 @@
     "room_picture": "http://dummyimage.com/189x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV", "Double Bed"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed"
+    ],
     "room_price": 90.09,
     "room_status": "Available"
   },
@@ -12620,7 +14207,10 @@
     "room_picture": "http://dummyimage.com/187x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Shower"],
+    "room_facilities": [
+      "AC",
+      "Shower"
+    ],
     "room_price": 134.49,
     "room_status": "Booked"
   },
@@ -12670,7 +14260,10 @@
     "room_picture": "http://dummyimage.com/138x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Wifi"
+    ],
     "room_price": 100.82,
     "room_status": "Booked"
   },
@@ -12703,7 +14296,13 @@
     "room_picture": "http://dummyimage.com/183x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "Towel", "Bathup", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Wifi",
+      "Towel",
+      "Bathup",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 175.93,
     "room_status": "Booked"
   },
@@ -12732,7 +14331,12 @@
     "room_picture": "http://dummyimage.com/246x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Coffee Set", "LED TV", "Wifi", "Towel"],
+    "room_facilities": [
+      "Coffee Set",
+      "LED TV",
+      "Wifi",
+      "Towel"
+    ],
     "room_price": 63.15,
     "room_status": "Booked"
   },
@@ -12764,7 +14368,11 @@
     "room_picture": "http://dummyimage.com/207x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Double Bed", "Towel", "Coffee Set"],
+    "room_facilities": [
+      "Double Bed",
+      "Towel",
+      "Coffee Set"
+    ],
     "room_price": 51.28,
     "room_status": "Booked"
   },
@@ -12775,7 +14383,10 @@
     "room_picture": "http://dummyimage.com/136x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Bathup"],
+    "room_facilities": [
+      "Towel",
+      "Bathup"
+    ],
     "room_price": 98.41,
     "room_status": "Booked"
   },
@@ -12786,7 +14397,10 @@
     "room_picture": "http://dummyimage.com/225x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi"
+    ],
     "room_price": 131.95,
     "room_status": "Available"
   },
@@ -12837,7 +14451,12 @@
     "room_picture": "http://dummyimage.com/142x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Shower", "Double Bed", "Towel", "AC"],
+    "room_facilities": [
+      "Shower",
+      "Double Bed",
+      "Towel",
+      "AC"
+    ],
     "room_price": 196.25,
     "room_status": "Available"
   },
@@ -12848,7 +14467,11 @@
     "room_picture": "http://dummyimage.com/210x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Wifi", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Wifi",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 76.14,
     "room_status": "Booked"
   },
@@ -12867,7 +14490,7 @@
       "Shower",
       "Bathup"
     ],
-    "room_price": 195.40,
+    "room_price": 195.4,
     "room_status": "Booked"
   },
   {
@@ -12899,7 +14522,9 @@
     "room_picture": "http://dummyimage.com/245x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 175.64,
     "room_status": "Booked"
   },
@@ -13038,7 +14663,7 @@
       "Wifi",
       "Shower"
     ],
-    "room_price": 140.30,
+    "room_price": 140.3,
     "room_status": "Available"
   },
   {
@@ -13048,7 +14673,10 @@
     "room_picture": "http://dummyimage.com/155x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed", "AC"],
+    "room_facilities": [
+      "Double Bed",
+      "AC"
+    ],
     "room_price": 111.82,
     "room_status": "Booked"
   },
@@ -13059,7 +14687,9 @@
     "room_picture": "http://dummyimage.com/236x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set"],
+    "room_facilities": [
+      "Coffee Set"
+    ],
     "room_price": 69.34,
     "room_status": "Booked"
   },
@@ -13070,7 +14700,9 @@
     "room_picture": "http://dummyimage.com/202x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 133.61,
     "room_status": "Available"
   },
@@ -13099,7 +14731,9 @@
     "room_picture": "http://dummyimage.com/121x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 93.41,
     "room_status": "Booked"
   },
@@ -13151,7 +14785,10 @@
     "room_picture": "http://dummyimage.com/126x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "Shower"],
+    "room_facilities": [
+      "Bathup",
+      "Shower"
+    ],
     "room_price": 176.02,
     "room_status": "Available"
   },
@@ -13162,7 +14799,13 @@
     "room_picture": "http://dummyimage.com/150x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Shower", "LED TV", "Bathup", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Shower",
+      "LED TV",
+      "Bathup",
+      "Wifi"
+    ],
     "room_price": 84.23,
     "room_status": "Available"
   },
@@ -13173,7 +14816,13 @@
     "room_picture": "http://dummyimage.com/121x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Coffee Set", "Shower", "AC", "Bathup", "Double Bed"],
+    "room_facilities": [
+      "Coffee Set",
+      "Shower",
+      "AC",
+      "Bathup",
+      "Double Bed"
+    ],
     "room_price": 178.38,
     "room_status": "Available"
   },
@@ -13184,7 +14833,13 @@
     "room_picture": "http://dummyimage.com/172x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed", "LED TV", "Coffee Set", "Shower", "Wifi"],
+    "room_facilities": [
+      "Double Bed",
+      "LED TV",
+      "Coffee Set",
+      "Shower",
+      "Wifi"
+    ],
     "room_price": 69.23,
     "room_status": "Available"
   },
@@ -13195,7 +14850,11 @@
     "room_picture": "http://dummyimage.com/117x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["AC", "Coffee Set", "Bathup"],
+    "room_facilities": [
+      "AC",
+      "Coffee Set",
+      "Bathup"
+    ],
     "room_price": 83.43,
     "room_status": "Booked"
   },
@@ -13206,8 +14865,14 @@
     "room_picture": "http://dummyimage.com/119x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Coffee Set", "Wifi", "Double Bed", "Shower"],
-    "room_price": 77.90,
+    "room_facilities": [
+      "LED TV",
+      "Coffee Set",
+      "Wifi",
+      "Double Bed",
+      "Shower"
+    ],
+    "room_price": 77.9,
     "room_status": "Available"
   },
   {
@@ -13217,7 +14882,13 @@
     "room_picture": "http://dummyimage.com/248x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Double Bed", "LED TV", "Towel", "Bathup", "AC"],
+    "room_facilities": [
+      "Double Bed",
+      "LED TV",
+      "Towel",
+      "Bathup",
+      "AC"
+    ],
     "room_price": 179.22,
     "room_status": "Booked"
   },
@@ -13268,7 +14939,12 @@
     "room_picture": "http://dummyimage.com/140x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Towel", "AC", "Shower", "Bathup"],
+    "room_facilities": [
+      "Towel",
+      "AC",
+      "Shower",
+      "Bathup"
+    ],
     "room_price": 146.57,
     "room_status": "Available"
   },
@@ -13279,8 +14955,12 @@
     "room_picture": "http://dummyimage.com/191x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Double Bed", "Towel", "LED TV"],
-    "room_price": 143.50,
+    "room_facilities": [
+      "Double Bed",
+      "Towel",
+      "LED TV"
+    ],
+    "room_price": 143.5,
     "room_status": "Booked"
   },
   {
@@ -13310,7 +14990,11 @@
     "room_picture": "http://dummyimage.com/135x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set", "Towel", "LED TV"],
+    "room_facilities": [
+      "Coffee Set",
+      "Towel",
+      "LED TV"
+    ],
     "room_price": 198.09,
     "room_status": "Booked"
   },
@@ -13321,7 +15005,9 @@
     "room_picture": "http://dummyimage.com/243x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 130.17,
     "room_status": "Booked"
   },
@@ -13358,7 +15044,7 @@
       "Wifi",
       "Towel"
     ],
-    "room_price": 174.90,
+    "room_price": 174.9,
     "room_status": "Booked"
   },
   {
@@ -13368,7 +15054,12 @@
     "room_picture": "http://dummyimage.com/219x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Coffee Set", "Bathup", "Double Bed", "Towel"],
+    "room_facilities": [
+      "Coffee Set",
+      "Bathup",
+      "Double Bed",
+      "Towel"
+    ],
     "room_price": 199.85,
     "room_status": "Available"
   },
@@ -13379,7 +15070,13 @@
     "room_picture": "http://dummyimage.com/188x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV", "Double Bed", "Coffee Set", "Towel", "AC"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed",
+      "Coffee Set",
+      "Towel",
+      "AC"
+    ],
     "room_price": 72.79,
     "room_status": "Available"
   },
@@ -13433,8 +15130,11 @@
     "room_picture": "http://dummyimage.com/238x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed", "Shower"],
-    "room_price": 163.60,
+    "room_facilities": [
+      "Double Bed",
+      "Shower"
+    ],
+    "room_price": 163.6,
     "room_status": "Available"
   },
   {
@@ -13482,7 +15182,13 @@
     "room_picture": "http://dummyimage.com/158x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "Towel", "AC", "Shower", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Towel",
+      "AC",
+      "Shower",
+      "Coffee Set"
+    ],
     "room_price": 85.57,
     "room_status": "Available"
   },
@@ -13493,7 +15199,13 @@
     "room_picture": "http://dummyimage.com/210x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Bathup", "LED TV", "Double Bed", "Shower"],
+    "room_facilities": [
+      "Towel",
+      "Bathup",
+      "LED TV",
+      "Double Bed",
+      "Shower"
+    ],
     "room_price": 107.53,
     "room_status": "Available"
   },
@@ -13532,7 +15244,7 @@
       "Wifi",
       "AC"
     ],
-    "room_price": 60.70,
+    "room_price": 60.7,
     "room_status": "Available"
   },
   {
@@ -13623,8 +15335,10 @@
     "room_picture": "http://dummyimage.com/162x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Shower"],
-    "room_price": 157.20,
+    "room_facilities": [
+      "Shower"
+    ],
+    "room_price": 157.2,
     "room_status": "Available"
   },
   {
@@ -13634,7 +15348,13 @@
     "room_picture": "http://dummyimage.com/115x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "AC", "Towel", "Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Shower",
+      "AC",
+      "Towel",
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 194.42,
     "room_status": "Booked"
   },
@@ -13645,7 +15365,12 @@
     "room_picture": "http://dummyimage.com/163x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["AC", "Wifi", "Coffee Set", "LED TV"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "Coffee Set",
+      "LED TV"
+    ],
     "room_price": 105.87,
     "room_status": "Booked"
   },
@@ -13656,7 +15381,10 @@
     "room_picture": "http://dummyimage.com/160x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["AC", "Towel"],
+    "room_facilities": [
+      "AC",
+      "Towel"
+    ],
     "room_price": 162.94,
     "room_status": "Booked"
   },
@@ -13667,7 +15395,10 @@
     "room_picture": "http://dummyimage.com/145x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi"
+    ],
     "room_price": 154.87,
     "room_status": "Available"
   },
@@ -13678,7 +15409,13 @@
     "room_picture": "http://dummyimage.com/155x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Shower", "Wifi", "LED TV", "AC", "Towel"],
+    "room_facilities": [
+      "Shower",
+      "Wifi",
+      "LED TV",
+      "AC",
+      "Towel"
+    ],
     "room_price": 159.23,
     "room_status": "Available"
   },
@@ -13731,7 +15468,12 @@
     "room_picture": "http://dummyimage.com/130x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["AC", "Shower", "Towel", "Wifi"],
+    "room_facilities": [
+      "AC",
+      "Shower",
+      "Towel",
+      "Wifi"
+    ],
     "room_price": 172.07,
     "room_status": "Available"
   },
@@ -13823,7 +15565,12 @@
     "room_picture": "http://dummyimage.com/164x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "AC", "Coffee Set", "Shower"],
+    "room_facilities": [
+      "LED TV",
+      "AC",
+      "Coffee Set",
+      "Shower"
+    ],
     "room_price": 98.04,
     "room_status": "Available"
   },
@@ -13834,7 +15581,12 @@
     "room_picture": "http://dummyimage.com/129x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["LED TV", "Double Bed", "Wifi", "Towel"],
+    "room_facilities": [
+      "LED TV",
+      "Double Bed",
+      "Wifi",
+      "Towel"
+    ],
     "room_price": 177.72,
     "room_status": "Booked"
   },
@@ -13845,7 +15597,10 @@
     "room_picture": "http://dummyimage.com/190x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "AC"
+    ],
     "room_price": 188.99,
     "room_status": "Available"
   },
@@ -13887,7 +15642,7 @@
       "Double Bed",
       "LED TV"
     ],
-    "room_price": 114.90,
+    "room_price": 114.9,
     "room_status": "Available"
   },
   {
@@ -13897,7 +15652,13 @@
     "room_picture": "http://dummyimage.com/105x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "Shower", "Double Bed", "Wifi", "AC"],
+    "room_facilities": [
+      "Bathup",
+      "Shower",
+      "Double Bed",
+      "Wifi",
+      "AC"
+    ],
     "room_price": 161.91,
     "room_status": "Available"
   },
@@ -13908,7 +15669,10 @@
     "room_picture": "http://dummyimage.com/195x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Double Bed", "Coffee Set"],
+    "room_facilities": [
+      "Double Bed",
+      "Coffee Set"
+    ],
     "room_price": 121.04,
     "room_status": "Booked"
   },
@@ -13937,7 +15701,10 @@
     "room_picture": "http://dummyimage.com/103x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Double Bed"],
+    "room_facilities": [
+      "Towel",
+      "Double Bed"
+    ],
     "room_price": 122.75,
     "room_status": "Booked"
   },
@@ -13958,7 +15725,7 @@
       "Towel",
       "Coffee Set"
     ],
-    "room_price": 57.80,
+    "room_price": 57.8,
     "room_status": "Available"
   },
   {
@@ -13986,7 +15753,9 @@
     "room_picture": "http://dummyimage.com/128x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["LED TV"],
+    "room_facilities": [
+      "LED TV"
+    ],
     "room_price": 71.02,
     "room_status": "Available"
   },
@@ -14019,7 +15788,12 @@
     "room_picture": "http://dummyimage.com/183x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "AC", "Double Bed", "Towel"],
+    "room_facilities": [
+      "Shower",
+      "AC",
+      "Double Bed",
+      "Towel"
+    ],
     "room_price": 139.03,
     "room_status": "Available"
   },
@@ -14077,7 +15851,7 @@
       "LED TV",
       "Bathup"
     ],
-    "room_price": 199.30,
+    "room_price": 199.3,
     "room_status": "Booked"
   },
   {
@@ -14087,7 +15861,9 @@
     "room_picture": "http://dummyimage.com/117x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 191.26,
     "room_status": "Booked"
   },
@@ -14118,7 +15894,10 @@
     "room_picture": "http://dummyimage.com/104x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup", "LED TV"],
+    "room_facilities": [
+      "Bathup",
+      "LED TV"
+    ],
     "room_price": 110.59,
     "room_status": "Available"
   },
@@ -14129,8 +15908,10 @@
     "room_picture": "http://dummyimage.com/168x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["AC"],
-    "room_price": 162.60,
+    "room_facilities": [
+      "AC"
+    ],
+    "room_price": 162.6,
     "room_status": "Available"
   },
   {
@@ -14168,7 +15949,7 @@
       "Coffee Set",
       "Wifi"
     ],
-    "room_price": 160.90,
+    "room_price": 160.9,
     "room_status": "Available"
   },
   {
@@ -14178,7 +15959,9 @@
     "room_picture": "http://dummyimage.com/137x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 144.43,
     "room_status": "Available"
   },
@@ -14189,7 +15972,12 @@
     "room_picture": "http://dummyimage.com/197x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-2",
-    "room_facilities": ["Coffee Set", "AC", "LED TV", "Shower"],
+    "room_facilities": [
+      "Coffee Set",
+      "AC",
+      "LED TV",
+      "Shower"
+    ],
     "room_price": 98.43,
     "room_status": "Booked"
   },
@@ -14250,7 +16038,7 @@
       "LED TV",
       "Towel"
     ],
-    "room_price": 82.40,
+    "room_price": 82.4,
     "room_status": "Available"
   },
   {
@@ -14260,7 +16048,10 @@
     "room_picture": "http://dummyimage.com/177x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["AC", "Shower"],
+    "room_facilities": [
+      "AC",
+      "Shower"
+    ],
     "room_price": 187.73,
     "room_status": "Booked"
   },
@@ -14313,8 +16104,10 @@
     "room_picture": "http://dummyimage.com/146x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed"],
-    "room_price": 96.20,
+    "room_facilities": [
+      "Double Bed"
+    ],
+    "room_price": 96.2,
     "room_status": "Booked"
   },
   {
@@ -14363,7 +16156,13 @@
     "room_picture": "http://dummyimage.com/167x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["LED TV", "Wifi", "Bathup", "AC", "Towel"],
+    "room_facilities": [
+      "LED TV",
+      "Wifi",
+      "Bathup",
+      "AC",
+      "Towel"
+    ],
     "room_price": 172.14,
     "room_status": "Available"
   },
@@ -14404,7 +16203,7 @@
       "Coffee Set",
       "Shower"
     ],
-    "room_price": 157.50,
+    "room_price": 157.5,
     "room_status": "Booked"
   },
   {
@@ -14414,8 +16213,12 @@
     "room_picture": "http://dummyimage.com/102x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Coffee Set", "Wifi", "Double Bed"],
-    "room_price": 142.50,
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi",
+      "Double Bed"
+    ],
+    "room_price": 142.5,
     "room_status": "Available"
   },
   {
@@ -14425,7 +16228,12 @@
     "room_picture": "http://dummyimage.com/230x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Double Bed", "Towel", "Wifi", "LED TV"],
+    "room_facilities": [
+      "Double Bed",
+      "Towel",
+      "Wifi",
+      "LED TV"
+    ],
     "room_price": 122.32,
     "room_status": "Booked"
   },
@@ -14436,8 +16244,14 @@
     "room_picture": "http://dummyimage.com/144x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-3",
-    "room_facilities": ["Shower", "Towel", "AC", "Double Bed", "LED TV"],
-    "room_price": 79.00,
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "AC",
+      "Double Bed",
+      "LED TV"
+    ],
+    "room_price": 79,
     "room_status": "Booked"
   },
   {
@@ -14475,7 +16289,7 @@
       "AC",
       "LED TV"
     ],
-    "room_price": 197.90,
+    "room_price": 197.9,
     "room_status": "Booked"
   },
   {
@@ -14522,7 +16336,13 @@
     "room_picture": "http://dummyimage.com/155x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Shower", "Towel", "LED TV", "Wifi", "Double Bed"],
+    "room_facilities": [
+      "Shower",
+      "Towel",
+      "LED TV",
+      "Wifi",
+      "Double Bed"
+    ],
     "room_price": 92.97,
     "room_status": "Booked"
   },
@@ -14533,7 +16353,10 @@
     "room_picture": "http://dummyimage.com/164x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Towel", "Bathup"],
+    "room_facilities": [
+      "Towel",
+      "Bathup"
+    ],
     "room_price": 85.77,
     "room_status": "Available"
   },
@@ -14565,7 +16388,12 @@
     "room_picture": "http://dummyimage.com/234x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Bathup", "Double Bed", "LED TV", "Coffee Set"],
+    "room_facilities": [
+      "Bathup",
+      "Double Bed",
+      "LED TV",
+      "Coffee Set"
+    ],
     "room_price": 76.02,
     "room_status": "Booked"
   },
@@ -14576,8 +16404,13 @@
     "room_picture": "http://dummyimage.com/165x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-1",
-    "room_facilities": ["Bathup", "Shower", "Wifi", "Double Bed"],
-    "room_price": 142.30,
+    "room_facilities": [
+      "Bathup",
+      "Shower",
+      "Wifi",
+      "Double Bed"
+    ],
+    "room_price": 142.3,
     "room_status": "Booked"
   },
   {
@@ -14626,7 +16459,13 @@
     "room_picture": "http://dummyimage.com/156x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Coffee Set", "Shower", "Towel", "Wifi", "Bathup"],
+    "room_facilities": [
+      "Coffee Set",
+      "Shower",
+      "Towel",
+      "Wifi",
+      "Bathup"
+    ],
     "room_price": 123.92,
     "room_status": "Booked"
   },
@@ -14637,7 +16476,10 @@
     "room_picture": "http://dummyimage.com/248x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["LED TV", "Wifi"],
+    "room_facilities": [
+      "LED TV",
+      "Wifi"
+    ],
     "room_price": 139.92,
     "room_status": "Available"
   },
@@ -14670,7 +16512,10 @@
     "room_picture": "http://dummyimage.com/182x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Coffee Set", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi"
+    ],
     "room_price": 143.42,
     "room_status": "Available"
   },
@@ -14681,7 +16526,11 @@
     "room_picture": "http://dummyimage.com/176x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Shower", "Wifi", "Towel"],
+    "room_facilities": [
+      "Shower",
+      "Wifi",
+      "Towel"
+    ],
     "room_price": 73.33,
     "room_status": "Available"
   },
@@ -14692,7 +16541,10 @@
     "room_picture": "http://dummyimage.com/176x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Towel", "Double Bed"],
+    "room_facilities": [
+      "Towel",
+      "Double Bed"
+    ],
     "room_price": 111.44,
     "room_status": "Booked"
   },
@@ -14703,7 +16555,12 @@
     "room_picture": "http://dummyimage.com/118x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "Bathup", "Towel", "LED TV"],
+    "room_facilities": [
+      "Shower",
+      "Bathup",
+      "Towel",
+      "LED TV"
+    ],
     "room_price": 108.62,
     "room_status": "Available"
   },
@@ -14714,7 +16571,9 @@
     "room_picture": "http://dummyimage.com/171x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Double Bed"],
+    "room_facilities": [
+      "Double Bed"
+    ],
     "room_price": 63.68,
     "room_status": "Available"
   },
@@ -14725,7 +16584,13 @@
     "room_picture": "http://dummyimage.com/181x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-2",
-    "room_facilities": ["Coffee Set", "Towel", "Bathup", "Double Bed", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Towel",
+      "Bathup",
+      "Double Bed",
+      "Wifi"
+    ],
     "room_price": 73.03,
     "room_status": "Booked"
   },
@@ -14767,7 +16632,7 @@
       "Wifi",
       "Towel"
     ],
-    "room_price": 69.30,
+    "room_price": 69.3,
     "room_status": "Available"
   },
   {
@@ -14777,7 +16642,9 @@
     "room_picture": "http://dummyimage.com/228x100.png/5fa2dd/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 115.45,
     "room_status": "Booked"
   },
@@ -14788,7 +16655,10 @@
     "room_picture": "http://dummyimage.com/210x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Shower", "Coffee Set"],
+    "room_facilities": [
+      "Shower",
+      "Coffee Set"
+    ],
     "room_price": 173.08,
     "room_status": "Booked"
   },
@@ -14839,7 +16709,10 @@
     "room_picture": "http://dummyimage.com/240x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "Shower"],
+    "room_facilities": [
+      "Wifi",
+      "Shower"
+    ],
     "room_price": 151.22,
     "room_status": "Available"
   },
@@ -14967,7 +16840,9 @@
     "room_picture": "http://dummyimage.com/119x100.png/cc0000/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Bathup"],
+    "room_facilities": [
+      "Bathup"
+    ],
     "room_price": 164.08,
     "room_status": "Available"
   },
@@ -15039,7 +16914,9 @@
     "room_picture": "http://dummyimage.com/167x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-2",
-    "room_facilities": ["Wifi"],
+    "room_facilities": [
+      "Wifi"
+    ],
     "room_price": 51.01,
     "room_status": "Available"
   },
@@ -15110,7 +16987,13 @@
     "room_picture": "http://dummyimage.com/204x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "B-1",
-    "room_facilities": ["Towel", "Bathup", "Shower", "AC", "Wifi"],
+    "room_facilities": [
+      "Towel",
+      "Bathup",
+      "Shower",
+      "AC",
+      "Wifi"
+    ],
     "room_price": 138.11,
     "room_status": "Booked"
   },
@@ -15240,7 +17123,11 @@
     "room_picture": "http://dummyimage.com/197x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["Bathup", "Wifi", "Towel"],
+    "room_facilities": [
+      "Bathup",
+      "Wifi",
+      "Towel"
+    ],
     "room_price": 167.34,
     "room_status": "Available"
   },
@@ -15251,7 +17138,10 @@
     "room_picture": "http://dummyimage.com/110x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set", "Wifi"],
+    "room_facilities": [
+      "Coffee Set",
+      "Wifi"
+    ],
     "room_price": 195.42,
     "room_status": "Available"
   },
@@ -15262,7 +17152,12 @@
     "room_picture": "http://dummyimage.com/211x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "B-1",
-    "room_facilities": ["Wifi", "LED TV", "Bathup", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "LED TV",
+      "Bathup",
+      "AC"
+    ],
     "room_price": 189.25,
     "room_status": "Available"
   },
@@ -15294,7 +17189,12 @@
     "room_picture": "http://dummyimage.com/152x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Wifi", "Towel", "LED TV", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "Towel",
+      "LED TV",
+      "AC"
+    ],
     "room_price": 191.62,
     "room_status": "Booked"
   },
@@ -15305,7 +17205,11 @@
     "room_picture": "http://dummyimage.com/133x100.png/ff4444/ffffff",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["AC", "Wifi", "Towel"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "Towel"
+    ],
     "room_price": 70.47,
     "room_status": "Booked"
   },
@@ -15316,7 +17220,13 @@
     "room_picture": "http://dummyimage.com/154x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["Shower", "AC", "Towel", "Bathup", "Double Bed"],
+    "room_facilities": [
+      "Shower",
+      "AC",
+      "Towel",
+      "Bathup",
+      "Double Bed"
+    ],
     "room_price": 58.41,
     "room_status": "Booked"
   },
@@ -15346,7 +17256,13 @@
     "room_picture": "http://dummyimage.com/224x100.png/dddddd/000000",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["LED TV", "AC", "Coffee Set", "Shower", "Towel"],
+    "room_facilities": [
+      "LED TV",
+      "AC",
+      "Coffee Set",
+      "Shower",
+      "Towel"
+    ],
     "room_price": 148.39,
     "room_status": "Available"
   },
@@ -15394,7 +17310,12 @@
     "room_picture": "http://dummyimage.com/237x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-1",
-    "room_facilities": ["Towel", "Coffee Set", "AC", "Bathup"],
+    "room_facilities": [
+      "Towel",
+      "Coffee Set",
+      "AC",
+      "Bathup"
+    ],
     "room_price": 198.16,
     "room_status": "Available"
   },
@@ -15479,7 +17400,12 @@
     "room_picture": "http://dummyimage.com/131x100.png/5fa2dd/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-4",
-    "room_facilities": ["LED TV", "Towel", "Double Bed", "Shower"],
+    "room_facilities": [
+      "LED TV",
+      "Towel",
+      "Double Bed",
+      "Shower"
+    ],
     "room_price": 183.59,
     "room_status": "Booked"
   },
@@ -15490,7 +17416,10 @@
     "room_picture": "http://dummyimage.com/124x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Wifi", "AC"],
+    "room_facilities": [
+      "Wifi",
+      "AC"
+    ],
     "room_price": 164.17,
     "room_status": "Booked"
   },
@@ -15501,7 +17430,13 @@
     "room_picture": "http://dummyimage.com/229x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "C-1",
-    "room_facilities": ["Coffee Set", "Bathup", "AC", "Shower", "Double Bed"],
+    "room_facilities": [
+      "Coffee Set",
+      "Bathup",
+      "AC",
+      "Shower",
+      "Double Bed"
+    ],
     "room_price": 104.22,
     "room_status": "Booked"
   },
@@ -15512,7 +17447,13 @@
     "room_picture": "http://dummyimage.com/201x100.png/ff4444/ffffff",
     "room_bedType": "Double",
     "room_floor": "A-2",
-    "room_facilities": ["Towel", "Bathup", "LED TV", "AC", "Coffee Set"],
+    "room_facilities": [
+      "Towel",
+      "Bathup",
+      "LED TV",
+      "AC",
+      "Coffee Set"
+    ],
     "room_price": 175.08,
     "room_status": "Booked"
   },
@@ -15541,7 +17482,11 @@
     "room_picture": "http://dummyimage.com/230x100.png/cc0000/ffffff",
     "room_bedType": "Single",
     "room_floor": "A-4",
-    "room_facilities": ["AC", "Wifi", "Coffee Set"],
+    "room_facilities": [
+      "AC",
+      "Wifi",
+      "Coffee Set"
+    ],
     "room_price": 62.64,
     "room_status": "Booked"
   },
@@ -15591,7 +17536,12 @@
     "room_picture": "http://dummyimage.com/222x100.png/dddddd/000000",
     "room_bedType": "Single",
     "room_floor": "A-3",
-    "room_facilities": ["AC", "Double Bed", "LED TV", "Shower"],
+    "room_facilities": [
+      "AC",
+      "Double Bed",
+      "LED TV",
+      "Shower"
+    ],
     "room_price": 114.65,
     "room_status": "Booked"
   },
@@ -15631,7 +17581,10 @@
       "AC",
       "Shower"
     ],
-    "room_price": 65.70,
+    "room_price": 65.7,
     "room_status": "Booked"
+  },
+  {
+    "room_id": 1001
   }
 ]
