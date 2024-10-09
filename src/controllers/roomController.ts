@@ -1,75 +1,68 @@
 import { Request, Response } from "express";
-import { Room } from '../interfaces/room';
-import { convertJSONToCSV, create, getAll, getById, remove, update } from "../services/crud";
-
-// Ruta al archivo JSON de habitaciones
-const roomsFilePath = '../data/rooms.json';
+import RoomModel from "models/roomModels";
 
 //?Obtener datos de todas la habitaciones
-export const getAllRooms = (req: Request, res: Response) => {
-    const rooms = getAll<Room>(roomsFilePath);
-    res.status(200).json(rooms);
+export const getAllRooms = async (req: Request, res: Response) => {
+    try {
+        const rooms = await RoomModel.find();
+        res.status(200).json(rooms);
+
+    } catch (error) {
+        res.status(500).json({ message: 'Error al obtener las habitaciones', error })
+    }
 };
 
 //?Obtener una habitación por ID
-export const getRoomById = (req: Request, res: Response) => {
-    const id = parseInt(req.params.id);
-    const room = getById<Room>(roomsFilePath, 'room_id', id);
+export const getRoomById = async (req: Request, res: Response) => {
+    const id = parseInt(req.params.id); //Mongoose maneja el ID como string
 
-    if (room) {
+    try {
+        const room = await RoomModel.findById(id);
         res.status(200).json(room);
-    } else {
-        res.status(404).json({ message: 'Habitación no encontrada' });
+
+    } catch (error) {
+        res.status(500).json({ message: 'Error al obtener la habitación', error });
     }
 };
 
 //? Crear una nueva habitación
-export const createRoom = (req: Request, res: Response) => {
-    const newRoom: Room = req.body;
-    const createdRoom = create<Room>(roomsFilePath, newRoom, 'room_id'); // Asigna ID único
-    res.status(201).json({ message: 'Habitación creada', room: createdRoom });
+export const createRoom = async (req: Request, res: Response) => {
+    const newRoom = req.body;  // Crea una instancia del modelo
+
+    try {
+        const createdRoom = await newRoom.save(); //Guarda la habitación.
+        res.status(201).json({ message: 'Habitación creada', room: createdRoom });
+    
+    } catch (error) {
+        res.status(400).json({ message: 'Error al crear la habitación' })
+    }
 };
 
 //? Actualizar una habitación existente
-export const updateRoom = (req: Request, res: Response) => {
-    const id = parseInt(req.params.id);  // Obtén el ID de la habitación desde los parámetros de la solicitud
-    const updatedData: Partial<Room> = req.body; // Obtén los datos actualizados del cuerpo de la solicitud
-    
-    //? Llama a la función de actualización
-    const updatedRoom = update<Room>(roomsFilePath, 'room_id', id, updatedData);
+export const updateRoom = async (req: Request, res: Response) => {
+    const id = req.params.id;  // Obtén el ID de la habitación desde los parámetros de la solicitud
+    const updatedData = req.body; // Obtén los datos actualizados del cuerpo de la solicitud
 
-    if (updatedRoom) {
-        res.status(200).json({message: 'Habitación actualizada exitosamente', room: updatedRoom });
-    } else {
-        res.status(404).json({ message: 'Habitación no encontrada' });
+    try{
+        //? Llama a la función de actualización
+        const updatedRoom = await RoomModel.findByIdAndUpdate( id, updatedData);
+        res.status(200).json({ message: 'Habitación actualizada exitosamente', room: updatedRoom });
+
+    } catch (error) {
+        res.status(400).json({ message: 'Error al actualizar la habitación' });
     }
+
 };
 
 //? Eliminar una habitación
-export const removeRoom = (req: Request, res: Response) => {
-    const id = parseInt(req.params.id);
-    const isRemoved = remove<Room>(roomsFilePath, 'room_id', id);
+export const removeRoom = async (req: Request, res: Response) => {
+    const id = req.params.id;
+    
+    try {
+        const isRemoved = await RoomModel.findByIdAndDelete(id);
+        res.status(200).json({ message: 'Habitación eliminada exitosamente', isRemoved });
 
-
-    if (isRemoved) {
-        res.status(200).json({ message: 'Habitación eliminada exitosamente' });
-    } else {
-        res.status(404).json({ message: 'Habitación no encontrada' });
+    } catch {
+        res.status(400).json({ message: 'Error al eliminar la habitación' });
     }
-};
-
-//? Convertir usuarios a CSV
-export const convertRoomToCSV = (req: Request, res: Response) => {
-    const fileName = 'rooms.json';
-    const headers = [
-        'room_id',
-         'room_number',
-         'room_type',
-         'room_facilities',
-         'room_price',
-         'offer_price',
-         'room_status',
-         'room_picture',
-         'room_bedType'];
-    convertJSONToCSV(req, res, fileName, headers);
 };
