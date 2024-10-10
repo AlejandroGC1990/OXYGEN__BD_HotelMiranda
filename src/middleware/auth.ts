@@ -28,10 +28,10 @@ export const authenticate = async (req: Request, res: Response, next: NextFuncti
 
         //?Verificar credenciales
         if (user && await bcrypt.compare(user_password, user.user_password)) {
-
             // Crear el token JWT
-            const token = jwt.sign({ user_name: user.user_name }, SECRET_KEY);
+            const token = jwt.sign({ user_name: user.user_name }, SECRET_KEY, { expiresIn: '24h' });
             res.json({ token }); // Enviar el token como respuesta
+            
         } else {
             res.status(401).json({ message: 'Invalid Credentials' });
         }

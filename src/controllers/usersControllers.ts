@@ -1,6 +1,4 @@
 import { Request, Response } from "express";
-import { User } from "../interfaces/user";
-import { getAll, getById, create, update, remove, convertJSONToCSV } from '../services/crud';
 
 //?? Ruta al JSON de users
 const usersFilePath = '../data/users.json';
