@@ -11,6 +11,8 @@ import contactRoutes from './routes/contactRoutes';
 import userRoutes from './routes/usersRoutes';
 import authRoutes from './routes/authRoutes';
 import publicRoutes from './routes/publicRoutes';
+import UserModel from './models/userModels';
+import bcrypt from 'bcrypt';
 
 dotenv.config(); //? Carga variables del archivo .env
 
@@ -20,7 +22,19 @@ const MONGO_URI = process.env.MONGO_URI;
 
 //? Conexión a MongoDB
 mongoose.connect(MONGO_URI!)
-    .then(() => console.log('MongoDB connected'))
+    .then(async() => {
+        console.log('MongoDB connected');
+        //? Para cifrar las contraseñas de los usuarios creados antes de plaicar bcrypt
+        // const users = await UserModel.find();
+        // users.forEach(async (user) => {
+        //     if (!user.user_password.startsWith('$2b$')) { // Si la contraseña no está cifrada
+        //         const salt = await bcrypt.genSalt(10);
+        //         user.user_password = await bcrypt.hash(user.user_password, salt);
+        //         await user.save();
+        //         console.log(`Contraseña de ${user.user_name} cifrada correctamente`);
+        //     }
+        // });
+    })
     .catch(err => console.error('MongoDB connection error:', err));
 
 //? Middleware

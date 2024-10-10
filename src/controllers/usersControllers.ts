@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import UserModel from "models/userModels";
+import UserModel from "../models/userModels";
 
 //?? Obtener todos los usuarios
 export const getAllUsers = async (req: Request, res: Response): Promise<void> => {
