@@ -1,81 +1,73 @@
 import { Request, Response } from "express";
-
-//?? Ruta al JSON de users
-const usersFilePath = '../data/users.json';
+import UserModel from "models/userModels";
 
 //?? Obtener todos los usuarios
-export const getAllUsers = (req: Request, res: Response): void => {
-    const users = getAll<User>(usersFilePath);
-    res.status(200).json(users);
+export const getAllUsers = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const users = await UserModel.find();
+        res.status(200).json(users);
+    } catch (error) {
+        res.status(500).json({ message: 'Error al obtener los usuarios', error });
+    }
 };
 
 //?? Obtener usuarios por Id
-export const getUsersById = (req: Request, res: Response): void => {
-    const id = parseInt(req.params.id);
-    const user = getById<User>(usersFilePath, 'user_id', id);
-
-    if (user) {
-        res.status(200).json(user);
-    } else {
-        res.status(404).json({ message: "Usuario no encontrado" });
+export const getUsersById = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const user = await UserModel.findById(req.params.id);
+        if (user) {
+            res.status(200).json(user);
+        } else {
+            res.status(404).json({ message: "Usuario no encontrado" });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Error al obtener el usuario', error });
     }
 };
 
 //? Crear un nuevo usuario
-export const createUser = (req: Request, res: Response): void => {
-    const newUser: User = req.body;
+export const createUser = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const newUser = new UserModel(req.body);
 
-    if (!newUser.user_name) {
-        res.status(400).json({ message: 'Nombre es requerido' });
+        if (!newUser.user_name || !newUser.user_password) {
+            res.status(400).json({ message: 'Nombre y contraseña son requeridos' });
+            return;
+        }
+
+        await newUser.save();
+        res.status(201).json({ message: 'Usuario creado', user: newUser });
+    } catch (error) {
+        res.status(500).json({ message: 'Error al crear el usuario', error });
     }
-
-    const createdUser = create<User>(usersFilePath, newUser, 'user_id');
-    res.status(201).json({ message: 'Usuario creado', user: createdUser });
 };
 
 //? Actualizar un usuario existente
-export const updateUser = (req: Request, res: Response): void => {
-    const id = parseInt(req.params.id);
-    const updatedData: Partial<User> = req.body;
+export const updateUser = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const updatedUser = await UserModel.findByIdAndUpdate(req.params.id, req.body, { new: true });
 
-    if (!updatedData.user_name) {
-        res.status(400).json({ message: 'Proporcione al menos un nombre o un correo para actualizar' });
-    }
-
-    const updatedUser = update<User>(usersFilePath, 'user_id', id, updatedData);
-
-    if (updatedUser) {
-        res.status(200).json({ message: 'Usuario actualizado', user: updatedUser });
-    } else {
-        res.status(404).json({ message: 'Usuario no encontrado' });
+        if (updatedUser) {
+            res.status(200).json({ message: 'Usuario actualizado', user: updatedUser });
+        } else {
+            res.status(404).json({ message: 'Usuario no encontrado' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Error al actualizar el usuario', error });
     }
 };
 
 //? Eliminar un usuario
-export const removeUser = (req: Request, res: Response): void => {
-    const id = parseInt(req.params.id);
-    const success = remove<User>(usersFilePath, 'user_id', id);
+export const removeUser = async (req: Request, res: Response): Promise<void> => {
+    try {
+        const user = await UserModel.findByIdAndDelete(req.params.id);
 
-    if (success) {
-        res.status(200).json({ message: 'Usuario eliminado' });
-    } else {
-        res.status(404).json({ message: 'Usuario no encontrado' });
+        if (user) {
+            res.status(200).json({ message: 'Usuario eliminado' });
+        } else {
+            res.status(404).json({ message: 'Usuario no encontrado' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Error al eliminar el usuario', error });
     }
-};
-
-//? Convertir usuarios a CSV
-export const convertUsersToCSV = (req: Request, res: Response) => {
-    const fileName = 'users.json';
-    const headers = [
-        'user_id',
-        'user_name',
-        'user_password',
-        'user_picture',
-        'user_joined',
-        'user_jobDescription',
-        'user_schedule',
-        'user_contact',
-        'user_status'
-    ];
-    convertJSONToCSV(req, res, fileName, headers);
 };

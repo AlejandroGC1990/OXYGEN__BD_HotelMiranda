@@ -18,7 +18,11 @@ export const getRoomById = async (req: Request, res: Response) => {
 
     try {
         const room = await RoomModel.findById(id);
-        res.status(200).json(room);
+        if (room) {
+            res.status(200).json(room);
+        } else {
+            res.status(404).json({ message: "Habitación no encontrado" });
+        }
 
     } catch (error) {
         res.status(500).json({ message: 'Error al obtener la habitación', error });
@@ -32,7 +36,7 @@ export const createRoom = async (req: Request, res: Response) => {
     try {
         const createdRoom = await newRoom.save(); //Guarda la habitación.
         res.status(201).json({ message: 'Habitación creada', room: createdRoom });
-    
+
     } catch (error) {
         res.status(400).json({ message: 'Error al crear la habitación' })
     }
@@ -43,9 +47,9 @@ export const updateRoom = async (req: Request, res: Response) => {
     const id = req.params.id;  // Obtén el ID de la habitación desde los parámetros de la solicitud
     const updatedData = req.body; // Obtén los datos actualizados del cuerpo de la solicitud
 
-    try{
+    try {
         //? Llama a la función de actualización
-        const updatedRoom = await RoomModel.findByIdAndUpdate( id, updatedData);
+        const updatedRoom = await RoomModel.findByIdAndUpdate(id, updatedData);
         res.status(200).json({ message: 'Habitación actualizada exitosamente', room: updatedRoom });
 
     } catch (error) {
@@ -57,7 +61,7 @@ export const updateRoom = async (req: Request, res: Response) => {
 //? Eliminar una habitación
 export const removeRoom = async (req: Request, res: Response) => {
     const id = req.params.id;
-    
+
     try {
         const isRemoved = await RoomModel.findByIdAndDelete(id);
         res.status(200).json({ message: 'Habitación eliminada exitosamente', isRemoved });
