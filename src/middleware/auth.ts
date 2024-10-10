@@ -19,25 +19,48 @@ declare global {
 const SECRET_KEY: string = process.env.JWT_SECRET_KEY || 'defaultSecretKey';
 
 //? Middleware de autenticación
-export const authenticate = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+export const authenticate = async (req: Request, res: Response) => {
     const { user_name, user_password } = req.body;  // Obtener las credenciales del cuerpo de la solicitud
 
     try {
+        console.log(`Autenticando usuario: ${user_name}`);
+
         //?Buscar usuario en la BD
         const user = await UserModel.findOne({ user_name });
 
-        //?Verificar credenciales
-        if (user && await bcrypt.compare(user_password, user.user_password)) {
-            // Crear el token JWT
-            const token = jwt.sign({ user_name: user.user_name }, SECRET_KEY, { expiresIn: '24h' });
-            res.json({ token }); // Enviar el token como respuesta
-            
-        } else {
-            res.status(401).json({ message: 'Invalid Credentials' });
+        //? Verificar si el usuario fue encontrado
+        if (!user) {
+            res.status(401).json({ message: 'Invalid User' });
+            return;
         }
+
+        //? Verificar la contraseña utilizando bcrypt
+        const isPasswordValid = await bcrypt.compare(user_password, user.user_password);
+        console.log(`Contraseña válida: ${isPasswordValid}`); // Log de la comparación de contraseña
+
+        if (!isPasswordValid) {
+            // console.log('Contraseña incorrecta');
+            res.status(401).json({ message: 'Invalid Password' });
+            return;
+        }
+
+        //? Crear el token JWT si la autenticación es correcta
+        const token = jwt.sign({ user_name: user.user_name }, SECRET_KEY, { expiresIn: '24h' });
+
+        //? Enviar el token como respuesta
+        res.json({ token });
+        // if (user && await bcrypt.compare(user_password, user.user_password)) {
+        //     //? Crear el token JWT
+        //     const token = jwt.sign({ user_name: user.user_name }, SECRET_KEY, { expiresIn: '24h' });
+        //     res.json({ token }); // Enviar el token como respuesta
+
+        // } else {
+        //     console.log('Usuario no encontrado');
+        //     res.status(401).json({ message: 'Invalid Credentials' });
+        // }
     } catch (error) {
         console.error(error);
-        res.status(500).json({ message: 'Internal Server Error'});
+        res.status(500).json({ message: 'Internal Server Error' });
     }
 };
 

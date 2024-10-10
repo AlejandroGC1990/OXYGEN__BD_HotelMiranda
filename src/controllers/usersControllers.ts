@@ -34,7 +34,7 @@ export const createUser = async (req: Request, res: Response): Promise<void> => 
             res.status(400).json({ message: 'Nombre y contraseña son requeridos' });
             return;
         }
-
+        //? Guardar el nuevo usuario automáticamente llamará al middleware para hashear la contraseña
         await newUser.save();
         res.status(201).json({ message: 'Usuario creado', user: newUser });
     } catch (error) {
