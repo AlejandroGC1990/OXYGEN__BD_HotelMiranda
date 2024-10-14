@@ -1,72 +1,69 @@
 import { Request, Response } from "express";
-import RoomModel from "../models/roomModels";
+import ContactModel from "../models/contactModels";
 
-//?Obtener datos de todas la habitaciones
-export const getAllRooms = async (req: Request, res: Response) => {
+//? Obtener todos los contactos
+export const getAllContacts = async (req: Request, res: Response) => {
     try {
-        const rooms = await RoomModel.find();
-        res.status(200).json(rooms);
-
+        const contacts = await ContactModel.find();
+        res.status(200).json(contacts);
     } catch (error) {
-        res.status(500).json({ message: 'Error al obtener las habitaciones', error })
+        res.status(500).json({ message: 'Error al obtener los contactos', error });
     }
 };
 
-//?Obtener una habitación por ID
-export const getRoomById = async (req: Request, res: Response) => {
-    const id = parseInt(req.params.id); //Mongoose maneja el ID como string
-
-    try {
-        const room = await RoomModel.findById(id);
-        if (room) {
-            res.status(200).json(room);
-        } else {
-            res.status(404).json({ message: "Habitación no encontrado" });
-        }
-
-    } catch (error) {
-        res.status(500).json({ message: 'Error al obtener la habitación', error });
-    }
-};
-
-//? Crear una nueva habitación
-export const createRoom = async (req: Request, res: Response) => {
-    const newRoom = req.body;  // Crea una instancia del modelo
-
-    try {
-        const createdRoom = await newRoom.save(); //Guarda la habitación.
-        res.status(201).json({ message: 'Habitación creada', room: createdRoom });
-
-    } catch (error) {
-        res.status(400).json({ message: 'Error al crear la habitación' })
-    }
-};
-
-//? Actualizar una habitación existente
-export const updateRoom = async (req: Request, res: Response) => {
-    const id = req.params.id;  // Obtén el ID de la habitación desde los parámetros de la solicitud
-    const updatedData = req.body; // Obtén los datos actualizados del cuerpo de la solicitud
-
-    try {
-        //? Llama a la función de actualización
-        const updatedRoom = await RoomModel.findByIdAndUpdate(id, updatedData);
-        res.status(200).json({ message: 'Habitación actualizada exitosamente', room: updatedRoom });
-
-    } catch (error) {
-        res.status(400).json({ message: 'Error al actualizar la habitación' });
-    }
-
-};
-
-//? Eliminar una habitación
-export const removeRoom = async (req: Request, res: Response) => {
+//? Obtener un contacto por ID
+export const getContactById = async (req: Request, res: Response) => {
     const id = req.params.id;
-
     try {
-        const isRemoved = await RoomModel.findByIdAndDelete(id);
-        res.status(200).json({ message: 'Habitación eliminada exitosamente', isRemoved });
+        const contact = await ContactModel.findById(id);
+        if (contact) {
+            res.status(200).json(contact);
+        } else {
+            res.status(404).json({ message: "Contacto no encontrado" });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Error al obtener el contacto', error });
+    }
+};
 
-    } catch {
-        res.status(400).json({ message: 'Error al eliminar la habitación' });
+//? Crear un nuevo contacto
+export const createContact = async (req: Request, res: Response) => {
+    const newContact = new ContactModel(req.body);
+    try {
+        const createdContact = await newContact.save();
+        res.status(201).json({ message: 'Contacto creado', contact: createdContact });
+    } catch (error) {
+        res.status(400).json({ message: 'Error al crear el contacto', error });
+    }
+};
+
+//? Actualizar un contacto existente
+export const updateContact = async (req: Request, res: Response) => {
+    const id = req.params.id;
+    const updatedData = req.body;
+    try {
+        const updatedContact = await ContactModel.findByIdAndUpdate(id, updatedData, { new: true });
+        if (updatedContact) {
+            res.status(200).json({ message: 'Contacto actualizado', contact: updatedContact });
+        } else {
+            res.status(404).json({ message: 'Contacto no encontrado' });
+        }
+    } catch (error) {
+        res.status(400).json({ message: 'Error al actualizar el contacto', error });
+    }
+};
+
+//? Eliminar un contacto
+export const removeContact = async (req: Request, res: Response) => {
+    const id = req.params.id;
+    try {
+        const removedContact = await ContactModel.findByIdAndDelete(id);
+        if (removedContact) {
+            res.status(200).json({ message: 'Contacto eliminado exitosamente' });
+        } else {
+            res.status(404).json({ message: 'Contacto no encontrado' });
+        }
+    } catch (error) {
+        res.status(400).json({ message: 'Error al eliminar el contacto', error });
     }
 };
