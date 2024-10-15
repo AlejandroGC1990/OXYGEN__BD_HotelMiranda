@@ -6,13 +6,13 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import roomRoutes from './routes/roomRoutes';
-// import bookingRoutes from './routes/bookingRoutes';
+import bookingRoutes from './routes/bookingRoutes';
 import contactRoutes from './routes/contactRoutes';
 import userRoutes from './routes/usersRoutes';
 import authRoutes from './routes/authRoutes';
 import publicRoutes from './routes/publicRoutes';
-import UserModel from './models/userModels';
-import bcrypt from 'bcrypt';
+// import UserModel from './models/userModels';
+// import bcrypt from 'bcrypt';
 
 dotenv.config(); //? Carga variables del archivo .env
 
@@ -47,7 +47,7 @@ app.use('/api/login', authRoutes);
 //? Rutas
 app.use('/public', publicRoutes);
 app.use('/api/room', roomRoutes);
-// app.use('/api/booking', bookingRoutes);
+app.use('/api/booking', bookingRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/user', userRoutes);
 

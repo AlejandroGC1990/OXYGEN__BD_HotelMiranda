@@ -5,7 +5,7 @@ import ContactModel from "../models/contactModels";
 import { Booking } from "../interfaces/booking";
 
 //? Obtener todas las reservas
-export const getAllBookings = async (req: Request, res: Response) => {
+export const getAllBookings = async (req: Request, res: Response): Promise<void> => {
     try {
         const bookings = await BookingModel.find().populate('guest').populate('room');
         res.status(200).json(bookings);
@@ -15,7 +15,7 @@ export const getAllBookings = async (req: Request, res: Response) => {
 };
 
 //? Obtener una reserva por ID
-export const getBookingById = async (req: Request, res: Response) => {
+export const getBookingById = async (req: Request, res: Response): Promise<void> => {
     const id = req.params.id;
     try {
         const booking = await BookingModel.findById(id).populate('guest').populate('room');
@@ -30,16 +30,16 @@ export const getBookingById = async (req: Request, res: Response) => {
 };
 
 //? Crear una nueva reserva
-export const createBooking = async (req: Request, res: Response) => {
+export const createBooking = async (req: Request, res: Response): Promise<void> => {
     try {
         const { guest, room, specialRequest } = req.body;
 
-        // Verifica si el contacto y la habitación existen
+        //? Verifica si el contacto y la habitación existen
         const contactExists = await ContactModel.findById(guest);
         const roomExists = await RoomModel.findById(room);
 
         if (!contactExists || !roomExists) {
-            return res.status(400).json({ message: 'El contacto o la habitación no existen' });
+            res.status(400).json({ message: 'El contacto o la habitación no existen' });
         }
 
         const newBooking = new BookingModel({
@@ -56,7 +56,7 @@ export const createBooking = async (req: Request, res: Response) => {
 };
 
 //? Actualizar una reserva existente
-export const updateBooking = async (req: Request, res: Response) => {
+export const updateBooking = async (req: Request, res: Response): Promise<void> => {
     const id = req.params.id;
     const updatedData = req.body;
 
@@ -73,7 +73,7 @@ export const updateBooking = async (req: Request, res: Response) => {
 };
 
 //? Eliminar una reserva
-export const removeBooking = async (req: Request, res: Response) => {
+export const removeBooking = async (req: Request, res: Response): Promise<void> => {
     const id = req.params.id;
     try {
         const removedBooking = await BookingModel.findByIdAndDelete(id);
