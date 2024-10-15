@@ -5,7 +5,7 @@ export interface Room {
     room_facilities: string[];
     room_price: number;
     offer_price?: number;
-    room_status: string;
+    room_status: 'Check In' | 'Check Out' | 'In Progress';
     room_picture: string;
     room_bedType: string;
 }
