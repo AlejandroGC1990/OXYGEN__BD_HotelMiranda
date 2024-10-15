@@ -22,32 +22,40 @@ const MONGO_URI = process.env.MONGO_URI;
 
 //? Conexión a MongoDB
 mongoose.connect(MONGO_URI!)
-    .then(async() => {
-        console.log('MongoDB connected');
-        //? Para cifrar las contraseñas de los usuarios creados antes de aplicar bcrypt
-        // const users = await UserModel.find();
-        // users.forEach(async (user) => {
-        //     if (!user.user_password.startsWith('$2b$')) { // Si la contraseña no está cifrada
-        //         const salt = await bcrypt.genSalt(10);
-        //         user.user_password = await bcrypt.hash(user.user_password, salt);
-        //         await user.save();
-        //         console.log(`Contraseña de ${user.user_name} cifrada correctamente`);
-        //     }
-        // });
-    })
-    .catch(err => console.error('MongoDB connection error:', err));
+  .then(async () => {
+    console.log('MongoDB connected');
+    //? Para cifrar las contraseñas de los usuarios creados antes de aplicar bcrypt
+    // const users = await UserModel.find();
+    // users.forEach(async (user) => {
+    //     if (!user.user_password.startsWith('$2b$')) { // Si la contraseña no está cifrada
+    //         const salt = await bcrypt.genSalt(10);
+    //         user.user_password = await bcrypt.hash(user.user_password, salt);
+    //         await user.save();
+    //         console.log(`Contraseña de ${user.user_name} cifrada correctamente`);
+    //     }
+    // });
+  })
+  .catch(err => console.error('MongoDB connection error:', err));
 
 //? Middleware de CORS manual
-app.use((req: Request, res: Response, next: NextFunction) => {
-    if (req.method === 'OPTIONS') {
-      res.end();
-    } else {
-      next();
-    }
-  });
+// app.use((req: Request, res: Response, next: NextFunction) => {
+//   if (req.method === 'OPTIONS') {
+//     res.end();
+//   } else {
+//     next();
+//   }
+// });
+app.use(cors({
+  origin: 'http://localhost:5173',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,UPDATE',
+  credentials: true,
+}));
 
 //? Middleware
-// app.use(cors());  // Permite solicitudes desde diferentes dominios
+app.use(cors({
+  origin: '*' // Permite todas las solicitudes de origen cruzado
+}
+));  // Permite solicitudes desde diferentes dominios
 app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
 
 //? Rutas de autenticación
@@ -63,5 +71,5 @@ app.use('/api/user', userRoutes);
 
 //? Iniciar el servidor
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}/public/info`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}/public/info`);
 });
