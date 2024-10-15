@@ -1,7 +1,7 @@
 //! Este archivo configura tu servidor Express, define middlewares (como cors y express.json())
 //!  y carga las rutas de tu API. El archivo .env contiene configuraciones como el puerto (PORT). 
 
-import express from 'express';
+import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
@@ -17,7 +17,7 @@ import publicRoutes from './routes/publicRoutes';
 dotenv.config(); //? Carga variables del archivo .env
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 const MONGO_URI = process.env.MONGO_URI;
 
 //? Conexión a MongoDB
@@ -37,8 +37,17 @@ mongoose.connect(MONGO_URI!)
     })
     .catch(err => console.error('MongoDB connection error:', err));
 
+//? Middleware de CORS manual
+app.use((req: Request, res: Response, next: NextFunction) => {
+    if (req.method === 'OPTIONS') {
+      res.end();
+    } else {
+      next();
+    }
+  });
+
 //? Middleware
-app.use(cors());  // Permite solicitudes desde diferentes dominios
+// app.use(cors());  // Permite solicitudes desde diferentes dominios
 app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
 
 //? Rutas de autenticación
