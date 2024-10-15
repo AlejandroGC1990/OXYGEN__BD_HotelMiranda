@@ -9,7 +9,7 @@ dotenv.config();
 declare global {
     namespace Express {
         interface Request {
-            user?: any; // o define un tipo más específico si lo deseas
+            user?: any; 
             isAuthenticated?: boolean;
         }
     }
@@ -39,7 +39,6 @@ export const authenticate = async (req: Request, res: Response) => {
         console.log(`Contraseña válida: ${isPasswordValid}`); // Log de la comparación de contraseña
 
         if (!isPasswordValid) {
-            // console.log('Contraseña incorrecta');
             res.status(401).json({ message: 'Invalid Password' });
             return;
         }
