@@ -3,7 +3,7 @@ import { Room } from "./room";
 
 export interface Booking {
     booking_Id: number;              
-    contact_Id: Contact;             
+    guest_Id: Contact;             
     guest_name: string;              
     guest_orderDate: string;       
     guest_checkIn: string;                 

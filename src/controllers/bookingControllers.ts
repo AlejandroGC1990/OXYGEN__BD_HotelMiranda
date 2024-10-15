@@ -43,9 +43,18 @@ export const createBooking = async (req: Request, res: Response): Promise<void> 
         }
 
         const newBooking = new BookingModel({
+            // booking_id,
             guest,
+            guest_idReview: guest.guest_idReview,
+            guest_name: guest.guest_name,  
+            guest_orderDate: guest.guest_orderDate,  
+            guest_checkIn: guest.guest_checkIn,
+            guest_checkOut: guest.guest_checkOut,
+            booking_specialRequest: specialRequest,
             room,
-            specialRequest
+            room_number: room.guest_name,
+            room_type: room.room_type,
+            room_status: room.room_status
         });
 
         const createdBooking = await newBooking.save();
