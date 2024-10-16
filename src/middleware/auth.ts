@@ -21,7 +21,7 @@ const SECRET_KEY: string = process.env.JWT_SECRET_KEY || 'defaultSecretKey';
 //? Middleware de autenticación
 export const authenticate = async (req: Request, res: Response) => {
     const { user_name, user_password } = req.body;  // Obtener las credenciales del cuerpo de la solicitud
-
+     
     try {
         console.log(`Autenticando usuario: ${user_name}`);
 
@@ -47,16 +47,7 @@ export const authenticate = async (req: Request, res: Response) => {
         const token = jwt.sign({ user_name: user.user_name }, SECRET_KEY, { expiresIn: '24h' });
 
         //? Enviar el token como respuesta
-        res.json({ token });
-        // if (user && await bcrypt.compare(user_password, user.user_password)) {
-        //     //? Crear el token JWT
-        //     const token = jwt.sign({ user_name: user.user_name }, SECRET_KEY, { expiresIn: '24h' });
-        //     res.json({ token }); // Enviar el token como respuesta
-
-        // } else {
-        //     console.log('Usuario no encontrado');
-        //     res.status(401).json({ message: 'Invalid Credentials' });
-        // }
+        res.json({ token }); 
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'Internal Server Error' });

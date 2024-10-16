@@ -38,13 +38,6 @@ mongoose.connect(MONGO_URI!)
   .catch(err => console.error('MongoDB connection error:', err));
 
 //? Middleware de CORS manual
-// app.use((req: Request, res: Response, next: NextFunction) => {
-//   if (req.method === 'OPTIONS') {
-//     res.end();
-//   } else {
-//     next();
-//   }
-// });
 app.use(cors({
   origin: 'http://localhost:5173',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,UPDATE',
@@ -52,10 +45,6 @@ app.use(cors({
 }));
 
 //? Middleware
-app.use(cors({
-  origin: '*' // Permite todas las solicitudes de origen cruzado
-}
-));  // Permite solicitudes desde diferentes dominios
 app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
 
 //? Rutas de autenticación
