@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import BookingModel from "../models/bookingModels";
 import RoomModel from "../models/roomModels";
 import ContactModel from "../models/contactModels";
-import { Booking } from "../interfaces/booking";
 
 //? Obtener todas las reservas
 export const getAllBookings = async (req: Request, res: Response): Promise<void> => {

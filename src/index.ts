@@ -1,18 +1,18 @@
 //! Este archivo configura tu servidor Express, define middlewares (como cors y express.json())
 //!  y carga las rutas de tu API. El archivo .env contiene configuraciones como el puerto (PORT). 
 
-import express, { Request, Response, NextFunction } from 'express';
+import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+
+//? Importación de rutas
 import roomRoutes from './routes/roomRoutes';
 import bookingRoutes from './routes/bookingRoutes';
 import contactRoutes from './routes/contactRoutes';
 import userRoutes from './routes/usersRoutes';
 import authRoutes from './routes/authRoutes';
 import publicRoutes from './routes/publicRoutes';
-// import UserModel from './models/userModels';
-// import bcrypt from 'bcrypt';
 
 dotenv.config(); //? Carga variables del archivo .env
 
@@ -45,7 +45,7 @@ app.use(cors({
 }));
 
 //? Middleware
-app.use(express.json()); // Parsear cuerpos de las solicitudes en JSON
+app.use(express.json()); //? Permite recibir datos en formato JSON en las solicitudes
 
 //? Rutas de autenticación
 app.use('/api/login', authRoutes);
