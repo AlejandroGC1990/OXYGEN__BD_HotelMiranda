@@ -12,10 +12,15 @@ const createTables = async () => {
 
     await createRoomTable();
     console.log('Tabla Room creada correctamente');
+    
+    // await createUsersTable();
+    // console.log('Tabla usuarios creada correctamente');
+    
+    // await createBookingTable();
+    // console.log('Tabla Booking creada correctamente');
   } catch (error) {
     console.error('Error al crear las tablas:', error);
   }
 };
 
 createTables();
-
