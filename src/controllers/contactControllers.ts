@@ -1,12 +1,10 @@
 import { Request, Response } from "express";
 import { connectDB } from '../db/db';
-import { Contact } from '../interfaces/contact';
 import { OkPacketParams } from "mysql2";
 
 //?? Obtener todos los contactos
 export const getAllContacts = async (req: Request, res: Response): Promise<void> => {
     try {
-
         const connection = await connectDB();
         const [rows] = await connection.execute('SELECT * FROM Contact');
         res.status(200).json(rows);
@@ -17,8 +15,8 @@ export const getAllContacts = async (req: Request, res: Response): Promise<void>
 
 //? Obtener contacto por ID
 export const getContactById = async (req: Request, res: Response): Promise<void> => {
+    const id = req.params.id;
     try {
-
         const connection = await connectDB();
         const [rows] = await connection.execute('SELECT * FROM Contact');
 

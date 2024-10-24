@@ -1,10 +1,12 @@
 import { Request, Response } from "express";
-import UserModel from "../models/userModels";
+import { connectDB } from '../db/db';
+import { OkPacketParams } from "mysql2";
 
 //?? Obtener todos los usuarios
 export const getAllUsers = async (req: Request, res: Response): Promise<void> => {
     try {
-        const users = await UserModel.find();
+        const connection = await connectDB();
+        const [users] = await connection.execute('SELECT * FROM User');
         res.status(200).json(users);
     } catch (error) {
         res.status(500).json({ message: 'Error al obtener los usuarios', error });
@@ -13,8 +15,11 @@ export const getAllUsers = async (req: Request, res: Response): Promise<void> =>
 
 //?? Obtener usuarios por Id
 export const getUsersById = async (req: Request, res: Response): Promise<void> => {
+    const id = req.params.id;
     try {
-        const user = await UserModel.findById(req.params.id);
+        const connection = await connectDB();
+        const [user] = await connection.execute('SELECT * FROM User WHERE user_id = ?', [id]);
+
         if (user) {
             res.status(200).json(user);
         } else {
@@ -27,16 +32,20 @@ export const getUsersById = async (req: Request, res: Response): Promise<void> =
 
 //? Crear un nuevo usuario
 export const createUser = async (req: Request, res: Response): Promise<void> => {
-    try {
-        const newUser = new UserModel(req.body);
+    const { user_name, user_password, user_picture, user_jobDescription, user_schedule, user_contact, user_status } = req.body;
 
-        if (!newUser.user_name || !newUser.user_password) {
-            res.status(400).json({ message: 'Nombre y contraseña son requeridos' });
-            return;
-        }
-        //? Guardar el nuevo usuario automáticamente llamará al middleware para hashear la contraseña
-        await newUser.save();
-        res.status(201).json({ message: 'Usuario creado', user: newUser });
+    if (!user_name || !user_password) {
+        res.status(400).json({ message: 'Nombre y contraseña son requeridos' });
+        return;
+    }
+    try {
+        const connection = await connectDB();
+        await connection.execute(
+            'INSERT INTO User (user_name, user_password, user_picture, user_jobDescription, user_schedule, user_contact, user_status) VALUES (?, ?, ?, ?, ?, ?, ?)',
+            [user_name, user_password, user_picture, user_jobDescription, JSON.stringify(user_schedule), user_contact, user_status]
+        );
+
+        res.status(201).json({ message: 'Usuario creado'});
     } catch (error) {
         res.status(500).json({ message: 'Error al crear el usuario', error });
     }
@@ -44,11 +53,20 @@ export const createUser = async (req: Request, res: Response): Promise<void> => 
 
 //? Actualizar un usuario existente
 export const updateUser = async (req: Request, res: Response): Promise<void> => {
-    try {
-        const updatedUser = await UserModel.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    const id = req.params.id;
+    const updatedData = req.body;
+    const connection = await connectDB();
 
-        if (updatedUser) {
-            res.status(200).json({ message: 'Usuario actualizado', user: updatedUser });
+    try {
+        const [result] = await connection.execute(
+            'UPDATE User SET user_name = ?, user_password = ?, user_picture = ?, user_jobDescription = ?, user_schedule = ?, user_contact = ?, user_status = ? WHERE user_id = ?',
+            [updatedData.user_name, updatedData.user_password, updatedData.user_picture, updatedData.user_jobDescription, JSON.stringify(updatedData.user_schedule), updatedData.user_contact, updatedData.user_status, id]
+        );
+
+        const okResult = result as OkPacketParams;
+
+        if (okResult.affectedRows) {
+            res.status(200).json({ message: 'Usuario actualizado' });
         } else {
             res.status(404).json({ message: 'Usuario no encontrado' });
         }
@@ -59,11 +77,16 @@ export const updateUser = async (req: Request, res: Response): Promise<void> => 
 
 //? Eliminar un usuario
 export const removeUser = async (req: Request, res: Response): Promise<void> => {
-    try {
-        const user = await UserModel.findByIdAndDelete(req.params.id);
+    const id = req.params.id;
+    const connection = await connectDB();
 
-        if (user) {
-            res.status(200).json({ message: 'Usuario eliminado' });
+    try {
+        const [result] = await connection.execute('DELETE FROM User WHERE user_id = ?', [id]);
+        
+        const okResult = result as OkPacketParams;
+
+        if (okResult.affectedRows) {
+            res.status(200).json({ message: 'Usuario eliminado exitosamente' });
         } else {
             res.status(404).json({ message: 'Usuario no encontrado' });
         }
