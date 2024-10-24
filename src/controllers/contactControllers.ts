@@ -1,11 +1,15 @@
 import { Request, Response } from "express";
-import ContactModel from "../models/contactModels";
+import { connectDB } from '../db/db';
+import { Contact } from '../interfaces/contact';
+import { OkPacketParams } from "mysql2";
 
 //?? Obtener todos los contactos
 export const getAllContacts = async (req: Request, res: Response): Promise<void> => {
     try {
-        const contacts = await ContactModel.find();
-        res.status(200).json(contacts);
+
+        const connection = await connectDB();
+        const [rows] = await connection.execute('SELECT * FROM Contact');
+        res.status(200).json(rows);
     } catch (error) {
         res.status(500).json({ message: 'Error al obtener los contactos', error });
     }
@@ -14,9 +18,12 @@ export const getAllContacts = async (req: Request, res: Response): Promise<void>
 //? Obtener contacto por ID
 export const getContactById = async (req: Request, res: Response): Promise<void> => {
     try {
-        const contact = await ContactModel.findById(req.params.id);
-        if (contact) {
-            res.status(200).json(contact);
+
+        const connection = await connectDB();
+        const [rows] = await connection.execute('SELECT * FROM Contact');
+
+        if (rows) {
+            res.status(200).json(rows);
         } else {
             res.status(404).json({ message: "Contacto no encontrado" });
         }
@@ -27,17 +34,19 @@ export const getContactById = async (req: Request, res: Response): Promise<void>
 
 //? Crear un nuevo contacto
 export const createContact = async (req: Request, res: Response): Promise<void> => {
+    const { guest_name, guest_email, guest_phone, guest_commentReview, guest_rateReview } = req.body;
+
     try {
-        const newContact = new ContactModel(req.body);
+        const connection = await connectDB();
+        const [result] = await connection.execute(`
+            INSERT INTO Contact (guest_name, guest_email, guest_phone, guest_commentReview, guest_rateReview) 
+            VALUES (?, ?, ?, ?, ?)`,
+            [guest_name, guest_email, guest_phone, guest_commentReview, guest_rateReview]
+        );
 
-        if (!newContact.guest_name || !newContact.guest_email) {
-            res.status(400).json({ message: 'El nombre y el email son requeridos' });
-            return;
-        }
+        const insertId = (result as any).insertId;
 
-        //? Guardar el nuevo contacto automáticamente llamará al middleware para hashear la contraseña
-        await newContact.save();
-        res.status(201).json({ message: 'Usuario creado', contact: newContact });
+        res.status(201).json({ message: 'Usuario creado', contactId: insertId });
     } catch (error) {
         res.status(500).json({ message: 'Error al crear el usuario', error });
     }
@@ -45,11 +54,22 @@ export const createContact = async (req: Request, res: Response): Promise<void> 
 
 //? Actualizar un contacto existente
 export const updateContact = async (req: Request, res: Response): Promise<void> => {
-    try {
-        const updatedContact = await ContactModel.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    const id = req.params.id;
+    const { guest_name, guest_email, guest_phone, guest_commentReview, guest_rateReview } = req.body;
 
-        if (updatedContact) {
-            res.status(200).json({ message: 'Contacto actualizado', contact: updatedContact });
+    try {
+        const connection = await connectDB();
+        const [result] = await connection.execute(`
+            UPDATE Contact 
+            SET guest_name = ?, guest_email = ?, guest_phone = ?, guest_commentReview = ?, guest_rateReview = ?
+            WHERE guest_idReview = ?`,
+            [guest_name, guest_email, guest_phone, guest_commentReview, guest_rateReview, id]
+        );
+
+        const okResult = result as OkPacketParams;
+
+        if (okResult.affectedRows) {
+            res.status(200).json({ message: 'Contacto actualizado', contact: updateContact });
         } else {
             res.status(404).json({ message: 'Contacto no encontrado' });
         }
@@ -59,16 +79,20 @@ export const updateContact = async (req: Request, res: Response): Promise<void> 
 };
 
 //? Eliminar un contacto
-export const removeContact = async (req: Request, res: Response): Promise<void> => {
+export const removeContact = async (req: Request, res: Response) => {
+    const id = req.params.id;
     try {
-        const success = await ContactModel.findByIdAndDelete(req.params.id);
+        const connection = await connectDB();
+        const [result] = await connection.execute('DELETE FROM Contact WHERE guest_idReview = ?', [id]);
 
-        if (success) {
+        const okResult = result as OkPacketParams;
+
+        if (okResult.affectedRows) {
             res.status(200).json({ message: 'Contacto eliminado' });
         } else {
             res.status(404).json({ message: 'Contacto no encontrado' });
         }
     } catch (error) {
-        res.status(500).json({ message: 'Error al eliminar el usuario', error });
-    };
+        res.status(500).json({ message: 'Error al eliminar el contacto', error });
+    }
 };
