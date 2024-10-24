@@ -43,7 +43,6 @@ export const createContact = async (req: Request, res: Response): Promise<void> 
             VALUES (?, ?, ?, ?, ?)`,
             [guest_name, guest_email, guest_phone, guest_commentReview, guest_rateReview]
         );
-
         const insertId = (result as any).insertId;
 
         res.status(201).json({ message: 'Usuario creado', contactId: insertId });

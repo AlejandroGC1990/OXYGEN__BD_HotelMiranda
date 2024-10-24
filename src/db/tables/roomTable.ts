@@ -4,6 +4,7 @@ export const createRoomTable = async () => {
   const connection = await connectDB();
 
   await connection.execute(`
+
     CREATE TABLE IF NOT EXISTS Room (
       room_id INT PRIMARY KEY AUTO_INCREMENT,
       room_number INT NOT NULL,
